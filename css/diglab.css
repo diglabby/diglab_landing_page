@@ -1,0 +1,263 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/*
+div {
+    border:1px solid red;
+}
+*/
+
+#lastBeforeFooter {
+    padding: 50px 0 115px 0;
+}
+
+.lead, .section-heading {
+    padding: 0 15px;
+}
+
+.p-fullwidth {
+    padding: 0 50px;
+}
+
+.h-fullwidth {
+    text-align: center;
+}
+
+@media(max-width:767px){
+    .p-fullwidth {
+    padding: 0;
+}
+   .lead, .section-heading {
+    padding: 0;
+} 
+    
+    .h-fullwidth {
+    padding: 0;
+}
+    
+}
+
+
+.main {
+    margin-bottom: 50px;
+    border:1px solid red;
+}
+
+.fullsize {
+    margin: 50px 0;
+    width:100%;
+}
+
+.buttons {
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:9999;
+    background:#404040;
+    height:85px;
+    width:100%;
+    text-align:center;
+}
+
+.call {
+    height:85px;
+}
+
+.button-call {
+    height:85px;
+    line-height: 85px;
+    width:40%;
+    background:#909090;
+}
+
+.button-call a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.cta {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cc {
+    height: 31px;
+    width: 88px;
+}
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 14px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 0; /* height of navbar in case there is one! */
+    padding-bottom: 65px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    }
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+    height:600px;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+footer {
+    padding: 50px 0 100px 0;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+    height:300px;
+    margin-bottom: 85px;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
