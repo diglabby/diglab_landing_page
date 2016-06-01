@@ -4,6 +4,8 @@
 Размеры на заглушках картинок - максимальные для исходников. 
 Футер тоже примерный пока, надо решить, что в нем нужно.
 
+Диклеймер и креденшиалз:
+
 Design based on:
 [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
 
