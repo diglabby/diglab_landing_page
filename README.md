@@ -1,3 +1,9 @@
+Макет первой страницы Лічбавай Майстэрні. 
+
+Текст - заглушка, примерно обозначающая смысловые блоки. Будет переписываться. 
+Размеры на заглушках картинок - максимальные для исходников. 
+Футер тоже примерный пока, надо решить, что в нем нужно.
+
 Design based on:
 [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
 
