@@ -242,39 +242,3 @@ p.copyright {
     letter-spacing: 1px;
 }
 }
-
-
-/*
-.buttons ul {
-    margin-bottom: 0;
-    height:85px;
-} 
-
-.buttons ul li {
-    height:85px;
-    width:40%;
-    background:#909090;
-    border: 1px solid yellow;
-}
-
-.buttons ul li a {
-    text-decoration: none;
-    color:#fff;
-    height:100%;
-    width:100%;
-    display:inline-block;
-    border: 1px solid blue;
-}
-
-.buttons ul li a span {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    border: 1px solid red;
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
-*/
