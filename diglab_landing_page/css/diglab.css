@@ -1,0 +1,280 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------- typography --------------------- */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 14px; 
+}
+
+.lead /* paragraphs inside sections */ {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ----------------- /typography --------------------- */
+
+/* ----------------- layout --------------------- */
+
+/* ----------------- hero section ----------------*/
+
+.intro-header {
+    padding-top: 0; /* height of navbar in case there is one! */
+    padding-bottom: 65px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+
+/* ----------------- content sections ----------------*/
+.section-background-gray {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.section-background-white {
+    padding: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    }
+
+
+.lead, .section-heading {
+    padding: 0 15px;
+}
+
+/*------------- dumb random patches - to be fixed in final version ------------------------------*/
+.p-fullwidth {
+    padding: 0 50px;
+}
+
+.h-fullwidth {
+    text-align: center;
+}
+
+.fullsize /* -- image for fullwidth blocks*/ {
+    margin: 50px 0;
+    width:100%;
+}
+
+@media(max-width:767px){
+    .p-fullwidth {
+    padding: 0;
+}
+   .lead, .section-heading {
+    padding: 0;
+} 
+    
+    .h-fullwidth {
+    padding: 0;
+}
+}
+
+/*------------- /dumb random patches - to be fixed in final version ------------------------------*/
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+    height:600px;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+}
+
+
+#lastBeforeFooter /*-- increase padding to accomodate cta block --*/{
+    padding: 50px 0 105px 0;
+}
+
+footer {
+    padding: 50px 0 100px 0;
+    color: #f8f8f8;
+    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background-size: cover;
+    height:300px;
+    position:relative;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.cc /* - creative commons icon - */ {
+    height: 31px;
+    width: 88px;
+}
+
+/* -----------------  CTA block ---------------------------------- */
+
+.buttons {
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:9999;
+    background:#404040;
+    height:85px;
+    width:100%;
+    text-align:center;
+}
+
+.button-volunteers, .button-initiatives {
+    width:50%;
+    height:85px;
+    background:#909090;
+    display:table;
+}
+
+.button-volunteers {
+    float:left;
+}
+
+.button-initiatives {
+    float:right;
+}
+
+.button-volunteers a, .button-initiatives a {
+    display:table-cell;
+    height:100%;
+    vertical-align: middle;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:#fff;
+}
+
+@media(max-width:700px) {
+    
+.button-volunteers a, .button-initiatives a  {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+}
+
+
+@media(max-width:500px) {
+    
+.button-volunteers a, .button-initiatives a  {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+}
+
+
+/*
+.buttons ul {
+    margin-bottom: 0;
+    height:85px;
+} 
+
+.buttons ul li {
+    height:85px;
+    width:40%;
+    background:#909090;
+    border: 1px solid yellow;
+}
+
+.buttons ul li a {
+    text-decoration: none;
+    color:#fff;
+    height:100%;
+    width:100%;
+    display:inline-block;
+    border: 1px solid blue;
+}
+
+.buttons ul li a span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+*/
