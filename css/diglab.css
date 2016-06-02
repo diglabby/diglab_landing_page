@@ -10,7 +10,7 @@ div {
 */
 
 #lastBeforeFooter {
-    padding: 50px 0 115px 0;
+    padding: 50px 0 105px 0;
 }
 
 .lead, .section-heading {
@@ -60,6 +60,10 @@ div {
     width:100%;
     text-align:center;
 }
+
+.buttons ul {
+    margin-bottom: 0;
+} 
 
 .call {
     height:85px;
@@ -255,7 +259,7 @@ footer {
     background: url(https://placehold.it/1900x800) no-repeat center center;
     background-size: cover;
     height:300px;
-    margin-bottom: 85px;
+    position:relative;
 }
 
 p.copyright {
