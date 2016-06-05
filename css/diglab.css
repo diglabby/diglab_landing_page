@@ -34,7 +34,7 @@ h6 {
 
 /* ----------------- /typography --------------------- */
 
-/* ----------------- layout --------------------- */
+/* ========================= layout =============================== */
 
 /* ----------------- hero section ----------------*/
 
@@ -238,6 +238,16 @@ p.copyright {
     
 .button-volunteers a, .button-initiatives a  {
     font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+}
+
+@media(max-width:360px) {
+    
+.button-volunteers a, .button-initiatives a  {
+    font-size: 16px;
+    padding: 0 10px;
     font-weight: 700;
     letter-spacing: 1px;
 }
