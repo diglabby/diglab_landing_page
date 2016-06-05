@@ -42,14 +42,18 @@ h6 {
     padding-top: 0; /* height of navbar in case there is one! */
     padding-bottom: 65px;
     text-align: center;
-    background: url(../img/header.png) no-repeat center -100px;
-    background-size: cover;
-    min-height:100%;
-}
+    height:100%;
+    background-image: url(../img/header.png), linear-gradient(#ccc 50%, #333 50%);
+    background-size: contain; 
+    background-color: #333;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    }
+
 
 .intro-message {
     position: relative;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 20%;
 }
 
@@ -67,6 +71,8 @@ h6 {
 
 #logo {
     margin:0 auto;
+    max-width:30%;
+    margin-bottom: 1em;
 }
 
 #hashtag {
@@ -76,7 +82,13 @@ h6 {
     color:#ccff00;
     margin-top: 1em;
 }
+
+
 @media(max-width:767px) {
+    .intro-header {
+        background-position: center 50%;
+    }
+    
     .intro-message {
         padding-bottom: 15%;
     }
@@ -84,23 +96,26 @@ h6 {
     .intro-message > h1 {
         font-size: 3em;
     }
+}
 
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
+@media(max-width:550px) {
+    .intro-message {
+        padding-bottom: 15%;
     }
 
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
+    .intro-message > h1 {
+        font-size: 2.5em;
     }
-
-    .intro-divider {
-        width: 100%;
-    }
+    
+    .intro-message > h3 {
+        font-size: 1.3em;
 }
 
 
+#hashtag {
+    font-size: 2em;
+ }
+}
 /* ----------------- content sections ----------------*/
 .section-background-gray {
     padding: 50px 0;
@@ -191,10 +206,15 @@ h6 {
 footer {
     padding: 50px 0 100px 0;
     color: #f8f8f8;
-    background: url(../img/footer.png) no-repeat center center;
-    background-size: cover;
     height:300px;
     position:relative;
+    
+    
+    background-image: url(../img/footer.png);
+    background-size: contain; 
+    background-color: #ccc;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 p.copyright {
