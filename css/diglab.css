@@ -21,6 +21,7 @@ h5,
 h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    color:#333;
 }
 
 .topnav {
@@ -32,7 +33,6 @@ h6 {
     font-weight: 400;
 }
 
-/* ----------------- /typography --------------------- */
 
 /* ========================= layout =============================== */
 
@@ -42,14 +42,14 @@ h6 {
     padding-top: 0; /* height of navbar in case there is one! */
     padding-bottom: 65px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background: url(../img/header.png) no-repeat center -100px;
     background-size: cover;
+    min-height:100%;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 18%;
+    padding-top: 5%;
     padding-bottom: 20%;
 }
 
@@ -57,10 +57,16 @@ h6 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+    color: #f8f8f8;
 }
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    color: #f8f8f8;
+}
+
+#logo {
+    margin:0 auto;
 }
 
 @media(max-width:767px) {
@@ -91,11 +97,16 @@ h6 {
 /* ----------------- content sections ----------------*/
 .section-background-gray {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
 }
 
 .section-background-white {
     padding: 50px 0;
+    background-color: #fff;
+}
+
+.section-background-dark {
+    background-color: #333;
 }
 
 .section-heading {
@@ -149,6 +160,7 @@ h6 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
+    color: #f8f8f8;
 }
 
 
@@ -165,10 +177,14 @@ h6 {
     padding: 50px 0 105px 0;
 }
 
+#lastBeforeFooter h2, #lastBeforeFooter p {
+    color:#ccff00;
+}
+
 footer {
     padding: 50px 0 100px 0;
     color: #f8f8f8;
-    background: url(https://placehold.it/1900x800) no-repeat center center;
+    background: url(../img/footer.png) no-repeat center center;
     background-size: cover;
     height:300px;
     position:relative;
@@ -190,17 +206,20 @@ p.copyright {
     bottom:0;
     left:0;
     z-index:9999;
-    background:#404040;
-    height:85px;
+    background:#888;
+    height:75px;
     width:100%;
     text-align:center;
+    box-shadow: 0 -1px 5px #888;
 }
 
 .button-volunteers, .button-initiatives {
     width:50%;
-    height:85px;
-    background:#909090;
+    height:75px;
+    background:#ccff00;
     display:table;
+    border:1px solid #888;
+    box-sizing: border-box;
 }
 
 .button-volunteers {
@@ -216,12 +235,10 @@ p.copyright {
     height:100%;
     vertical-align: middle;
     padding: 0 15px;
-    text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: 2px;
     text-decoration: none;
-    color:#fff;
+    color:#333;
 }
 
 @media(max-width:700px) {
@@ -229,26 +246,14 @@ p.copyright {
 .button-volunteers a, .button-initiatives a  {
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 }
 
 
 @media(max-width:500px) {
-    
 .button-volunteers a, .button-initiatives a  {
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 }
 
-@media(max-width:360px) {
-    
-.button-volunteers a, .button-initiatives a  {
-    font-size: 16px;
-    padding: 0 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-}
