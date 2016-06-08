@@ -25,7 +25,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead /* paragraphs inside sections */ {
@@ -38,40 +38,41 @@ h6 {
 
 /* ----------------- hero section ----------------*/
 
-.intro-header {
-    padding-top: 0; /* height of navbar in case there is one! */
-    padding-bottom: 65px;
+#hero {
+    padding-top: 0; /* top = height of navbar in case there is one! */
     text-align: center;
-    height:100%;
-    background-image: url(../img/header.png), linear-gradient(#ccc 50%, #333 50%);
-    background-size: contain; 
-    background-color: #333;
-    background-position: center -100px;
+    min-height:100vh;
+    background-image: url(../img/header.png), linear-gradient(#ccc 85%, #333 15%);
+    background-color: #ccc;
+    background-size: 100% auto;
+    background-position: center 85%;
     background-repeat: no-repeat;
-    }
-
+    position: relative;
+  }
 
 .intro-message {
-    position: relative;
-    padding-top: 3%;
-    padding-bottom: 20%;
+    padding-top: 2%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 5vw;
     color: #f8f8f8;
 }
 
-.intro-message > h3 {
+.intro-message > h3, i {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     color: #f8f8f8;
+  }
+
+.intro-message > h3 {
+    font-size: 2vw;
 }
 
 #logo {
     margin:0 auto;
-    max-width:30%;
+    max-width:15%;
     margin-bottom: 1em;
 }
 
@@ -80,50 +81,57 @@ h6 {
     font-weight: 400;
     font-size: 3em;
     color:#ccff00;
-    margin-top: 1em;
+    margin-top: 0.8em;
+    margin-bottom: .5em;
 }
 
 
 @media(max-width:767px) {
-    .intro-header {
-        background-position: center 50%;
+  #logo {
+      max-width:20%;
     }
-    
+
     .intro-message {
         padding-bottom: 15%;
     }
 
     .intro-message > h1 {
-        font-size: 3em;
+      font-size: 5vw;
     }
+
+    .intro-message > h3 {
+      font-size: 3vw;
+}
 }
 
 @media(max-width:550px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
 
-    .intro-message > h1 {
-        font-size: 2.5em;
-    }
-    
-    .intro-message > h3 {
-        font-size: 1.3em;
+  .intro-message > h1 {
+    font-size: 6vw;
+  }
+
+  .intro-message > h3 {
+    font-size: 4vw;
 }
 
+    .intro-message {
+    padding-top: 15%;
+}
 
 #hashtag {
-    font-size: 2em;
+    font-size: 4vw;
+    padding-bottom: 20%;
  }
 }
 /* ----------------- content sections ----------------*/
+
 .section-background-gray {
-    padding: 50px 0;
-    background-color: #f2f2f2;
+      padding: 30px 0 0 0;
+      background-color: #f2f2f2;
 }
 
 .section-background-white {
-    padding: 50px 0;
+    padding: 30px 0 0 0;
     background-color: #fff;
 }
 
@@ -161,8 +169,8 @@ h6 {
 }
    .lead, .section-heading {
     padding: 0;
-} 
-    
+}
+
     .h-fullwidth {
     padding: 0;
 }
@@ -208,10 +216,10 @@ footer {
     color: #f8f8f8;
     height:300px;
     position:relative;
-    
-    
-    background-image: url(../img/footer.png);
-    background-size: contain; 
+
+
+    background-image: url(../img/footer_left_wide.png);
+    background-size: 100% auto;
     background-color: #ccc;
     background-position: center center;
     background-repeat: no-repeat;
@@ -269,7 +277,7 @@ p.copyright {
 }
 
 @media(max-width:700px) {
-    
+
 .button-volunteers a, .button-initiatives a  {
     font-size: 22px;
     font-weight: 700;
@@ -283,4 +291,3 @@ p.copyright {
     font-weight: 700;
 }
 }
-
