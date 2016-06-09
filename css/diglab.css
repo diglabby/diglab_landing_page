@@ -179,18 +179,67 @@ h6 {
 /*------------- /dumb random patches - to be fixed in final version ------------------------------*/
 
 .banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(https://placehold.it/1900x800) no-repeat center center;
-    background-size: cover;
+    padding: 0;
+    color: #333;
     height:600px;
+    width:100%;
+    position:relative;
+  }
+
+.map-background {
+  position:absolute;
+  height:600px;
+  width:960px;
+  top:50%;
+  left:50%;
+  margin-top:-300px;
+  margin-left:-480px;
+  background: url(../img/map-960.png) no-repeat center center;
+  background-size: contain;
+  }
+
+.map-label {
+  position:absolute;
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1em;
+  color: #333;
+  background-color: #fff;
+  padding:5px 10px;
+  box-shadow: 1px 1px 5px #888;
+  }
+
+.label-one {
+  height:90px;
+  width:220px;
+  bottom:143px;
+  left:230px;
+}
+
+.label-two {
+  height:65px;
+  width:100px;
+  top:188px;
+  left:378px;
+}
+
+.label-three {
+  height:65px;
+  width:220px;
+  bottom:120px;
+  right:55px;
 }
 
 .banner h2 {
     margin: 0;
+    padding-top: 40px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
     color: #f8f8f8;
+    position: relative;
+    top:0;
+    z-index:9999;
 }
 
 
@@ -201,6 +250,38 @@ h6 {
         font-size: 3em;
     }
 }
+
+/*
+@media(min-width:320px) {
+  .map-background {
+    width:300px;
+    top:50%;
+    left:50%;
+    margin-left:-150px;
+    background: url(../img/map-300.png) no-repeat center center;
+    }
+}
+
+@media(min-width:650px) {
+  .map-background {
+    width:600px;
+    top:50%;
+    left:50%;
+    margin-left:-300px;
+    background: url(../img/map-600.png) no-repeat center center;
+    }
+}
+
+@media(min-width:1024px) {
+  .map-background {
+    width:960px;
+    top:50%;
+    left:50%;
+    margin-left:-480px;
+    background: url(../img/map-960.png) no-repeat center center;
+    }
+}
+*/
 
 
 #lastBeforeFooter /*-- increase padding to accomodate cta block --*/{
@@ -219,7 +300,7 @@ footer {
 
 
     background-image: url(../img/footer.png);
-    background-size: contain;
+    background-size: cover;
     background-color: #ccc;
     background-position: center bottom;
     background-repeat: no-repeat;
