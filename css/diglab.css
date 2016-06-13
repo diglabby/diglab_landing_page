@@ -3,14 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-
 body,
 html {
     width: 100%;
     height: 100%;
 }
-
 /* ----------------- typography --------------------- */
 body,
 h1,
@@ -23,11 +20,9 @@ h6 {
     font-weight: 700;
     color:#333;
 }
-
 .topnav {
     font-size: 14px;
 }
-
 .lead /* paragraphs inside sections */ {
     font-size: 18px;
     font-weight: 400;
@@ -79,7 +74,7 @@ h6 {
 #hashtag {
     font-family: 'Ubuntu Mono', sans-serif;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2vw;
     color:#ccff00;
     margin-top: 0.8em;
     margin-bottom: .5em;
@@ -114,7 +109,7 @@ h6 {
     font-size: 4vw;
 }
 
-    .intro-message {
+  .intro-message {
     padding-top: 15%;
 }
 
@@ -125,25 +120,28 @@ h6 {
 }
 /* ----------------- content sections ----------------*/
 
+.section-wrapper {
+  padding: 40px 0;
+}
+
 .section-background-gray {
-      padding: 30px 0 0 0;
+      padding: 0;
       background-color: #f2f2f2;
 }
 
 .section-background-white {
-    padding: 30px 0 0 0;
     background-color: #fff;
+    padding: 0;
 }
+
 
 .section-background-dark {
     background-color: #333;
 }
 
 .section-heading {
-    margin-bottom: 30px;
-    margin-top: 40px;
-    }
-
+    margin: 30px 0 40px 0;
+}
 
 .lead, .section-heading {
     padding: 0 15px;
@@ -159,141 +157,376 @@ h6 {
 }
 
 .fullsize /* -- image for fullwidth blocks*/ {
-    margin: 50px 0;
+    margin: 0;
     width:100%;
 }
 
 @media(max-width:767px){
-    .p-fullwidth {
+  .p-fullwidth {
     padding: 0;
-}
-   .lead, .section-heading {
+  }
+  .lead, .section-heading {
     padding: 0;
+  }
+  .h-fullwidth {
+    padding: 0;
+  }
 }
 
-    .h-fullwidth {
-    padding: 0;
-}
-}
-
-/*------------- /dumb random patches - to be fixed in final version ------------------------------*/
-
+/*--------------------------------- map defaults -----------------------------*/
 .banner {
     padding: 0;
     color: #333;
     height:600px;
     width:100%;
     position:relative;
-  }
-
+    background-color: #ccc;
+}
 .map-background {
   position:absolute;
   height:600px;
-  width:960px;
   top:50%;
   left:50%;
   margin-top:-300px;
-  margin-left:-480px;
-  background: url(../img/map-960.png) no-repeat center center;
   background-size: contain;
-  }
-
+}
 .map-label {
   position:absolute;
   font-family: 'Ubuntu Mono', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1em;
   color: #333;
   background-color: #fff;
-  padding:5px 10px;
   box-shadow: 1px 1px 5px #888;
-  }
-
-.label-one {
-  height:90px;
-  width:220px;
-  bottom:143px;
-  left:230px;
+  font-weight: 400;
 }
-
-.label-two {
-  height:65px;
-  width:100px;
-  top:188px;
-  left:378px;
-}
-
-.label-three {
-  height:65px;
-  width:220px;
-  bottom:120px;
-  right:55px;
-}
-
 .banner h2 {
-    margin: 0;
-    padding-top: 40px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
     color: #f8f8f8;
     position: relative;
     top:0;
     z-index:9999;
+    padding: 30px 0 40px 0;
+    margin:0; /* so that the margin would not push the background image down*/
 }
+/* ----------------------- map 320 - 480 ---------------------------------*/
+@media(min-width:280px) {
 
-
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-}
-
-
-@media(min-width:320px) {
-  .map-background {
+  .banner {
+      height:400px;
+  }
+  .banner h2 {
+      font-size: 24px;
+      padding: 20px 0 30px 0;
+      margin:0;
+  }
+ .map-background {
     width:300px;
-    top:50%;
-    left:50%;
+    height:350px;
     margin-left:-150px;
-    background: url(../img/map-300.png) no-repeat center center;
+    margin-top:-175px;
+    background: url(../img/map_300_350.png) no-repeat center center;
+  }
+  .map-label {
+    font-size: 22px;
+    line-height: 1em;
+  }
+  .map-label {
+    font-size: 13px;
+    line-height: 1em;
+    font-weight: 400;
+    padding: 3px 6px 3px 5px;
+  }
+  .label-one {
+    height:46px;
+    width:122px;
+    bottom:107px;
+    left:8px;
+  }
+  .label-one:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 70px;
+    bottom:-18px;
+    border: 9px solid;
+    border-color: #fff transparent transparent transparent;
+  }
+  .label-two {
+    height:35px;
+    width:57px;
+    top:68px;
+    left:160px;
+  }
+  .label-two:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -16px;
+    top: 9px;
+    border: 8px solid;
+    border-color: transparent #fff transparent transparent;
+  }
+  .label-three {
+    height:35px;
+    width:132px;
+    bottom:10px;
+    right:24px;
+  }
+  .label-three:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 43px;
+    top: -16px;
+    border: 8px solid;
+    border-color: transparent transparent #fff;
+  }
+}
+/* ----------------------- map 480 - 720 ---------------------------------*/
+
+@media(min-width:480px) {
+  .banner {
+      height:400px;
+  }
+  .map-background {
+    width:400px;
+    height:320px;
+    margin-left:-200px;
+    margin-top:-160px;
+    background: url(../img/map_400_320.png) no-repeat center center;
     }
+    .map-label {
+      font-size: 13px;
+      line-height: 1em;
+      font-weight: 400;
+      padding: 3px 6px 3px 5px;
+    }
+    .label-one {
+      height:50px;
+      width:124px;
+      bottom:101px;
+      left:106px;
+    }
+    .label-one:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 37px;
+      bottom:-14px;
+      border: 8px solid;
+      border-color: #fff transparent transparent transparent;
+    }
+    .label-two {
+      height:35px;
+      width:57px;
+      top:42px;
+      left:274px;
+    }
+    .label-two:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -16px;
+      top: 9px;
+      border: 8px solid;
+      border-color: transparent #fff transparent transparent;
+    }
+    .label-three {
+      height:35px;
+      width:132px;
+      bottom:15px;
+      right:45px;
+    }
+    .label-three:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 43px;
+      top: -16px;
+      border: 8px solid;
+      border-color: transparent transparent #fff;
+    }
+}
+/* ----------------------- map 720 - 1024 ---------------------------------*/
+@media(min-width:720px) {
+
+  .banner {
+      height:450px;
+  }
+  .banner h2 {
+      font-size: 28px;
+      padding: 20px 0 40px 0;
+  }
+ .map-background {
+    width:700px;
+    height:390px;
+    margin-left:-350px;
+    margin-top:-195px;
+    background: url(../img/map_700_390.png) no-repeat center center;
+  }
+
+  .map-label {
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 400;
+    padding:5px 10px;
+  }
+
+  .label-one {
+    height:60px;
+    width:160px;
+    bottom:38px;
+    left:212px;
+  }
+  .label-one:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -24px;
+    top: 18px;
+    border: 12px solid;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .label-two {
+    height:45px;
+    width:74px;
+    top:71px;
+    left:440px;
+  }
+
+  .label-two:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -19px;
+    top: 12px;
+    border: 10px solid;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .label-three {
+    height:45px;
+    width:169px;
+    bottom:33px;
+    right:82px;
+  }
+
+  .label-three:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 45px;
+    top: -24px;
+    border: 12px solid;
+    border-color: transparent transparent #fff;
+  }
 }
 
-@media(min-width:650px) {
-  .map-background {
-    width:600px;
-    top:50%;
-    left:50%;
-    margin-left:-300px;
-    background: url(../img/map-600.png) no-repeat center center;
-    }
-}
+
+/* ----------------------- map 1024 and wider --------------------------------*/
 
 @media(min-width:1024px) {
+
+  .banner {
+      height:600px;
+  }
+  .banner h2 {
+      font-size: 36px;
+      padding: 30px 0 40px 0;
+  }
   .map-background {
-    width:960px;
-    top:50%;
-    left:50%;
-    margin-left:-480px;
-    background: url(../img/map-960.png) no-repeat center center;
+    width:1000px;
+    height:600px;
+    margin-left:-500px;
+    margin-top:-300px;
+    background: url(../img/map_1000.png) no-repeat center center;
     }
+  .map-label {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1em;
+    padding:5px 7px;
+  }
+
+  .label-one {
+    height:78px;
+    width:215px;
+    bottom:105px;
+    left:242px;
+  }
+
+  .label-one:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -28px;
+    top: 24px;
+    border: 15px solid;
+    border-color: transparent #fff transparent transparent;
+      }
+
+    .label-two {
+      height:58px;
+      width:94px;
+      top:217px;
+      left:396px;
+    }
+
+  .label-two:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 93px;
+      top: 14px;
+      border: 15px solid;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    .label-three {
+      height:60px;
+      width:220px;
+      bottom:90px;
+      right:48px;
+    }
+
+  .label-three:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 71px;
+    top: -28px;
+    border: 15px solid;
+    border-color: transparent transparent #fff;
+  }
 }
 
+/* ----------------------- map 1024 and wider --------------------------------*/
 
-
-#lastBeforeFooter /*-- increase padding to accomodate cta block --*/{
-    padding: 50px 0 105px 0;
+/* -----------------------bottom block ---------------------------------------*/
+/*temp*/ #lastBeforeFooter /*-- increase padding to accomodate cta block on top of footer --*/
+{
+    padding: 0 0 105px 0;
 }
 
-#lastBeforeFooter h2, #lastBeforeFooter p {
+/*temp*/ #lastBeforeFooter h2, #lastBeforeFooter p {
     color:#ccff00;
 }
 
+/*------------------------- footer ------------------------------------------*/
 footer {
-    padding: 50px 0 100px 0;
+    padding: 0;
     color: #f8f8f8;
     height:300px;
     position:relative;
@@ -306,11 +539,11 @@ footer {
     background-repeat: no-repeat;
 }
 
-p.copyright {
+/*temp*/  p.copyright  {
     margin: 15px 0 0 0;
 }
 
-.cc /* - creative commons icon - */ {
+/*temp*/ .cc /* - creative commons icon - */ {
     height: 31px;
     width: 88px;
 }
