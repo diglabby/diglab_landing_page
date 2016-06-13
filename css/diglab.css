@@ -147,6 +147,9 @@ h6 {
     padding: 0 15px;
 }
 
+ul.lead {
+  margin:auto 50px;
+}
 /*------------- dumb random patches - to be fixed in final version ------------------------------*/
 .p-fullwidth {
     padding: 0 50px;
