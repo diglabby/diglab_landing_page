@@ -3,12 +3,14 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+
 body,
 html {
     width: 100%;
     height: 100%;
 }
-/* ----------------- typography --------------------- */
+/* ============================= typography overall ========================= */
 body,
 h1,
 h2,
@@ -28,10 +30,51 @@ h6 {
     font-weight: 400;
 }
 
+a, a:hover {
+  text-decoration: none;
+  color:inherit;
+}
+/*---------------media queries for font-sizes--------------------------------*/
+@media(min-width:280px) {
+  .lead {
+    font-size:14px;
+  }
+  .section-heading,
+  banner>h2 {
+    font-size: 24px;
+  }
+}
+@media(min-width:480px) {
+  .lead {
+    font-size:14px;
+  }
+  .section-heading,
+  banner>h2 {
+    font-size: 24px;
+  }
+}
+@media(min-width:720px) {
+  .lead {
+    font-size:16px;
+  }
+.section-heading,
+banner>h2 {
+    font-size: 28px;
+  }
+}
+@media(min-width:1024px) {
+  .lead {
+    font-size:18px;
+  }
+.section-heading,
+banner>h2 {
+    font-size: 36px;
+  }
+}
 
-/* ========================= layout =============================== */
+/* ================================ layout ================================== */
 
-/* ----------------- hero section ----------------*/
+/* ------------------------------- hero section ------------------------------*/
 
 #hero {
     padding: 0; /* top = height of navbar in case there is one! */
@@ -44,23 +87,19 @@ h6 {
     background-position: center 85%;
     background-repeat: no-repeat;
   }
-
 .intro-message {
     padding-top: 2%;
 }
-
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5vw;
     color: #f8f8f8;
 }
-
-.intro-message > h3, i {
+.intro-message > h3, .intro-message i {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     color: #f8f8f8;
   }
-
 .intro-message > h3 {
     font-size: 2vw;
 }
@@ -79,77 +118,94 @@ h6 {
     margin-top: 0.8em;
     margin-bottom: .5em;
 }
-
-
 @media(max-width:767px) {
   #logo {
       max-width:20%;
     }
-
     .intro-message {
         padding-bottom: 15%;
     }
-
     .intro-message > h1 {
       font-size: 5vw;
     }
-
     .intro-message > h3 {
       font-size: 3vw;
+    }
 }
-}
-
 @media(max-width:550px) {
-
   .intro-message > h1 {
     font-size: 6vw;
   }
-
   .intro-message > h3 {
     font-size: 4vw;
-}
-
+  }
   .intro-message {
     padding-top: 15%;
-}
-
-#hashtag {
+  }
+  #hashtag {
     font-size: 4vw;
     padding-bottom: 20%;
  }
 }
-/* ----------------- content sections ----------------*/
 
+.small-header {
+  min-height:150px;
+  position:relative;
+  background-image: url(../img/header.png);
+  background-size: auto 75%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  text-align: center;
+  color:#333;
+  font-weight: 400;
+  font-size: 16px
+}
+
+.small-header img {
+  text-align: right;
+  max-width: 100%;
+  height:auto;
+}
+
+.small-header h1 {
+  text-align: left;
+  margin:20px 0;
+  }
+
+
+/* -------------------------- content sections -------------------------------*/
 .section-wrapper {
   padding: 40px 0;
 }
-
 .section-background-gray {
-      padding: 0;
       background-color: #f2f2f2;
+      padding: 0 0 40px 0;
 }
-
 .section-background-white {
     background-color: #fff;
     padding: 0;
 }
 
-
 .section-background-dark {
     background-color: #333;
 }
-
+.section-background-dark h2, .section-background-dark p {
+    color:#ccff00;
+}
 .section-heading {
     margin: 30px 0 40px 0;
 }
-
 .lead, .section-heading {
     padding: 0 15px;
 }
-
 ul.lead {
-  margin:auto 50px;
+  margin:auto 70px;
 }
+ul.lead>li {
+  padding:10px 0;
+}
+
 /*------------- dumb random patches - to be fixed in final version ------------------------------*/
 .p-fullwidth {
     padding: 0 50px;
@@ -160,7 +216,7 @@ ul.lead {
 }
 
 .fullsize /* -- image for fullwidth blocks*/ {
-    margin: 0;
+    margin: 0 0 30px 0;
     width:100%;
 }
 
@@ -176,6 +232,183 @@ ul.lead {
   }
 }
 
+/* -----------------------bottom block ---------------------------------------*/
+.lastBeforeFooter
+{
+    padding: 0 0 105px 0;/*-- increase padding to accomodate cta block on top of footer --*/
+}
+
+/*------------------------- footer ------------------------------------------*/
+footer {
+    padding: 25px 0;
+    min-height:300px;
+    position:relative;
+    background-image: url(../img/footer_4.png);
+    background-size: auto 75%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    text-align: center;
+    color:#333;
+    font-weight: 400;
+    font-size: 16px
+}
+
+footer p {
+  padding: 3px 0;
+}
+
+.fancylink a {
+ color:#ccff00;
+ text-decoration: none;
+ /*
+ background-image: -webkit-linear-gradient(#333 0%, #333 100%);
+ background-image: -moz-linear-gradient(#333 0%, #333 100%);
+ background-image: -o-linear-gradient(#333 0%, #333 100%);
+ background-image: linear-gradient(#333 0%, #333 100%);
+ background-position: 0 100%;
+ border-bottom: 0;
+ background-repeat: repeat-x;
+ background-repeat-x: repeat;
+ background-repeat-y: no-repeat;
+ background-size: 1px 1px;
+  text-shadow: 3px 0 #ccc,2px 0 #ccc,1px 0 #ccc,-1px 0 #ccc,-2px 0 #ccc,-3px 0 #ccc;
+  */
+}
+
+.fancylink a:hover {
+  color:#ccff00;
+  background-image: -webkit-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: -moz-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: -o-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-position: 0 100%;
+  border-bottom: 0;
+  background-repeat: repeat-x;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-size: 1px 1px;
+  text-decoration: none;
+  text-shadow: 3px 0 #ccc,2px 0 #ccc,1px 0 #ccc,-1px 0 #ccc,-2px 0 #ccc,-3px 0 #ccc;
+}
+
+.fancylink-dark a {
+  color:#ccff00;
+  background-image: -webkit-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: -moz-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: -o-linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-image: linear-gradient(#ccff00 0%, #ccff00 100%);
+  background-position: 0 100%;
+  border-bottom: 0;
+  background-repeat: repeat-x;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-size: 1px 1px;
+  text-decoration: none;
+  text-shadow: 3px 0 #333,2px 0 #333,1px 0 #333,-1px 0 #333,-2px 0 #333,-3px 0 #333;
+}
+
+
+.bottom-menu li {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.copyleft * {
+  display:inline-block;
+  line-height: 16px;
+  vertical-align: middle;
+  }
+
+.copyleft i {
+  font-size: 16px;
+}
+
+.copyleft a {
+  margin-left: 10px;
+}
+
+.social i {
+  margin: 0 5px;
+}
+
+
+@media (max-width:420px) {
+  footer {
+      background-size: auto 50%;
+  }
+}
+/* -----------------  CTA block ---------------------------------- */
+
+.buttons {
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:9999;
+    background:none;
+    height:75px;
+    width:100%;
+    text-align:center;
+    box-shadow: 0 0 5px #888;
+}
+
+.button-volunteers, .button-initiatives {
+    width:50%;
+    height:75px;
+    background:#ccff00;
+    display:table;
+    border:1px solid #888;
+    box-shadow: 2px 0 5px #888;
+}
+
+.button-volunteers:hover, .button-initiatives:hover {
+    background:#66ff00;
+}
+
+.button-volunteers {
+    float:left;
+}
+
+.button-initiatives {
+    float:right;
+}
+
+.button-volunteers a, .button-initiatives a {
+    display:table-cell;
+    height:100%;
+    vertical-align: middle;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color:#333;
+}
+
+@media(min-width:200px) {
+  .button-volunteers a, .button-initiatives a  {
+      font-size: 18px;
+  }
+}
+
+@media(min-width:480px) {
+  .button-volunteers a, .button-initiatives a  {
+  }
+}
+
+@media(min-width:720px) {
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 22px;
+  }
+}
+
+@media(min-width:1024px) {
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 28px;
+  }
+}
+
+/* ================================ MAP ====================================*/
 /*--------------------------------- map defaults -----------------------------*/
 .banner {
     padding: 0;
@@ -217,7 +450,6 @@ ul.lead {
       height:400px;
   }
   .banner h2 {
-      font-size: 24px;
       padding: 20px 0 30px 0;
       margin:0;
   }
@@ -362,7 +594,6 @@ ul.lead {
       height:450px;
   }
   .banner h2 {
-      font-size: 28px;
       padding: 20px 0 40px 0;
   }
  .map-background {
@@ -443,7 +674,6 @@ ul.lead {
       height:600px;
   }
   .banner h2 {
-      font-size: 36px;
       padding: 30px 0 40px 0;
   }
   .map-background {
@@ -459,14 +689,12 @@ ul.lead {
     line-height: 1em;
     padding:5px 7px;
   }
-
   .label-one {
     height:78px;
     width:215px;
     bottom:105px;
     left:242px;
   }
-
   .label-one:before {
     content: ' ';
     position: absolute;
@@ -476,15 +704,13 @@ ul.lead {
     top: 24px;
     border: 15px solid;
     border-color: transparent #fff transparent transparent;
-      }
-
+  }
     .label-two {
       height:58px;
       width:94px;
       top:217px;
       left:396px;
     }
-
   .label-two:before {
       content: ' ';
       position: absolute;
@@ -495,14 +721,12 @@ ul.lead {
       border: 15px solid;
       border-color: transparent transparent transparent #fff;
     }
-
-    .label-three {
+  .label-three {
       height:60px;
       width:220px;
       bottom:90px;
       right:48px;
     }
-
   .label-three:before {
     content: ' ';
     position: absolute;
@@ -513,98 +737,4 @@ ul.lead {
     border: 15px solid;
     border-color: transparent transparent #fff;
   }
-}
-
-/* ----------------------- map 1024 and wider --------------------------------*/
-
-/* -----------------------bottom block ---------------------------------------*/
-/*temp*/ #lastBeforeFooter /*-- increase padding to accomodate cta block on top of footer --*/
-{
-    padding: 0 0 105px 0;
-}
-
-/*temp*/ #lastBeforeFooter h2, #lastBeforeFooter p {
-    color:#ccff00;
-}
-
-/*------------------------- footer ------------------------------------------*/
-footer {
-    padding: 0;
-    color: #f8f8f8;
-    height:300px;
-    position:relative;
-
-
-    background-image: url(../img/footer.png);
-    background-size: cover;
-    background-color: #ccc;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-}
-
-/*temp*/  p.copyright  {
-    margin: 15px 0 0 0;
-}
-
-/*temp*/ .cc /* - creative commons icon - */ {
-    height: 31px;
-    width: 88px;
-}
-
-/* -----------------  CTA block ---------------------------------- */
-
-.buttons {
-    position:fixed;
-    bottom:0;
-    left:0;
-    z-index:9999;
-    background:none;
-    height:75px;
-    width:100%;
-    text-align:center;
-    box-shadow: 0 -1px 5px #888;
-}
-
-.button-volunteers, .button-initiatives {
-    width:50%;
-    height:75px;
-    background:#ccff00;
-    display:table;
-    border:1px solid #888;
-    box-shadow: 2px 0 5px #888;
-}
-
-.button-volunteers {
-    float:left;
-}
-
-.button-initiatives {
-    float:right;
-}
-
-.button-volunteers a, .button-initiatives a {
-    display:table-cell;
-    height:100%;
-    vertical-align: middle;
-    padding: 0 15px;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color:#333;
-}
-
-@media(max-width:700px) {
-
-.button-volunteers a, .button-initiatives a  {
-    font-size: 22px;
-    font-weight: 700;
-}
-}
-
-
-@media(max-width:500px) {
-.button-volunteers a, .button-initiatives a  {
-    font-size: 18px;
-    font-weight: 700;
-}
 }
