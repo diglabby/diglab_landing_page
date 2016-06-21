@@ -1,160 +1,353 @@
 /*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+* Initially based on:
+* Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
 
 body,
 html {
   width: 100%;
   height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
-/* ============================= site-wide defaults ========================= */
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu', sans-serif;
+  margin: 30px 0;
   font-weight: 700;
 }
-.lead {
-  margin: 0 0 40px 0;
-  font-size: 18px;
-  font-weight: 400;
-}
-.section-heading {
-  margin: 40px 0 40px 0;
-}
-ul.lead>li, ol.lead>li  {
-  padding:0 0 10px 0;
-}
-.fullwidth h2 {
-  text-align: center;
-}
-.fullwidth img {
-  margin: 0 auto 40px auto;
-}
-.fullwidth ul, .fullwidth ol {
-  margin:auto 15px 40px 15px;
-}
 a, a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color:inherit;
 }
-.fancylink a {
-  color:#444;
+a#scroll, .icons a {
   text-decoration: none;
-  background-image: -webkit-linear-gradient(#333 0%, #333 100%);
-  background-image: -moz-linear-gradient(#333 0%, #333 100%);
-  background-image: -o-linear-gradient(#333 0%, #333 100%);
-  background-image: linear-gradient(#333 0%, #333 100%);
-  background-position: 0 100%;
-  border-bottom: 0;
-  background-repeat: repeat-x;
-  background-size: 1px;
- text-shadow: 3px 0 #ccc,2px 0 #ccc,1px 0 #ccc,-1px 0 #ccc,-2px 0 #ccc,-3px 0 #ccc;
 }
-.fancylink-dark a {
-  color:#ccff00;
-  background-image: -webkit-linear-gradient(#ccff00 0%, #ccff00 100%);
-  background-image: -moz-linear-gradient(#ccff00 0%, #ccff00 100%);
-  background-image: -o-linear-gradient(#ccff00 0%, #ccff00 100%);
-  background-image: linear-gradient(#ccff00 0%, #ccff00 100%);
-  background-position: 0 100%;
-  border-bottom: 0;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
-  text-decoration: none;
-  text-shadow: 3px 0 #333,2px 0 #333,1px 0 #333,-1px 0 #333,-2px 0 #333,-3px 0 #333;
-}
-  /*.fancylink a:hover {
-    color:#333;
-    background-image: -webkit-linear-gradient(#ccff00 0%, #ccff00 100%);
-    background-image: -moz-linear-gradient(#ccff00 0%, #ccff00 100%);
-    background-image: -o-linear-gradient(#ccff00 0%, #ccff00 100%);
-    background-image: linear-gradient(#ccff00 0%, #ccff00 100%);
-    background-position: 0 100%;
-    border-bottom: 0;
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
-    text-decoration: none;
-    text-shadow: 3px 0 #ccc,2px 0 #ccc,1px 0 #ccc,-1px 0 #ccc,-2px 0 #ccc,-3px 0 #ccc;
-  }*/
-
-/*-------------------------------- hero section -------------------------------*/
-.hero {
-    padding: 0; /* top = height of navbar in case there is one! */
-    text-align: center;
-    width:100%;
-    min-height:100vh;
-    background-image: url(../img/header.png), linear-gradient(#ccc 85%, #333 15%);
-    background-color: #ccc;
-    background-size: 100% auto;
-    background-position: center 85%;
-    background-repeat: no-repeat;
-}
-.intro-header {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-    color: #f8f8f8;
-}
-.logo {
-    margin:0 auto;
-}
-.intro-header h1 {
-    margin: 20px 0;
-}
-h3.hashtag {
-  font-family: 'Ubuntu Mono', sans-serif;
-  font-weight: 400;
-  color:#ccff00;
-}
-/* ----------------- small-header to be fixed ----------------------------------------------------------------------------------------------*/
-.small-header {
-  min-height:150px;
-  position:relative;
-  background-image: url(../img/header.png);
-  background-size: auto 75%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-color: #ccc;
-  text-align: center;
-  color:#333;
-  font-weight: 400;
-}
-.small-header img {
-  text-align: right;
-  max-width: 100%;
-  height:auto;
-}
-.small-header h1 {
-  text-align: left;
-  margin:20px 0;
-}
-/* ----------------- end small-header to be fixed -----------------------------------------------------------------------------------------*/
-
-/* -------------------------- content sections -------------------------------*/
-.section-wrapper {
-  margin: 40px 0 40px 0;
-}
-.section-background-gray {
+/*======================== SECTION BACKGROUNDS ==============================*/
+.background-gray {
   background-color: #f2f2f2;
 }
-.section-background-white {
+.background-white {
   background-color: #fff;
 }
-.section-background-dark {
+.background-dark {
   background-color: #333;
-}
-.section-background-dark h2, .section-background-dark p {
   color:#ccff00;
 }
-/* -----------------------bottom block ---------------------------------------*/
-.lastBeforeFooter
-{
-  padding: 0 0 105px 0; /*-- increase padding to accomodate cta block on top of footer --*/
+.background-map {
+  background-color: #ccc;
+}
+li  {
+  padding:0 0 10px 0;
+}
+.section {
+  padding:40px 0;
+}
+.img-fullwidth {
+  margin: 40px 0;
+}
+.img-halfwidth {
+  margin: 30px 0;
+}
+.section-title {
+  text-align: center;
+}
+.section-title-inner {
+  text-align: left;
+}
+.main-wrapper {
+  margin: 0 0 75px 0;
+}
+/*====================== IMAGE SIZE MEDIA QUERIES =============================*/
+@media(min-width:180px) {
+  .img-fullwidth {
+    max-width: 100%;
+  }
+  .img-halfwidth {
+    max-width: 90%;
+  }
+}
+@media(min-width:480px) {
+  .img-fullwidth {
+    max-width: 80%;
+  }
+}
+@media(min-width:1024px) {
+  .img-halfwidth {
+    max-width: 100%;
+  }
+}
+/*====================== FONT SIZE MEDIA QUERIES =============================*/
+@media(min-width:180px) {
+  .intro-message > h1 {
+    font-size: 8vw;
+  }
+  .intro-message > h3 {
+    font-size: 12px;
+  }
+  .hashtag {
+    font-size: 15px;
+  }
+  .inner-title {
+    font-size: 26px;
+  }
+  p, li {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 20px;
+  }
+}
+@media(min-width:480px) {
+  .intro-message > h3 {
+    font-size: 16px;
+  }
+  .hashtag {
+    font-size: 20px;
+  }
+  .inner-title {
+    font-size: 32px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 24px;
+  }
+}
+@media(min-width:720px) {
+  .intro-message > h1 {
+    font-size: 7vw;
+  }
+  .intro-message > h3 {
+    font-size: 18px;
+  }
+  .hashtag {
+    font-size: 22px;
+  }
+  .inner-title {
+    font-size: 36px;
+  }
+  p, li {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .contact li, .copyleft {
+    font-size: 16px;
+  }
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 30px;
+  }
+  .social {
+    font-size: 20px;
+  }
+}
+@media(min-width:1024px) {
+  .intro-message > h1 {
+    font-size: 5vw;
+  }
+  .intro-message > h3 {
+    font-size: 20px;
+  }
+  .hashtag {
+    font-size: 24px;
+  }
+  .inner-title {
+    font-size: 40px;
+  }
+  p, li {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .contact li, .copyleft {
+    font-size: 16px;
+  }
+  .button-volunteers a, .button-initiatives a  {
+    font-size: 32px;
+  }
+  .social {
+    font-size: 20px;
+  }
+}
+/*============================== HERO SECTION ===============================*/
+.hero {
+  padding: 0; /* top = height of navbar in case there is one! */
+  text-align: center;
+  width:100%;
+  min-height:100vh;
+  background-image: url(../img/header.png), -webkit-linear-gradient(#ccc 85%, #333 15%);
+  background-image: url(../img/header.png), linear-gradient(#ccc 85%, #333 15%);
+  background-color: #ccc;
+  background-size: 100% auto;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+}
+.intro-header {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  color: #f8f8f8;
+}
+.logo {
+  margin:0 auto;
+}
+.hashtag {
+  font-family: 'Ubuntu Mono', sans-serif;
+  color:#ccff00;
+  width:100%;
+  display: block;
+  margin:20px auto 10px auto;
+}
+
+/*--------------------media queries for hero section--------------------------*/
+@media(min-width:180px) {
+  .intro-message {
+    padding-top: 30%;
+  }
+  .logo {
+    max-width:30%;
+  }
+  .pointerdown {
+    margin:15% 0 0 0;
+  }
+}
+@media(min-width:480px) {
+  .intro-message {
+    padding-top: 10%;
+  }
+  .logo {
+    max-width:25%;
+  }
+  .pointerdown {
+    margin:10% 0 0 0;
+  }
+}
+@media(min-width:720px) {
+  .intro-message {
+    padding-top: 5%;
+  }
+  .logo {
+      max-width:18%;
+  }
+  .pointerdown {
+    margin:5% 0 0 0;
+  }
+}
+@media(min-width:1024px) {
+  .intro-message {
+    padding-top: 2%;
+  }
+  .logo {
+      max-width:13%;
+  }
+  .pointerdown {
+    margin:5% 0 0 0;
+  }
+}
+
+/* ======================= INNER HEADER ====================================*/
+.inner-header {
+  position:relative;
+  background-color: #ccc;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  color: #f8f8f8;
+  width:100%;
+  height:100px;
+}
+.inner-header-background {
+  background-size: auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height:100px;
+}
+.inner-logo {
+  width: auto;
+  float:left;
+  margin: 0;
+}
+.inner-title {
+  float:left;
+  line-height: 100px;
+}
+
+@media(min-width:180px) {
+  .inner-logo {
+    display: none;
+    }
+  .inner-title {
+    margin:0 auto;
+    text-align: center;
+  }
+  .inner-header-background {
+    background-image:none;
+  }
+}
+
+@media(min-width:480px) {
+  .inner-logo {
+    display: block;
+    height:100px;
+    padding:5px 0;
+  }
+  .inner-title {
+    margin:0 0 0 20px;
+    text-align: left;
+  }
+}
+
+@media(min-width:720px) {
+  .inner-logo {
+    height:90px;
+    padding:5px 0;
+  }
+  .inner-title {
+    margin:0 0 0 20px;
+    line-height: 70px;
+  }
+  .inner-header-background {
+    background-size: 50%;
+    background-image: url(../img/header-inner.png);
+  }
+}
+
+@media(min-width:1024px) {
+  .inner-header-background {
+    background-size: 35%;
+  }
+  .inner-logo {
+    height:100px;
+    padding:5px 0;
+  }
+  .inner-title {
+    line-height: 100px;
+    margin:0 30px;
+  }
 }
 /*------------------------- footer ------------------------------------------*/
 footer {
@@ -162,13 +355,11 @@ footer {
   min-height:300px;
   position:relative;
   background-image: url(../img/footer_4.png);
-  background-size: auto 70%;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: #ccc;
   text-align: center;
-  color:#333;
-  }
+}
 footer p {
   padding: 3px 0;
 }
@@ -176,13 +367,14 @@ footer p {
   padding: 0 10px;
   font-weight: 700;
 }
+.contact li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .copyleft * {
   display:inline-block;
   line-height: 16px;
   vertical-align: middle;
-}
-.copyleft, .contact {
-  font-weight: 400;
 }
 .copyleft i {
   font-size: 16px;
@@ -193,26 +385,39 @@ footer p {
 .social i {
   margin: 0 5px;
 }
-
-@media (max-width:420px) {
+/*--------------------media queries for footer--------------------------*/
+@media(min-width:180px) {
   footer {
     background-size: auto 50%;
   }
 }
+@media(min-width:480px) {
+  .bottom-menu {
+    margin: 0 0 30px -5px;
+  }
+  footer {
+    background-size: auto 70%;
+  }
+}
+@media(min-width:720px) {
+  .bottom-menu {
+    margin: 0 0 25px -5px;
+  }
+  .contact {
+    margin: 0 0 15px -5px;
+  }
+}
 /* -----------------  CTA block ---------------------------------- */
-
 .buttons {
   position:fixed;
   bottom:0;
   left:0;
   z-index:9999;
-  background:none;
   height:75px;
   width:100%;
   text-align:center;
   box-shadow: 0 0 5px #888;
 }
-
 .button-volunteers, .button-initiatives {
   width:50%;
   height:75px;
@@ -221,9 +426,8 @@ footer p {
   border:1px solid #888;
   box-shadow: 2px 0 5px #888;
 }
-
 .button-volunteers:hover, .button-initiatives:hover {
-  background:#66ff00;
+  background:#b1d523;
 }
 .button-volunteers {
   float:left;
@@ -235,13 +439,27 @@ footer p {
   display:table-cell;
   height:100%;
   vertical-align: middle;
-  padding: 0 15px;
   font-weight: 700;
+  line-height: 1em;
   text-decoration: none;
-  color:#333;
 }
-/* ================================ MAP ====================================*/
-/*--------------------------------- map defaults -----------------------------*/
+/*========================BUTTONS MEDIA QUERIES ============================*/
+@media(min-width:180px) {
+.button-volunteers a, .button-initiatives a  {
+  padding: 0 5px;
+  }
+}
+@media(min-width:480px) {
+.button-volunteers a, .button-initiatives a  {
+  padding: 0 10px;
+  }
+}
+@media(min-width:720px) {
+.button-volunteers a, .button-initiatives a  {
+  padding: 0 15px;
+  }
+}
+/* ================================ MAP ======================================*/
 .map {
   padding: 0;
   color: #333;
@@ -261,22 +479,17 @@ footer p {
 .map-label {
   position:absolute;
   font-family: 'Ubuntu Mono', sans-serif;
-  color: #333;
   background-color: #fff;
   box-shadow: 1px 1px 5px #888;
-  font-weight: 400;
+  padding: 3px 6px 3px 6px;
+  line-height: 1em;
 }
 .map h2 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     color: #f8f8f8;
-    position: relative;
-    top:0;
-    z-index:9999;
-    padding: 30px 0 40px 0;
-    margin:0;
 }
-/* ----------------------- map 320 - 480 ---------------------------------*/
-@media(min-width:280px) {
+/* ----------------------- map 180 - 480 ---------------------------------*/
+@media(min-width:180px) {
   .map {
     height:450px;
   }
@@ -288,66 +501,58 @@ footer p {
     background: url(../img/map_300_350.png) no-repeat center center;
   }
   .map-label {
-    font-size: 22px;
-    line-height: 1em;
-  }
-  .map-label {
     font-size: 13px;
-    line-height: 1em;
-    font-weight: 400;
-    padding: 3px 6px 3px 5px;
   }
   .label-one {
-    height:46px;
-    width:122px;
-    bottom:107px;
-    left:8px;
+    height:48px;
+    width:123px;
+    top:56px;
+    left:162px;
   }
   .label-one:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: 70px;
-    bottom:-18px;
+    top: 14px;
+    left:-17px;
     border: 9px solid;
-    border-color: #fff transparent transparent transparent;
+    border-color: transparent #fff transparent transparent;
   }
   .label-two {
     height:35px;
-    width:57px;
-    top:68px;
-    left:160px;
+    width:58px;
+    top:168px;
+    left:32px;
   }
   .label-two:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: -16px;
-    top: 9px;
-    border: 8px solid;
-    border-color: transparent #fff transparent transparent;
+    right: -17px;
+    top: 8px;
+    border: 9px solid;
+    border-color: transparent transparent transparent #fff;
   }
   .label-three {
     height:35px;
     width:132px;
-    bottom:10px;
-    right:24px;
+    bottom:7px;
+    right:89px;
   }
   .label-three:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: 43px;
-    top: -16px;
-    border: 8px solid;
+    left: 36px;
+    top: -17px;
+    border: 9px solid;
     border-color: transparent transparent #fff;
   }
 }
 /* ----------------------- map 480 - 720 ---------------------------------*/
-
 @media(min-width:480px) {
   .map {
       height:500px;
@@ -361,53 +566,38 @@ footer p {
   }
   .map-label {
     font-size: 13px;
-    line-height: 1em;
-    font-weight: 400;
-    padding: 3px 6px 3px 5px;
   }
   .label-one {
     height:50px;
     width:124px;
-    bottom:101px;
-    left:106px;
+    top:41px;
+    left:208px;
   }
   .label-one:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 37px;
-    bottom:-14px;
-    border: 8px solid;
-    border-color: #fff transparent transparent transparent;
+    left: -17px;
+    top:15px;
+    border: 9px solid;
+    border-color: transparent #fff transparent transparent;
   }
   .label-two {
-    height:35px;
-    width:57px;
-    top:42px;
-    left:274px;
+    height:36px;
+    width:58px;
+    top:211px;
+    left:56px;
   }
   .label-two:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: -16px;
+    right: -17px;
     top: 9px;
-    border: 8px solid;
-    border-color: transparent #fff transparent transparent;
+    border: 9px solid;
+    border-color: transparent transparent transparent #fff;
   }
   .label-three {
     height:35px;
     width:132px;
-    bottom:15px;
-    right:45px;
+    bottom:13px;
+    right:31px;
   }
   .label-three:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: 43px;
     top: -16px;
     border: 8px solid;
@@ -416,12 +606,8 @@ footer p {
 }
 /* ----------------------- map 720 - 1024 ---------------------------------*/
 @media(min-width:720px) {
-
   .map {
     height:450px;
-  }
-  .map h2 {
-    padding: 20px 0 40px 0;
   }
   .map-background {
     width:700px;
@@ -432,22 +618,16 @@ footer p {
   }
   .map-label {
     font-size: 16px;
-    line-height: 1em;
-    font-weight: 400;
     padding:5px 10px;
   }
   .label-one {
     height:60px;
-    width:160px;
-    bottom:38px;
-    left:212px;
+    width:156px;
+    top:292px;
+    left:211px;
   }
   .label-one:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: -24px;
+    left: -23px;
     top: 18px;
     border: 12px solid;
     border-color: transparent #fff transparent transparent;
@@ -459,10 +639,6 @@ footer p {
     left:440px;
   }
   .label-two:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: -19px;
     top: 12px;
     border: 10px solid;
@@ -475,10 +651,6 @@ footer p {
     right:82px;
   }
   .label-three:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: 45px;
     top: -24px;
     border: 12px solid;
@@ -490,9 +662,6 @@ footer p {
   .map {
     height:600px;
   }
-  .map h2 {
-    padding: 30px 0 40px 0;
-  }
   .map-background {
     width:1000px;
     height:600px;
@@ -501,22 +670,16 @@ footer p {
     background: url(../img/map_1000.png) no-repeat center center;
   }
   .map-label {
-    font-weight: 400;
     font-size: 22px;
-    line-height: 1em;
     padding:5px 7px;
   }
   .label-one {
     height:78px;
-    width:215px;
-    bottom:105px;
+    width:206px;
+    top:417px;
     left:242px;
   }
   .label-one:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: -28px;
     top: 24px;
     border: 15px solid;
@@ -529,10 +692,6 @@ footer p {
     left:396px;
   }
   .label-two:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: 93px;
     top: 14px;
     border: 15px solid;
@@ -545,230 +704,9 @@ footer p {
     right:48px;
   }
   .label-three:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
     left: 71px;
     top: -28px;
     border: 15px solid;
     border-color: transparent transparent #fff;
-  }
-}
-/*--------------------media queries for layout--------------------------*/
-@media(min-width:280px) {
-  .intro-message {
-    padding-top: 30%;
-  }
-  .logo {
-    max-width:30%;
-  }
-  .pointerdown {
-    margin:25% 0 0 0;
-  }
-  .lead, .section-heading {
-    padding: 0;
-  }
-  .fullwidth img {
-    max-width:100%;
-  }
-  .fullwidth p {
-    padding: 0;
-  }
-}
-@media(min-width:480px) {
-  .intro-message {
-    padding-top: 10%;
-  }
-  .logo {
-      max-width:25%;
-  }
-  .pointerdown {
-    margin:15% 0 0 0;
-  }
-  .section-background-white img {
-    max-width:90%;
-    margin: 0 auto;
-  }
-  .fullwidth img {
-    max-width:90%;
-  }
-  .fullwidth p {
-    padding: 0 15px;
-  }
-  .fullwidth ul, .fullwidth ol {
-    padding: 0 20px;
-  }
-  .bottom-menu {
-    margin: 0 0 30px -5px;
-  }
-}
-@media(min-width:720px) {
-  .intro-message {
-    padding-top: 5%;
-  }
-  .logo {
-      max-width:18%;
-  }
-  .pointerdown {
-    margin:8% 0 0 0;
-  }
-  .section-background-white img {
-    max-width:90%;
-    margin: 0 auto;
-  }
-  .fullwidth img {
-    max-width:90%;
-  }
-  .fullwidth p {
-    padding: 0 15px;
-  }
-  .fullwidth ul, .fullwidth ol {
-    padding: 0 20px;
-  }
-  .bottom-menu {
-    margin: 0 0 25px -5px;
-  }
-  .contact {
-    margin: 0 0 15px -5px;
-  }
-}
-@media(min-width:1024px) {
-  .intro-message {
-    padding-top: 2%;
-  }
-  .logo {
-      max-width:13%;
-  }
-  .pointerdown {
-    margin:10% 0 0 0;
-  }
-  .section-background-white img {
-    max-width:100%;
-    margin: 0 auto;
-  }
-  .fullwidth img {
-    max-width:80%;
-  }
-  .fullwidth p {
-    padding: 0 15px;
-  }
-  .fullwidth ul, .fullwidth ol {
-    padding: 0 20px;
-  }
-  .bottom-menu {
-    margin: 0 0 25px -5px;
-  }
-  .contact {
-    margin: 0 0 15px -5px;
-  }
-}
-/*---------------media queries for font-sizes--------------------------------*/
-@media(min-width:280px) {
-  .intro-message > h1 {
-    font-size: 8vw;
-  }
-  .intro-message > h3 {
-    font-size: 12px;
-  }
-  h3.hashtag {
-    font-size: 15px;
-  }
-  .lead {
-    font-size:15px;
-  }
-  .section-heading {
-      font-size: 24px;
-  }
-  .bottom-menu {
-    font-size: 16px;
-  }
-  .button-volunteers a, .button-initiatives a  {
-    font-size: 18px;
-    line-height: 1em;
-  }
-}
-@media(min-width:480px) {
-  .intro-message > h1 {
-    font-size: 8vw;
-  }
-  .intro-message > h3 {
-    font-size: 16px;
-  }
-  h3.hashtag {
-    font-size: 20px;
-  }
-  .lead {
-    font-size:16px;
-  }
-  .section-heading {
-      font-size: 24px;
-  }
-  .bottom-menu {
-    font-size: 16px;
-  }
-  .button-volunteers a, .button-initiatives a  {
-    font-size: 20px;
-    line-height: 1em;
-  }
-}
-@media(min-width:720px) {
-  .intro-message > h1 {
-    font-size: 7vw;
-  }
-  .intro-message > h3 {
-    font-size: 18px;
-  }
-  h3.hashtag {
-    font-size: 22px;
-  }
-  .lead {
-    font-size:18px;
-  }
-  .section-heading {
-    font-size: 26px;
-  }
-  .bottom-menu {
-    font-size: 18px;
-  }
-  .contact, .copyleft {
-    font-size: 16px;
-  }
-  .button-volunteers a, .button-initiatives a  {
-    font-size: 24px;
-    line-height: 1em;
-  }
-  .social {
-    font-size: 20px;
-  }
-}
-@media(min-width:1024px) {
-  .intro-message > h1 {
-    font-size: 5vw;
-  }
-  .intro-message > h3 {
-    font-size: 20px;
-  }
-  h3.hashtag {
-    font-size: 24px;
-  }
-  .lead {
-    font-size:18px;
-  }
-  .section-heading {
-      font-size: 28px;
-  }
-  .bottom-menu {
-    font-size: 18px;
-  }
-  .contact, .copyleft {
-    font-size: 16px;
-  }
-  .button-volunteers a, .button-initiatives a  {
-    font-size: 28px;
-    line-height: 1em;
-  }
-  .social {
-    font-size: 20px;
   }
 }
