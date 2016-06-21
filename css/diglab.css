@@ -49,10 +49,10 @@ li  {
   padding:40px 0;
 }
 .img-fullwidth {
-  margin: 40px 0;
+  margin: 40px auto;
 }
 .img-halfwidth {
-  margin: 30px 0;
+  margin: 30px auto;
 }
 .section-title {
   text-align: center;
