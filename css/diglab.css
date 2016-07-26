@@ -508,8 +508,8 @@ footer p {
     font-size: 13px;
   }
   .label-one {
-    height:50px;
-    width:130px;
+    min-height:50px;
+    min-width:50px;
     top:56px;
     left:162px;
   }
@@ -518,16 +518,16 @@ footer p {
     position: absolute;
     width: 0;
     height: 0;
-    top: 14px;
+    top: 16px;
     left:-17px;
     border: 9px solid;
     border-color: transparent #fff transparent transparent;
   }
   .label-two {
-    height:36px;
-    width:63px;
+    min-height:36px;
+    min-width:50px;
     top:168px;
-    left:32px;
+    right:208px;
   }
   .label-two:before {
     content: ' ';
@@ -540,17 +540,17 @@ footer p {
     border-color: transparent transparent transparent #fff;
   }
   .label-three {
-    height:36px;
-    width:138px;
-    bottom:7px;
-    right:89px;
+    min-height:36px;
+    min-width:100px;
+    bottom:3px;
+    right:92px;
   }
   .label-three:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: 40px;
+    left: 29px;
     top: -17px;
     border: 9px solid;
     border-color: transparent transparent #fff;
@@ -570,7 +570,7 @@ footer p {
   }
   .label-one {
     top:41px;
-    left:208px;
+    left:217px;
   }
   .label-one:before {
     left: -17px;
@@ -579,8 +579,8 @@ footer p {
     border-color: transparent #fff transparent transparent;
   }
   .label-two {
-    top:211px;
-    left:56px;
+    top:200px;
+    right:286px;
   }
   .label-two:before {
     right: -17px;
@@ -589,11 +589,11 @@ footer p {
     border-color: transparent transparent transparent #fff;
   }
   .label-three {
-    bottom:13px;
-    right:31px;
+    bottom:3px;
+    right:36px;
   }
   .label-three:before {
-    left: 47px;
+    left: 26px;
     top: -16px;
     border: 8px solid;
     border-color: transparent transparent #fff transparent;
@@ -616,10 +616,8 @@ footer p {
     padding: 7px 9px;
   }
   .label-one {
-    height:60px;
-    width:158px;
-    top:292px;
-    left:211px;
+    top:272px;
+    left:220px;
   }
   .label-one:before {
     left: -23px;
@@ -628,10 +626,9 @@ footer p {
     border-color: transparent #fff transparent transparent;
   }
   .label-two {
-    height:45px;
-    width:74px;
-    top:71px;
-    left:440px;
+    top:65px;
+    right:auto;
+    left: 435px;
   }
   .label-two:before {
     left: -19px;
@@ -640,13 +637,11 @@ footer p {
     border-color: transparent #fff transparent transparent;
   }
   .label-three {
-    height:45px;
-    width:169px;
-    bottom:33px;
+    bottom:25px;
     right:82px;
   }
   .label-three:before {
-    left: 45px;
+    left: 50px;
     top: -24px;
     border: 12px solid;
     border-color: transparent transparent #fff;
@@ -666,14 +661,12 @@ footer p {
   }
   .map-label {
     font-size: 18px;
-    padding: 11px 15px;
+    padding: 7px 10px;
     line-height: 1.1em
   }
   .label-one {
-    height:78px;
-    width:197px;
-    top:417px;
-    left:245px;
+    top:400px;
+    left:255px;
   }
   .label-one:before {
     left: -28px;
@@ -682,25 +675,23 @@ footer p {
     border-color: transparent #fff transparent transparent;
   }
   .label-two {
-    height:58px;
-    width:94px;
-    top:217px;
-    left:396px;
+    top:230px;
+    right:505px;
+    left: auto;
   }
   .label-two:before {
-    left: 93px;
-    top: 14px;
+    right: -26px;
+    left:auto;
+    top: 12px;
     border: 15px solid;
     border-color: transparent transparent transparent #fff;
   }
   .label-three {
-    height:60px;
-    width:207px;
     bottom:90px;
-    right:49px;
+    right:69px;
   }
   .label-three:before {
-    left: 59px;
+    left: 49px;
     top: -28px;
     border: 15px solid;
     border-color: transparent transparent #fff;
