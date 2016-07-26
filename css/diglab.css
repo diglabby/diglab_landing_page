@@ -105,6 +105,12 @@ ul, ol {
   cursor: pointer;
   padding-top:30px;
 }
+
+.lang {
+  position:absolute;
+  right:20px;
+  top:10px;
+}
 /* ======================= INNER HEADER ====================================*/
 .inner-header {
   position:relative;
