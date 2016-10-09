@@ -109,8 +109,23 @@ ul, ol {
 .lang {
   position:absolute;
   right:20px;
-  top:10px;
+  top:5px;
+  min-width: 120px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
 }
+
+.lang-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #DDD9D5;
+}
+
 /* ======================= INNER HEADER ====================================*/
 .inner-header {
   position:relative;
