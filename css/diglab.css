@@ -110,13 +110,17 @@ ul, ol {
   position:absolute;
   right:20px;
   top:5px;
-  min-width: 120px;
+  min-width: 180px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+}
+
+.lang a:hover {
+  color: #E7E3DF;
 }
 
 .lang-active {
