@@ -1,0 +1,29 @@
+{
+  "name": "diglab_landing_page",
+  "version": "1.0.0",
+  "description": "Страница Лічбавай Майстэрні.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev-server",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemNikolaev/diglab_landing_page.git"
+  },
+  "author": "Artem Nikolaev <artem@nikolaev.by> (http://nikolaev.by/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemNikolaev/diglab_landing_page/issues"
+  },
+  "homepage": "https://github.com/ArtemNikolaev/diglab_landing_page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-uglify": "^2.0.0",
+    "st": "^1.2.0"
+  }
+}
