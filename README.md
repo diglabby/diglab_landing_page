@@ -1,5 +1,24 @@
 Страница Лічбавай Майстэрні. 
 
+All site in '/build' folder.
+
+Before start you need to do this in project folder:
+
+```
+npm install -g gulp
+npm install
+```
+
+To run dev-server just type:
+```
+npm start
+```
+
+To build production configuration type:
+```
+npm build
+```
+
 Диклеймер и креденшиалз:
 
 Design based on:
