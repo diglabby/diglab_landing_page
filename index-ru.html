@@ -19,18 +19,23 @@
   	<meta property="og:image"         content="http://it.falanster.by/img/logo_for_site.png" />
 
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
     <link href="css/diglab.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/57e075aec4.js"></script>
     <link href="css/cc-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;subset=cyrillic" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,8 +49,25 @@
 <body>
 <!-- Header -->
   <div class="hero">
+    <!-- Burger. It appears only in mobile version -->
+    <a class="main-header__bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <nav class="header__nav">
+      <!-- Main navigation -->
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav-current">галоўная</a></li>
+          <li><a href="http://it.falanster.by/blog/">блог</a></li>
+          <li><a href="initiative.html">iнiцыятывам</a></li>
+          <li><a href="volunteers.html">валанцёрам</a></li>
+        </ul>
+        <!-- Lang panel -->
+        <div class="nav__lang">
+          <a href="index.html">BY</a>
+          <a href="index-tras.html">TRAS</a>
+          <a href="index-en.html">EN</a>
+          <a href="index-ru.html" class="lang-active">RU</a>
+        </div>
+    </nav>
     <div class="intro-message">
-      <div class="lang row"><a href="index.html">BY</a><a href="index-tras.html">TRAS</a><a href="index-en.html" class="active">EN</a><a href="#" class="lang-active">RU</a></div>
       <img class="img-responsive logo" src="img/logo_for_site.png" alt="">
       <h1>Цифровая мастерская</h1>
       <h3>онлайн-маркет IT-волонтёрского обмена,<br>
@@ -64,7 +86,10 @@
       <div class="row">
         <div class="col-lg-4 col-lg-offset-2 col-sm-offset-0 col-sm-6">
           <h2 class="scrollhere">Вы программист</h2>
-          <p>Вы &mdash; разработчик сайтов или мобильных приложений, специалист в информационной безопасности, графический дизайнер, SEO-специалист или переводчик? Хотите поделится своими знаниями и временем с другими общественными инициативами? Вы &mdash; потенциальный участник волонтерского движения.</p>
+          <p class="vol-text">Вы &mdash; разработчик сайтов или мобильных приложений, специалист в информационной безопасности, графический дизайнер, SEO-специалист или переводчик? Хотите поделится своими знаниями и временем с другими общественными инициативами? Вы &mdash; потенциальный участник волонтерского движения.</p>
+          <div class="row btn-center">
+            <a type="button" class="btn button-volunteers  btn-lg" href="volunteers.html">волонтёру</a>
+          </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <img class="img-responsive img-halfwidth" src="img/programmer.png" alt="IT-волонтёр">
@@ -75,7 +100,10 @@
       <div class="row">
         <div class="col-lg-4 col-lg-push-6 col-sm-6 col-sm-push-6">
             <h2>Вы инициатива</h2>
-            <p>Вы &mdash; лидер инициативы или начинальник некоммерческого проекта? Вам просто не хватает знаний в ІТ-отрасли для решения проблем вашего двора, городка? Вы &mdash; потенциальный потребитель волонтерских услуг.</p>
+            <p class="vol-text">Вы &mdash; лидер инициативы или начинальник некоммерческого проекта? Вам просто не хватает знаний в ІТ-отрасли для решения проблем вашего двора, городка? Вы &mdash; потенциальный потребитель волонтерских услуг.</p>
+            <div class="row btn-center">
+              <a type="button" class="btn button-initiatives  btn-lg" href="initiative.html">инициативе</a>
+            </div>
         </div>
         <div class="col-lg-4 col-lg-pull-2 col-sm-6 col-sm-pull-6">
           <img class="img-responsive img-halfwidth" src="img/initiative.png" alt="ініцыятыва">
@@ -144,8 +172,11 @@
       <div class="row">
         <div class="col-lg-12 col-sm-12">
           <ul class="bottom-menu list-inline">
-            <li>Главная</li>
-            <li><a href="tos-ru.html">Правила пользования</a></li>
+            <li><a href="#" class="nav-current">Галоўная</a></li>
+            <li><a href="https://it.falanster.by/tos.html">Правілы карыстання</a></li>
+            <li><a href="http://it.falanster.by/blog/">Блог</a></li>
+            <li><a href="volunteers.html">Валанцёрам</a></li>
+            <li><a href="initiative.html">Iнiцыятывам</a></li>
           </ul>
           <ul class="contact list-inline">
             <li>Связаться с нами:</li>
@@ -175,11 +206,6 @@
     </div>
   </footer>
 
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
 
   <!-- custom scripts -->
   <script src="js/diglab.js"></script>

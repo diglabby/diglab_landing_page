@@ -1,0 +1,275 @@
+.main-wrapper {
+  flex: 1;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  min-height: 1000px;
+  position: relative;
+  .main-wrapper__top {
+    @include flexbox;
+  }
+  .main-wrapper__medium {
+    margin-bottom: 60px;
+    @include flexbox;
+    @media #{$tablet} {
+      margin-bottom: 30px;
+    }
+    .main-wrapper__medium-header {
+      @media #{$tablet} {
+        text-align: center;
+      }
+    }
+    .main-wrapper__medium-container {
+      width: 750px;
+      min-height: 350px;
+      @include flexbox(row, stretch, space-between);
+      @media #{$tablet} {
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+      }
+      .main-wrapper__medium-left {
+        width: 450px;
+        min-height: 350px;
+        @include flexbox($justify-content: flex-start);
+        flex: 1 0;
+        margin-right: 30px;
+        @media #{$portable} {
+          width: 400px;
+        }
+        @media #{$tablet} {
+          width: 95%;
+          min-height: 260px;
+          margin-bottom: 20px;
+        }
+        .main-wrapper__medium-list {
+          list-style: decimal;
+          padding: 0 0 0 20px;
+          @media #{$tablet} {
+            margin-bottom: 20px;
+          }
+          li {
+            padding: 0 0 10px 0;
+          }
+        }
+      }
+    }
+    .main-wrapper__medium-container-init {
+      width: 750px;
+      min-height: 350px;
+      @include flexbox(column, stretch, space-between);
+      @media #{$tablet} {
+        width: 90%;
+        align-items: center;
+      }
+      .main-wrapper__medium-left {
+        width: 100%;
+        @include flexbox($justify-content: flex-start);
+        flex: 1 0;
+        order: 2;
+        margin-right: 30px;
+        @media #{$tablet} {
+          width: 95%;
+          min-height: 260px;
+        }
+        .main-wrapper__medium-list {
+          list-style: decimal;
+          padding: 0 0 0 20px;
+          @media #{$tablet} {
+            margin-bottom: 20px;
+          }
+          li {
+            padding: 0 0 10px 0;
+          }
+        }
+      }
+      .main-wrapper__medium-img-init {
+        order: 1;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .main-wrapper__bottom {
+    @include flexbox;
+    min-height: 500px;
+    background-color: $mainBottomBack;
+    padding-bottom: 30px;
+    .main-wrapper__bottom-header {
+      @media #{$tablet} {
+        text-align: center;
+      }
+    }
+    .main-wrapper__bottom-container {
+      width: 750px;
+      min-height: 350px;
+      @include flexbox(row);
+      @media #{$tablet} {
+        width: 90%;
+        flex-direction: column;
+      }
+      .main-wrapper__bottom-right {
+        width: 650px;
+        min-height: 350px;
+        @include flexbox($align-items: flex-end, $justify-content: flex-start);
+        flex: 1 0;
+        margin-left: 20px;
+        @media #{$portable} {
+          width: 45%;
+        }
+        @media #{$tablet} {
+          align-items: center;
+          order: 1;
+          width: 95%;
+          margin-bottom: 20px;
+          min-height: 80px;
+        }
+      }
+      .main-wrapper__bottom-img {
+        @media #{$tablet} {
+          order: 2;
+          margin-bottom: 20px;
+        }
+      }
+      .main-wrapper__bottom-list {
+        list-style: initial;
+        padding: 0 0 0 20px;
+        li {
+          padding: 0 0 10px 0;
+        }
+      }
+    }
+  }
+  .main-wrapper__below {
+    min-height: 690px;
+    @include flexbox($justify-content: flex-start);
+    background-color: $mainBelowBack;
+    color: $mainBelowColor;
+    padding-bottom: 40px;
+    .main-wrapper__below-container {
+      width: 750px;
+      @media #{$portable} {
+        width: 70%;
+      }
+      @media #{$tablet} {
+        width: 90%;
+      }
+      .main-wrapper__below-header {
+        font-family: $headerFont;
+        color: $headerTitle;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+        line-height: 6.25rem;
+        text-align: center;
+        margin-top: 10px;
+        @media #{$tablet} {
+          line-height: 2.5rem;
+        }
+      }
+      .main-wrapper__below-list {
+        list-style: none;
+        padding: 0 0 0 20px;
+        margin-bottom: 20px;
+        li {
+          position: relative;
+          padding: 0 0 10px 0;
+          &:before {
+            content:  "-";
+            position: absolute;
+            left:     -18px;
+          }
+        }
+      }
+      .main-wrapper__below-img {
+        @include flexbox;
+      }
+    }
+  }
+
+  // Working methods - initiatives
+.main-wrapper__below-initiative {
+  min-height: 660px;
+  @include flexbox($justify-content: flex-start);
+  background-color: $mainBelowBack;
+  color: $mainBelowColor;
+  padding-bottom: 40px;
+  .main-wrapper__below-container {
+    width: 750px;
+    @media #{$portable} {
+      width: 70%;
+    }
+    @media #{$tablet} {
+      width: 90%;
+    }
+    .main-wrapper__below-header {
+      font-family: $headerFont;
+      color: $headerTitle;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+      line-height: 6.25rem;
+      text-align: center;
+      margin-top: 10px;
+      @media #{$tablet} {
+        line-height: 2.5rem;
+      }
+    }
+    .main-wrapper__below-list {
+      list-style: none;
+      padding: 0 0 0 20px;
+      margin-bottom: 20px;
+      li {
+        position: relative;
+        padding: 0 0 10px 0;
+        &:before {
+          content:  "-";
+          position: absolute;
+          left:     -18px;
+        }
+      }
+    }
+    .main-wrapper__below-img {
+      @include flexbox;
+    }
+  }
+}
+
+  .main-wrapper__chasm {
+    @include flexbox($justify-content: flex-start);
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-color: $baseColor;
+    color: $btnColor;
+    @media #{$portable} {
+      padding-bottom: 140px;
+    }
+    @media #{$tablet} {
+      padding-bottom: 50px;
+      margin-bottom: 30px;
+    }
+    .main-wrapper__chasm-container {
+      width: 750px;
+      @media #{$portable} {
+        width: 70%;
+      }
+      @media #{$tablet} {
+        width: 90%;
+      }
+      .main-wrapper__chasm-header {
+        text-shadow: 2px 2px 2px #1e1e1e;
+        text-align: center;
+      }
+      .main-wrapper__chasm-list {
+        list-style: initial;
+        padding: 0 0 0 20px;
+        li {
+          position: relative;
+          list-style: none;
+          padding: 0 0 10px 0;
+          &:before {
+            content:  "-";
+            position: absolute;
+            left:     -18px;
+          }
+        }
+      }
+    }
+  }
+}

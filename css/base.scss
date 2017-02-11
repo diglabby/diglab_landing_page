@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  font-size: $fontSize;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $fontFamily;
+  color: $baseColor;
+  font-weight: 400;
+  position: relative;
+  @include font-size(16px);
+  @media #{$portable} {
+    min-width: 768px;
+    max-width: 1365px;
+  }
+  @media #{$tablet} {
+    min-width: 425px;
+    max-width: 767px;
+  }
+  @media #{$smartphone} {
+    min-width: 280px;
+    max-width: 424px;
+  }
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,h3,h4,h5,h6 {
+  margin:30px 0;
+  font-family: $headerFont;
+  font-weight: 400;
+  @media #{$smartphone} {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @media #{$portable} {
+    font-size: 32px;
+  }
+}
+
+
+h3 {
+  @media #{$portable} {
+    font-size: 24px;
+  }
+  @media #{$tablet} {
+    font-size: 22px;
+  }
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding:0 0 0 20px;
+}
+
+li {
+  padding:0 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p, li {
+  font-size: 16px;
+  @media #{$smartphone} {
+    font-size: 13px;
+  }
+}
+
+.main-header__bars {
+  display: none;
+  @media #{$tablet} {
+    display: block;
+    position: absolute;
+    font-size: 26px;
+    color: $etcColor;
+    top: 4%;
+    left: 3%;
+  }
+}
+
+.main-wrapper__button {
+  width: 100%;
+  height: 75px;
+  background-color: $btnColor;
+  font-family: $headerFont;
+  font-size: 32px;
+  @include flexbox;
+  font-weight: bold;
+  border: 1px solid #888;
+  z-index: 999;
+  box-shadow: 5px 0 5px #888;
+  &:hover {
+    background-color: $btnHover;
+    text-decoration: none;
+    color: inherit;
+  }
+  @media #{$tablet} {
+    font-size: 24px;
+  }
+  @media #{$portable} {
+    font-size: 30px;
+  }
+  @media #{$smartphone} {
+    font-size: 20px;
+  }
+}
+
+.nav-current {
+  pointer-events: none;
+  cursor: default;
+  color: $headerBack;
+}
+
+#drift-widget
+{
+	bottom:80px!important
+}

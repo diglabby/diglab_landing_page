@@ -23,6 +23,12 @@ $(window).scroll(function() {
   }
 });
 
+$(function() {
+  $('.main-header__bars').on('click', function() {
+    $('.nav__list').toggle('slow');
+  })
+})
+
 <!-- Start of Async Drift Code -->
 !function() {
 var t;
