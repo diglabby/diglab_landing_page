@@ -129,6 +129,10 @@ p, li {
   text-decoration: none;
   color: inherit;
 }
+.main-wrapper__button:focus {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
   .main-wrapper__button {
     font-size: 24px;
