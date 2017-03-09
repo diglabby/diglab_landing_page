@@ -144,6 +144,9 @@
     background-color: $mainBelowBack;
     color: $mainBelowColor;
     padding-bottom: 40px;
+    @media #{$smartphone} {
+      min-height: 500px;
+    }
     .main-wrapper__below-container {
       width: 750px;
       @media #{$portable} {
@@ -191,6 +194,9 @@
   background-color: $mainBelowBack;
   color: $mainBelowColor;
   padding-bottom: 40px;
+  @media #{$smartphone} {
+    min-height: 500px;
+  }
   .main-wrapper__below-container {
     width: 750px;
     @media #{$portable} {
