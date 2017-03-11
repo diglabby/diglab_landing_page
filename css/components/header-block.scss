@@ -2,15 +2,21 @@
   background-color: $headerBack;
   @include flexbox(column, stretch, space-between);
   position: relative;
+  padding-top: 50px;
   .header__nav {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
     min-height: 50px;
-    background-color: darken($headerBack, 30%);
+    background-color: $headerBackTransparent;
     @include flexbox(row, center, space-between);
     padding-left: 1.5%;
     padding-right: 3%;
     @media #{$tablet} {
       flex-direction: column;
       padding-right: 5%;
+      background-color: rgba(128, 128, 128, 0.8);
     }
     .nav__list {
       @include flexbox(row, center, space-between);

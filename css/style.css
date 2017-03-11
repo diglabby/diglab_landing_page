@@ -75,9 +75,10 @@ p, li {
     .main-header__bars {
       display: block;
       position: absolute;
+      z-index: 5;
       font-size: 26px;
       color: #fff;
-      top: 4%;
+      top: 7px;
       left: 3%; } }
 
 .main-wrapper__button {
@@ -125,10 +126,15 @@ p, li {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  position: relative; }
+  position: relative;
+  padding-top: 50px; }
   .main-header .header__nav {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
     min-height: 50px;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.2);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -138,7 +144,8 @@ p, li {
     @media only screen and (max-width: 768px) {
       .main-header .header__nav {
         flex-direction: column;
-        padding-right: 5%; } }
+        padding-right: 5%;
+        background-color: rgba(128, 128, 128, 0.8); } }
     .main-header .header__nav .nav__list {
       display: flex;
       flex-direction: row;
