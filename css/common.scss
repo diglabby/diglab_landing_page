@@ -86,9 +86,10 @@ p, li {
   @media #{$tablet} {
     display: block;
     position: absolute;
+    z-index: 5;
     font-size: 26px;
     color: $etcColor;
-    top: 4%;
+    top: 7px;
     left: 3%;
   }
 }
