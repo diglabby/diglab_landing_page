@@ -134,13 +134,14 @@ p, li {
     top: 0;
     width: 100%;
     min-height: 50px;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: gray;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-left: 1.5%;
-    padding-right: 3%; }
+    padding-right: 3%;
+    transition: 0.5s; }
     @media only screen and (max-width: 768px) {
       .main-header .header__nav {
         flex-direction: column;
