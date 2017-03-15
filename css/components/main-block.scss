@@ -279,15 +279,24 @@
   }
 
   // Partners page
-  // .partners-top__header {
-  //   margin-bottom: 0;
-  // }
+  .partners-top__header {
+    @media #{$tablet} {
+      text-align: center;
+    }
+  }
+
+  .partners-bottom__header {
+    @media #{$tablet} {
+      text-align: center;
+    }
+  }
+
 
   .partners-top {
     min-height: 250px;
     @include flexbox(row, center, space-between);
     flex-wrap: wrap;
-    @media #{$smartphone} {
+    @media #{$tablet} {
       flex-direction: column;
     }
     .partners-figure {
@@ -305,7 +314,7 @@
       flex-wrap: wrap;
       padding-top: 50px;
       padding-bottom: 130px;
-      @media #{$smartphone} {
+      @media #{$tablet} {
         flex-direction: column;
       }
       .partners-figure {
