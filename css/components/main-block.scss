@@ -2,7 +2,6 @@
   flex: 1;
   padding-top: 35px;
   padding-bottom: 35px;
-  min-height: 1000px;
   position: relative;
   .main-wrapper__top {
     @include flexbox;
@@ -276,6 +275,29 @@
           }
         }
       }
+    }
+  }
+
+  // Partners page
+  .partners-top__header {
+    margin-bottom: 0;
+  }
+
+  .partners-top {
+    min-height: 250px;
+    @include flexbox(row, center, space-between);
+  }
+
+  .partners-bottom {
+    background-color: $mainBottomBack;
+    .partners-bottom__header {
+      margin-bottom: 0;
+    }
+    .partners-bottom__container {
+      min-height: 250px;
+      @include flexbox(row, center, space-between);
+      padding-top: 50px;
+      padding-bottom: 130px;
     }
   }
 }

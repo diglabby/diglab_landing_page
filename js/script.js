@@ -19,6 +19,7 @@ $(document).ready(function() {
       $(".header__nav").css("background-color", "rgba(128, 128, 128, 0.2)");
     }
   })
+
 });
 
 
