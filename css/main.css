@@ -129,12 +129,13 @@ ul,ol
 	top: 0;
   width: 100%;
   min-height: 50px;
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2.5%;
   padding-right: 3%;
+	transition: 0.5s;
 }
 
 .nav__list {
@@ -217,7 +218,8 @@ ul,ol
   .header__nav {
     flex-direction: column;
     padding-right: 5%;
-		background-color: rgba(128, 128, 128, 0.8);
+		background-color: rgba(128, 128, 128, 1);
+		transition: 0.5s;
   }
   .nav__list {
     display: none;

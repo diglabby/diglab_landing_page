@@ -134,13 +134,14 @@ p, li {
     top: 0;
     width: 100%;
     min-height: 50px;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: gray;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-left: 1.5%;
-    padding-right: 3%; }
+    padding-right: 3%;
+    transition: 0.5s; }
     @media only screen and (max-width: 768px) {
       .main-header .header__nav {
         flex-direction: column;
@@ -289,7 +290,6 @@ p, li {
   flex: 1;
   padding-top: 35px;
   padding-bottom: 35px;
-  min-height: 1000px;
   position: relative; }
   .main-wrapper .main-wrapper__top {
     display: flex;
@@ -562,6 +562,58 @@ p, li {
             content: "-";
             position: absolute;
             left: -18px; }
+  @media only screen and (max-width: 768px) {
+    .main-wrapper .partners-top__header {
+      text-align: center; } }
+  @media only screen and (max-width: 768px) {
+    .main-wrapper .partners-bottom__header {
+      text-align: center; } }
+  .main-wrapper .partners-top {
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      .main-wrapper .partners-top {
+        flex-direction: column; } }
+    .main-wrapper .partners-top .partners-figure {
+      position: relative;
+      width: 145px;
+      height: 135px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      .main-wrapper .partners-top .partners-figure:hover > .overlay {
+        display: block; }
+      .main-wrapper .partners-top .partners-figure .overlay {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(128, 128, 128, 0.5); }
+  .main-wrapper .partners-bottom {
+    background-color: #F2F2F2; }
+    .main-wrapper .partners-bottom .partners-bottom__container {
+      min-height: 250px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 50px;
+      padding-bottom: 130px; }
+      @media only screen and (max-width: 768px) {
+        .main-wrapper .partners-bottom .partners-bottom__container {
+          flex-direction: column; } }
+      .main-wrapper .partners-bottom .partners-bottom__container .partners-figure {
+        width: 145px;
+        height: 135px;
+        margin-bottom: 20px; }
 
 footer {
   padding: 25px 0;

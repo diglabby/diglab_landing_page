@@ -13,6 +13,7 @@
     @include flexbox(row, center, space-between);
     padding-left: 1.5%;
     padding-right: 3%;
+    transition: 0.5s;
     @media #{$tablet} {
       flex-direction: column;
       padding-right: 5%;

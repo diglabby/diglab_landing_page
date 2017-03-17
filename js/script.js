@@ -10,6 +10,16 @@ $(document).ready(function() {
       $(".main-wrapper__button").css({"bottom":0, "position":"fixed"});
     }
   });
+// Top menu scrolling
+  $(window).scroll(function() {
+    if($(window).scrollTop() == 0) {
+      $(".header__nav").css("background-color", "rgba(128, 128, 128, 1)");
+    }
+    else {
+      $(".header__nav").css("background-color", "rgba(128, 128, 128, 0.2)");
+    }
+  })
+
 });
 
 
