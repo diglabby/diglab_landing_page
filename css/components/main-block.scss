@@ -7,11 +7,7 @@
     @include flexbox;
   }
   .main-wrapper__medium {
-    margin-bottom: 60px;
     @include flexbox;
-    @media #{$tablet} {
-      margin-bottom: 30px;
-    }
     .main-wrapper__medium-header {
       @media #{$tablet} {
         text-align: center;
@@ -247,7 +243,6 @@
     }
     @media #{$tablet} {
       padding-bottom: 50px;
-      margin-bottom: 30px;
     }
     .main-wrapper__chasm-container {
       width: 750px;
@@ -333,6 +328,25 @@
         &:hover {
           border: 1px solid $btnHover;
           border-radius: 15px;
+        }
+      }
+    }
+  }
+  .main-wrapper__video {
+    @include flexbox (column, center, flex-start);
+    background-color: darken($mainBelowBack, 20%);
+    .main-wrapper__video-container {
+      min-height: 700px;
+      padding-top: 30px;
+      @media #{$tablet} {
+        width: 100%;
+      }
+      .main-wrapper__video-header {
+        text-align: center;
+      }
+      .main-wrapper__video-player {
+        @media #{$tablet} {
+          width: 100%;
         }
       }
     }
