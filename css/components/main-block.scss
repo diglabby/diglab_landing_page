@@ -169,6 +169,7 @@
         li {
           position: relative;
           padding: 0 0 10px 0;
+          color: $etcColor;
           &:before {
             content:  "-";
             position: absolute;
@@ -334,7 +335,7 @@
   }
   .main-wrapper__video {
     @include flexbox (column, center, flex-start);
-    background-color: darken($mainBelowBack, 20%);
+    background-color: $mainBelowBack;
     .main-wrapper__video-container {
       min-height: 700px;
       padding-top: 30px;
@@ -342,7 +343,15 @@
         width: 100%;
       }
       .main-wrapper__video-header {
+        font-family: $headerFont;
+        color: $headerTitle;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
         text-align: center;
+        margin-bottom: 50px;
+        @media #{$tablet} {
+          line-height: 2.5rem;
+        }
       }
       .main-wrapper__video-player {
         @media #{$tablet} {
