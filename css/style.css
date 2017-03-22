@@ -463,7 +463,8 @@ p, li {
         margin-bottom: 20px; }
         .main-wrapper .main-wrapper__below .main-wrapper__below-container .main-wrapper__below-list li {
           position: relative;
-          padding: 0 0 10px 0; }
+          padding: 0 0 10px 0;
+          color: #fff; }
           .main-wrapper .main-wrapper__below .main-wrapper__below-container .main-wrapper__below-list li:before {
             content: "-";
             position: absolute;
