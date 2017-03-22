@@ -694,4 +694,26 @@ footer {
   .contact {
     margin: 0 0 15px -5px; } }
 
+.main-wrapper__video {
+  background-color: #b3b3b3;
+  margin-bottom: 30px;
+  
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+
+}
+
+.main-wrapper__below-header1 {
+  font-family: "Ubuntu", sans-serif;
+    color: #F8F8F8;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    line-height: 6.25rem;
+    text-align: center;
+    margin-top: 10px;
+}
 /*# sourceMappingURL=style.css.map */
