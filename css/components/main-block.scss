@@ -276,15 +276,13 @@
 
   // Partners page
   .partners-top__header {
-    @media #{$tablet} {
-      text-align: center;
-    }
+    font-size: 28px;
+    margin-bottom: 0;
   }
 
   .partners-bottom__header {
-    @media #{$tablet} {
-      text-align: center;
-    }
+    font-size: 28px;
+    margin-bottom: 0;
   }
 
 

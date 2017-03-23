@@ -558,12 +558,12 @@ p, li {
             content: "-";
             position: absolute;
             left: -18px; }
-  @media only screen and (max-width: 768px) {
-    .main-wrapper .partners-top__header {
-      text-align: center; } }
-  @media only screen and (max-width: 768px) {
-    .main-wrapper .partners-bottom__header {
-      text-align: center; } }
+  .main-wrapper .partners-top__header {
+    font-size: 28px;
+    margin-bottom: 0; }
+  .main-wrapper .partners-bottom__header {
+    font-size: 28px;
+    margin-bottom: 0; }
   .main-wrapper .partners-top {
     min-height: 250px;
     display: flex;
