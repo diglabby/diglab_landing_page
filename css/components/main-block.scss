@@ -5,6 +5,18 @@
   position: relative;
   .main-wrapper__top {
     @include flexbox;
+    .main-wrapper__top-text {
+      margin-bottom: 40px;
+    }
+    .main-wrapper__top-img {
+      max-width: 750px;
+      .main-wrapper__top-text-img {
+        max-width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+    }
   }
   .main-wrapper__medium {
     @include flexbox;
@@ -76,10 +88,6 @@
             padding: 0 0 10px 0;
           }
         }
-      }
-      .main-wrapper__medium-img-init {
-        order: 1;
-        margin-bottom: 30px;
       }
     }
   }
