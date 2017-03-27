@@ -5,11 +5,9 @@
   position: relative;
   .main-wrapper__top {
     @include flexbox;
-    .main-wrapper__top-text {
-      margin-bottom: 40px;
-    }
     .main-wrapper__top-img {
       max-width: 750px;
+      margin-top: 20px;
       .main-wrapper__top-text-img {
         max-width: 100%;
         margin: 0 auto;
@@ -18,9 +16,15 @@
       }
     }
   }
+    
+    // Padding bottom for medium block at initiative page
+    .medium-initiative {
+      padding-bottom: 50px;
+    }
+    
   .main-wrapper__medium {
     @include flexbox;
-    .main-wrapper__medium-header {
+     .main-wrapper__medium-header {
       @media #{$tablet} {
         text-align: center;
       }
@@ -89,6 +93,9 @@
           }
         }
       }
+        .main-wrapper__medium-img-init {
+            margin-bottom: 20px;
+        }
     }
   }
   .main-wrapper__bottom {
