@@ -168,7 +168,7 @@
         </section>
     </main>
     <!-- Green button. Fixed positions, when on a footer - absolute (see script.js for customization) -->
-    <a href="https://docs.google.com/forms/d/1n3NvUiVhCghEy12hNpZ-aPFU3R_dB-xJa64cOPTWgc8/viewform" class="main-wrapper__button">become volunteer</a>
+    <a href="https://docs.google.com/forms/d/1n3NvUiVhCghEy12hNpZ-aPFU3R_dB-xJa64cOPTWgc8/viewform" class="main-wrapper__button" onclick="goog_report_conversion()">become volunteer</a>
     <footer>
       <div class="container">
         <div class="row">
@@ -229,5 +229,38 @@
   ga('send', 'pageview');
 
   </script>
+  
+  <!-- Google Code for &#1059;&#1095;&#1077;&#1090; &#1079;&#1072;&#1087;&#1080;&#1089;&#1072;&#1074;&#1096;&#1080;&#1093;&#1089;&#1103; &#1080; &#1086;&#1073;&#1088;&#1072;&#1090;&#1080;&#1074;&#1096;&#1080;&#1093;&#1089;&#1103; Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 877512301;
+    w.google_conversion_label = "FMP8CLa-m3IQ7Yy3ogM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
   </body>
 </html>
