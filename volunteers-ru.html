@@ -100,10 +100,7 @@
                 <li>Для переводчиков - это английский, белорусский и русский языки.</li>
                 <li>Для специалистов по безопасности -  gpg, veracrypt, keepass, enigmail.</li>
               </ul>
-              <p class="main-wrapper__medium-text">Отдельные и самые важные на сегодня скилы - это подготовка технических заданий для задач, с которыми приходят общественные инициативы и организации.</p>
-            </div>
-            <div class="main-wrapper__medium-img">
-              <img src="img/vol_main-medium.png" alt="Skills" width="350" height="350" class="img-responsive">
+              <p class="main-wrapper__medium-text">Отдельные и самые важные на сегодня скилы - это анализ потребностей, подготовка технических заданий для задач, с которыми приходят общественные инициативы и организации.</p>
             </div>
           </div>
 
@@ -133,7 +130,7 @@
             <ul class="main-wrapper__below-list">
               <li>Волонтер заполняет анкету.</li>
               <li>Мы связываемся с им и уточняем опыт.</li>
-              <li>Ищем с подходящую из имеющих задачу.</li>
+              <li>Ищем из имеющихся подходящую задачу.</li>
               <li>Связываем волонтера с общественной инициативой и помогаем наладить контакт.</li>
               <li>Следим за работой, по результатам составляем отчет и пишем рекомендацию.</li>
               <li>Действуем по описанной ниже схеме.</li>
@@ -153,7 +150,7 @@
               <li>Новые знакомства с интересными людьми, которые делают наше общество лучше.</li>
               <li>Реальные и - самое важное - полезные проекты, которыми начинающий айтишник пополнит свое резюме.</li>
               <li>Социальные знания, которые опытный программист сможет улучшить, например, узнав о том, чем занимается общественная организация.</li>
-              <li>Повышение своего авторитета и кармы за хорошо выполненную задачу в айти-сообщества.</li>
+              <li>Повышение своего авторитета и кармы за хорошо выполненную задачу среди таких же представителей сообщества айти-волонтёров.</li>
               <li>Рекомендательное письмо и благодарность, в том числе отображение имени волонтера на готовой работе.</li>
             </ul>
           </div>
@@ -168,7 +165,7 @@
         </section>
     </main>
     <!-- Green button. Fixed positions, when on a footer - absolute (see script.js for customization) -->
-    <a href="https://docs.google.com/forms/d/1xvajxU2tx9YequE-0bDqLgxZ5QJtwQqbOAoKcM7nHj4/viewform" class="main-wrapper__button">стань волонтером</a>
+    <a href="https://docs.google.com/forms/d/1xvajxU2tx9YequE-0bDqLgxZ5QJtwQqbOAoKcM7nHj4/viewform" class="main-wrapper__button" onclick="goog_report_conversion()">стань волонтером</a>
     <footer>
       <div class="container">
         <div class="row">
@@ -229,5 +226,38 @@
   ga('send', 'pageview');
 
   </script>
+  
+  <!-- Google Code for &#1059;&#1095;&#1077;&#1090; &#1079;&#1072;&#1087;&#1080;&#1089;&#1072;&#1074;&#1096;&#1080;&#1093;&#1089;&#1103; &#1080; &#1086;&#1073;&#1088;&#1072;&#1090;&#1080;&#1074;&#1096;&#1080;&#1093;&#1089;&#1103; Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 877512301;
+    w.google_conversion_label = "FMP8CLa-m3IQ7Yy3ogM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
   </body>
 </html>
