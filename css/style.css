@@ -168,10 +168,14 @@ p, li {
             font-size: 16px; } }
         .main-header .header__nav .nav__list a:hover {
           color: #AAD400; }
-      @media only screen and (max-width: 1366px) {
+      @media only screen and (min-width: 769px) {
         .main-header .header__nav .nav__list {
+	  display: flex!important;
           padding-left: 1%;
-          padding-right: 1%; } }
+          padding-right: 1%;
+          width: 610px; }
+	  .nav__lang {
+          width: 15%; } }
       @media only screen and (max-width: 768px) {
         .main-header .header__nav .nav__list {
           display: none;

@@ -184,8 +184,8 @@ ul, ol {
 @media only screen and (min-width: 769px) {
   .nav__list {
     display: flex!important;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0;
+    width: 690px;
   }
   .nav__lang {
     width: 15%;
