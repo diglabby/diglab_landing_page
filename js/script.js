@@ -52,7 +52,7 @@ $(document).ready(function () {
     if ($(window).scrollTop() == 0) {
       $('.header__nav').css('background-color', 'rgba(128, 128, 128, 1)')
     } else {
-      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.2)')
+      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.6)')
     }
   })
 })

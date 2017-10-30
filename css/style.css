@@ -159,7 +159,7 @@ p, li {
         margin-right: 20px; }
         @media only screen and (max-width: 768px) {
           .main-header .header__nav .nav__list li {
-            margin-right: 0; } }
+            margin-right: 20px; } }
       .main-header .header__nav .nav__list a {
         transition: 0.5s;
         font-size: 22px; }
@@ -171,8 +171,9 @@ p, li {
       @media only screen and (min-width: 769px) {
         .main-header .header__nav .nav__list {
 	  display: flex!important;
-          padding: 0;
-          width: 610px; }
+	  padding-left: 1%;
+	  padding-right: 1%;
+          width: 690px; }
 	.nav__lang {
           width: 15%; } }
       @media only screen and (max-width: 768px) {
