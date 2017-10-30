@@ -146,7 +146,7 @@ ul, ol {
 }
 
 .nav__list a:hover {
-  color: #AAD400;
+  color: #AAD400!important;
   text-decoration: underline;
 }
 
@@ -950,4 +950,8 @@ footer p {
 
 #drift-widget {
   bottom: 75px!important
+}
+
+.nav__list a i {
+  font-size: 22px;
 }
