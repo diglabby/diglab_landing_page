@@ -146,7 +146,7 @@ ul, ol {
 }
 
 .nav__list a:hover {
-  color: #AAD400!important;
+  color: #AAD400;
   text-decoration: underline;
 }
 
