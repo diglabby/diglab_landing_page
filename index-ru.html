@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Тут общественные инициативы находят помощь IT-волонтеров, а волонтёры помогают организациям и проектам: рисуют дизайн, создают сайты, делают переводы и т.д">
-    <meta name="author" content="">
+    <meta name="author" content="Фаланстер">
+    <meta name="designer" content="Светлана Ермакович">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <title>Цифровая мастерская</title>
@@ -17,7 +18,6 @@
   	<meta property="og:title"         content="Цифровая мастерская" />
   	<meta property="og:description"   content="онлайн-маркет IT-волонтёрского обмена, на которых волонтеры и общественные инициативы могут находить друг друга" />
   	<meta property="og:image"         content="http://it.falanster.by/img/logo_for_site.png" />
-
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
@@ -47,8 +47,7 @@
 </head>
 
 <body>
-<!-- Header -->
-  <div class="hero">
+<header>
     <nav class="header__nav">
       <!-- Burger. It appears only in mobile version -->
       <a class="main-header__bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -58,7 +57,8 @@
           <li><a href="http://it.falanster.by/blog/">блог</a></li>
           <li><a href="initiative-ru.html">инициативам</a></li>
           <li><a href="volunteers-ru.html">волонтёрам</a></li>
-	  <li><a href="https://geeklauka.by/" target="_blank">гiк-лаўка <i class="fa fa-linux" aria-hidden="true"></i></a></li>
+          <li><a href="#">сообщество</a></li>
+	        <li><a href="https://geeklauka.by/" target="_blank">гiк-лаўка <i class="fa fa-linux" aria-hidden="true"></i></a></li>
         </ul>
         <!-- Lang panel -->
         <div class="nav__lang">
@@ -79,7 +79,7 @@
         <i class="fa fa-angle-down fa-inverse fa-2x" aria-hidden="true"></i>
       </div>
     </div>
-  </div><!-- hero -->
+  </header>
 
   <!-- Page Content -->
   <div class="section background-white">
@@ -178,6 +178,7 @@
             <li><a href="http://it.falanster.by/blog/">Блог</a></li>
             <li><a href="volunteers-ru.html">Волонтёрам</a></li>
             <li><a href="initiative-ru.html">Инициативам</a></li>
+            <li><a href="#">Сообщество</a></li>
             <li><a href="partners-ru.html">Наши партнёры</a></li>
           </ul>
           <ul class="contact list-inline">
@@ -209,18 +210,16 @@
   </footer>
 
 
-  <!-- custom scripts -->
-  <script src="js/script.js"></script>
-  <script>
+<!-- custom scripts -->
+<script src="js/script.js"></script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-89579350-1', 'auto');
   ga('send', 'pageview');
-
-  </script>
+</script>
 </body>
 
 </html>
