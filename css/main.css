@@ -186,7 +186,7 @@ ul, ol {
     display: flex!important;
 	  padding-left: 1%;
 	  padding-right: 1%;
-    width: 690px;
+    width: 850px;
   }
   .nav__lang {
     width: 15%;
@@ -229,7 +229,7 @@ ul, ol {
   }
 }
 
-.hero {
+header {
   position: relative;
   padding: 0;
   padding-top: 50px;
@@ -956,4 +956,84 @@ footer p {
 
 .nav__list a i {
   font-size: 22px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.item {  
+  display: flex;
+  font-family: Ubuntu;
+  font-weight: normal;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.card-items .item h3 {
+  font-size: 28px;
+}
+
+.card-items .item p {
+  font-family: 'PT Sans';
+  font-size: 16px;
+  font-weight: normal;
+  margin: 20px 0 20px 0;
+  width: 270px;
+}
+
+.card-items .item button {
+  background-color: #808080;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  width: 250px;
+}
+
+.card-img {
+  background-color: #ff6666 ;
+  height: 180px;
+  width: 270px;
+  text-align: center; 
+  padding-top: 90px;
+}
+
+.statistic {
+  background-color: #333333;
+  color: #CCFF00;
+}
+
+.stat-digits {
+  font-size: 87.5px;
+}
+
+.stat-info {
+  font-size: 33px;
+  width: 270px;
+}
+
+.history-init {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+
+.history-init h2, .history-init h3 {
+  text-shadow: 1px 1px 1px black;
+}
+
+.history-vol {
+  background-color: #ececec;
+  color: #333333;
+}
+
+.history-vol .card-items .item button {
+  background-color: #cccccc;
+  border: 1px solid #333333;
+  color: #333333;
 }
