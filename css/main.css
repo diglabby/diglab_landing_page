@@ -23,12 +23,24 @@ h2, h3, h4, h5, h6 {
   font-weight: 400
 }
 
-.hashtag, .map-label {
+.hashtag {
   font-family: 'Ubuntu Mono', monospace;
+  color: #cf0;
+  width: 100%;
+  display: block;
+  margin: 20px auto 10px
 }
 
 .buttons {
-  font-family: 'Ubuntu', sans-serif
+  font-family: 'Ubuntu', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  height: 75px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 1px #888
 }
 
 a, a:hover {
@@ -84,10 +96,6 @@ ul, ol {
 .background-dark {
   background-color: #333;
   color: #cf0
-}
-
-.background-map {
-  background-color: #ccc
 }
 
 .tos-header {
@@ -148,6 +156,10 @@ ul, ol {
 .nav__list a:hover {
   color: #AAD400;
   text-decoration: underline;
+}
+
+.nav__list a i {
+  font-size: 22px;
 }
 
 .nav__list .nav-current {
@@ -253,13 +265,6 @@ header {
 .intro-message {
   padding-left: 15px;
   padding-right: 15px
-}
-
-.hashtag {
-  color: #cf0;
-  width: 100%;
-  display: block;
-  margin: 20px auto 10px
 }
 
 .pointerdown {
@@ -371,17 +376,6 @@ footer p {
   margin: 0 5px
 }
 
-.buttons {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
-  height: 75px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 0 1px #888
-}
-
 .button-volunteers, .button-initiatives {
   width: 50%;
   height: 75px;
@@ -410,36 +404,6 @@ footer p {
   font-weight: 700;
   line-height: 1em;
   text-decoration: none
-}
-
-.map {
-  padding: 0;
-  color: #333;
-  width: 100%;
-  position: relative;
-  background-color: #ccc
-}
-
-.map-background {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-size: contain;
-  z-index: 2;
-}
-
-.map-label {
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 1px 1px 5px #888;
-  padding: 5px 8px;
-  line-height: 1em
-}
-
-.map h2 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  color: #f8f8f8;
-  z-index: 99999
 }
 
 .vol-text {
@@ -745,217 +709,8 @@ footer p {
   }
 }
 
-@media (min-width:180px) {
-  .map {
-    height: 460px
-  }
-  .map-background {
-    width: 300px;
-    height: 350px;
-    margin-left: -150px;
-    margin-top: -175px;
-    background: url(../img/map_300_350.png) no-repeat center center
-  }
-  .map-label {
-    font-size: 13px
-  }
-  .label-one {
-    min-height: 50px;
-    min-width: 50px;
-    top: 56px;
-    left: 162px
-  }
-  .label-one:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 16px;
-    left: -17px;
-    border: 9px solid;
-    border-color: transparent #fff transparent transparent
-  }
-  .label-two {
-    min-height: 36px;
-    min-width: 50px;
-    top: 168px;
-    right: 208px
-  }
-  .label-two:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: -17px;
-    top: 8px;
-    border: 9px solid;
-    border-color: transparent transparent transparent #fff
-  }
-  .label-three {
-    min-height: 36px;
-    min-width: 100px;
-    bottom: 3px;
-    right: 92px
-  }
-  .label-three:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 29px;
-    top: -17px;
-    border: 9px solid;
-    border-color: transparent transparent #fff
-  }
-}
-
-@media (min-width:480px) {
-  .map {
-    height: 500px
-  }
-  .map-background {
-    width: 400px;
-    height: 320px;
-    margin-left: -200px;
-    margin-top: -160px;
-    background: url(../img/map_400_320.png) no-repeat center center
-  }
-  .label-one {
-    top: 41px;
-    left: 217px
-  }
-  .label-one:before {
-    left: -17px;
-    top: 15px;
-    border: 9px solid;
-    border-color: transparent #fff transparent transparent
-  }
-  .label-two {
-    top: 200px;
-    right: 286px
-  }
-  .label-two:before {
-    right: -17px;
-    top: 9px;
-    border: 9px solid;
-    border-color: transparent transparent transparent #fff
-  }
-  .label-three {
-    bottom: 3px;
-    right: 36px
-  }
-  .label-three:before {
-    left: 26px;
-    top: -16px;
-    border: 8px solid;
-    border-color: transparent transparent #fff
-  }
-}
-
-@media (min-width:720px) {
-  .map {
-    height: 500px
-  }
-  .map-background {
-    width: 700px;
-    height: 390px;
-    margin-left: -350px;
-    margin-top: -195px;
-    background: url(../img/map_700_390.png) no-repeat center center
-  }
-  .map-label {
-    font-size: 16px;
-    padding: 7px 9px
-  }
-  .label-one {
-    top: 272px;
-    left: 220px
-  }
-  .label-one:before {
-    left: -23px;
-    top: 18px;
-    border: 12px solid;
-    border-color: transparent #fff transparent transparent
-  }
-  .label-two {
-    top: 65px;
-    right: auto;
-    left: 435px
-  }
-  .label-two:before {
-    left: -19px;
-    top: 12px;
-    border: 10px solid;
-    border-color: transparent #fff transparent transparent
-  }
-  .label-three {
-    bottom: 25px;
-    right: 82px
-  }
-  .label-three:before {
-    left: 50px;
-    top: -24px;
-    border: 12px solid;
-    border-color: transparent transparent #fff
-  }
-}
-
-@media (min-width:1024px) {
-  .map {
-    height: 600px
-  }
-  .map-background {
-    width: 1000px;
-    height: 600px;
-    margin-left: -500px;
-    margin-top: -300px;
-    background: url(../img/map_1000.png) no-repeat center center
-  }
-  .map-label {
-    font-size: 18px;
-    padding: 7px 10px;
-    line-height: 1.1em
-  }
-  .label-one {
-    top: 400px;
-    left: 255px
-  }
-  .label-one:before {
-    left: -28px;
-    top: 24px;
-    border: 15px solid;
-    border-color: transparent #fff transparent transparent
-  }
-  .label-two {
-    top: 230px;
-    right: 505px;
-    left: auto
-  }
-  .label-two:before {
-    right: -26px;
-    left: auto;
-    top: 12px;
-    border: 15px solid;
-    border-color: transparent transparent transparent #fff
-  }
-  .label-three {
-    bottom: 90px;
-    right: 69px
-  }
-  .label-three:before {
-    left: 49px;
-    top: -28px;
-    border: 15px solid;
-    border-color: transparent transparent #fff
-  }
-}
-
 #drift-widget {
   bottom: 75px!important
-}
-
-.nav__list a i {
-  font-size: 22px;
 }
 
 .items {
