@@ -792,3 +792,31 @@ footer p {
   border: 1px solid #333333;
   color: #333333;
 }
+
+.subscribe {
+  background-color: white;
+}
+
+.submit-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.submit-form button {
+  background-color: #cccccc;
+  border: 1px #333333 solid;
+  color: #333333;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 30px 5px 30px;
+  margin-left: 50px;
+}
+
+.submit-form input {
+  color: #666666;
+  font-family: 'PT Sans';
+  font-size: 19px;
+  height: 37px;
+  width: 300px;
+}

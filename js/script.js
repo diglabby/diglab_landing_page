@@ -23,10 +23,10 @@ $(document).ready(function () {
   })
 // CTA buttons panel attached to footer
   $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
-      $('.buttons').css({'bottom': 300, 'position': 'absolute'})
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 575) {
+      $('.buttons').css({'position': 'relative'});
     } else {
-      $('.buttons').css({'bottom': 0, 'position': 'fixed'})
+      $('.buttons').css({'bottom': 0, 'position': 'fixed'});
     }
   })
 
