@@ -726,7 +726,8 @@ footer p {
   font-family: Ubuntu;
   font-weight: normal;
   flex-direction: column;
-  padding-right: 40px;
+  padding-left: 5px; 
+  padding-right: 5px;
 }
 
 .card-items .item h3 {
@@ -738,7 +739,7 @@ footer p {
   font-size: 16px;
   font-weight: normal;
   margin: 20px 0 20px 0;
-  width: 270px;
+  width: 240px;
 }
 
 .card-items .item button {
@@ -748,13 +749,13 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   height: 40px;
-  width: 250px;
+  width: 240px;
 }
 
 .card-img {
   background-color: #ff6666 ;
   height: 180px;
-  width: 270px;
+  width: 240px;
   text-align: center; 
   padding-top: 90px;
 }
@@ -770,7 +771,7 @@ footer p {
 
 .stat-info {
   font-size: 33px;
-  width: 270px;
+  width: 240px;
 }
 
 .history-init {
@@ -819,4 +820,29 @@ footer p {
   font-size: 19px;
   height: 37px;
   width: 300px;
+}
+
+.without-bottom-margin {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1023px) {
+.stat-items {
+  flex-wrap: wrap;
+ }
+.subscribe .section-title {
+  font-size: 24px;
+ }
+ .submit-form {
+  text-align: left;
+ }
+ .submit-form button {
+  display: block;
+  margin-left: 0;
+  margin-top: 27px;
+ }
+.submit-form input {
+  border: 1px #333333 solid;
+  font-size: 17px;
+ }
 }
