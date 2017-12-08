@@ -771,6 +771,7 @@ footer p {
 
 .stat-info {
   font-size: 33px;
+  line-height: 35px;
   width: 240px;
 }
 
@@ -824,6 +825,10 @@ footer p {
 
 .without-bottom-margin {
   margin-bottom: 0;
+}
+
+.without-top-margin {
+  margin-top: 0;
 }
 
 @media (max-width: 1023px) {
