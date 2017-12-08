@@ -49,6 +49,39 @@ $(document).ready(function () {
   })
 })
 
+//Slider histories initiatives and volunters
+  var cur = 1;
+  $('.arrows i').on('click', function(ev) {
+    var arr = ev.target.parentNode.parentNode.children;
+    console.log(ev.target.parentNode.parentNode.children);
+    if ( ( ~ev.target.className.indexOf("fa-caret-left") && cur === 1 ) || ( ~ev.target.className.indexOf("fa-caret-right") && cur === arr.length - 2 ) ) {
+      return;
+    } else if ( ~ev.target.className.indexOf("fa-caret-left") ) {
+      arrows("item-nonactive", "item-nonactive", cur, "minus");
+    } else if ( ~ev.target.className.indexOf("fa-caret-right") ) {
+      arrows("item-nonactive", "item-nonactive", cur, "plus");
+    }
+     if ( cur === 1 ) {
+      arrows("nonblocked-arrow", "blocked-arrow", 0);
+     } else if ( cur === arr.length - 2 ) {
+      arrows("nonblocked-arrow", "blocked-arrow", arr.length - 1);
+     } else {
+      arrows("blocked-arrow", "nonblocked-arrow", 0);
+      arrows("blocked-arrow", "nonblocked-arrow", arr.length - 1);
+     }
+
+  function arrows(remove, add, num, sign) {
+    if (!sign) arr[num].classList.remove(remove);
+    arr[num].classList.add(add);
+    if (sign) {
+      if ( sign === "plus" ) {
+        cur += 1;
+      } else if ( sign === "minus" ) cur -= 1;
+      arr[cur].classList.remove(remove);
+    }
+  }
+  });
+
 // <!-- Start of Async Drift Code -->
 //!(function () {
 //  var t

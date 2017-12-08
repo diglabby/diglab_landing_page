@@ -831,6 +831,26 @@ footer p {
   margin-top: 0;
 }
 
+.arrows {
+  display: none;
+  font-size: 50px;
+  padding-top: 155px;
+}
+
+.nonblocked-arrow {
+  opacity: 1;
+}
+
+.nonblocked-arrow:hover {
+  color: #CCFF00;
+  cursor: pointer;
+}
+
+.blocked-arrow {
+  cursor: default;
+  opacity: 0.6;
+}
+
 @media (max-width: 1023px) {
 .stat-items {
   flex-wrap: wrap;
@@ -849,5 +869,15 @@ footer p {
 .submit-form input {
   border: 1px #333333 solid;
   font-size: 17px;
+ }
+ .history-init h3, .history-vol h3 {
+  margin-top: 0;
+ }
+.arrows {
+  color: #333333;
+  display: inherit;
+ }
+.item-nonactive {
+  display: none;
  }
 }
