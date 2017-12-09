@@ -429,9 +429,13 @@ p, li {
           margin-bottom: 20px; } }
       .main-wrapper .main-wrapper__bottom .main-wrapper__bottom-container .main-wrapper__bottom-list {
         list-style: initial;
-        padding: 0 0 0 20px; }
+        padding: 70px 0 0 20px; }
         .main-wrapper .main-wrapper__bottom .main-wrapper__bottom-container .main-wrapper__bottom-list li {
           padding: 0 0 10px 0; }
+      @media (max-width: 768px) {
+        .main-wrapper .main-wrapper__bottom .main-wrapper__bottom-container .main-wrapper__bottom-list {
+          padding-top: 0;
+          } }
   .main-wrapper .main-wrapper__below {
     min-height: 690px;
     display: flex;

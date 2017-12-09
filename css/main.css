@@ -797,6 +797,7 @@ footer p {
 
 .subscribe {
   background-color: white;
+  height: 300px;
 }
 
 .submit-form {
@@ -841,7 +842,7 @@ footer p {
   opacity: 1;
 }
 
-.nonblocked-arrow:hover {
+.nonblocked-arrow i:hover {
   color: #CCFF00;
   cursor: pointer;
 }
@@ -879,5 +880,8 @@ footer p {
  }
 .item-nonactive {
   display: none;
+ }
+.card-items .item p {
+  font-weight: bold;
  }
 }
