@@ -33,10 +33,9 @@ h2, h3, h4, h5, h6 {
 
 .buttons {
   font-family: 'Ubuntu', sans-serif;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   left: 0;
-  z-index: 9999;
+  z-index: 1;
   height: 75px;
   width: 100%;
   text-align: center;
@@ -57,7 +56,7 @@ li {
 }
 
 ul, ol {
-  padding: 0 0 0 20px
+  padding: 0 0 20px 20px
 }
 
 .section {
@@ -73,8 +72,8 @@ ul, ol {
 }
 
 .bottom-wrapper {
-  padding: 0 0 75px;
-  background-color: #333
+  background-color: #333;
+  padding: 0 0 20px;
 }
 
 .img-fullwidth {
@@ -532,7 +531,8 @@ footer p {
     font-size: 40px
   }
   h2 {
-    font-size: 36px
+    font-size: 36px;
+    line-height: 32px;
   }
   h3 {
     font-size: 24px
@@ -718,7 +718,7 @@ footer p {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .item {  
@@ -726,8 +726,8 @@ footer p {
   font-family: Ubuntu;
   font-weight: normal;
   flex-direction: column;
-  padding-left: 5px; 
-  padding-right: 5px;
+  padding-left: 20px; 
+  padding-right: 20px;
 }
 
 .card-items .item h3 {
@@ -739,7 +739,7 @@ footer p {
   font-size: 16px;
   font-weight: normal;
   margin: 20px 0 20px 0;
-  width: 240px;
+  width: 219px;
 }
 
 .card-items .item button {
@@ -749,15 +749,15 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   height: 40px;
-  width: 240px;
+  width: 219px;
 }
 
 .card-img {
   background-color: #ff6666 ;
-  height: 180px;
-  width: 240px;
+  height: 146px;
+  width: 219px;
   text-align: center; 
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 .statistic {
@@ -772,7 +772,7 @@ footer p {
 .stat-info {
   font-size: 33px;
   line-height: 35px;
-  width: 240px;
+  width: 219px;
 }
 
 .history-init {
@@ -797,7 +797,6 @@ footer p {
 
 .subscribe {
   background-color: white;
-  height: 300px;
 }
 
 .submit-form {
@@ -835,7 +834,7 @@ footer p {
 .arrows {
   display: none;
   font-size: 50px;
-  padding-top: 155px;
+  padding-top: 140px;
 }
 
 .nonblocked-arrow {

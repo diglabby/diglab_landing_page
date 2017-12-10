@@ -1,59 +1,70 @@
 // All pages:
 $(document).ready(function () {
   $('.main-header__bars').on('click', function () {
-    $('.nav__list').toggle('slow')
-  })
-
+    $('.nav__list').toggle('slow');
+  });
 // Main page
 // smooth scroll to first content block
   $('.pointerdown').on('click', function (event) {
     $('html, body').animate({
       scrollTop: $('.scrollhere').offset().top
     }, 800, function () {
-    })
-  })
+    });
+  });
 // CTA buttons panel shown on scroll
-  $('.buttons').hide()
+/*  $('.buttons').hide();
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
-        $('.buttons').show()
+        $('.buttons').show();
       }
-    })
-  })
+    });
+  });*/
 // CTA buttons panel attached to footer
+
   $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 525) {
+    if ( $(window).scrollTop() + $(window).height() > $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() - 75 ) ) {
       $('.buttons').css({'position': 'relative', 'z-index': 1});
-    } else if ($(window).scrollTop() + $(window).height() < $(document).height() - 600) {
-      $('.buttons').css({'bottom': 0, 'position': 'fixed'});
+    } else if ( $(window).scrollTop() + $(window).height() < $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() ) ) {
+      $('.buttons').css({'bottom': 0, 'position': 'fixed', 'z-index': 9999});
     }
-  })
+    $('.buttons').show();
+  });
 
 // Volunteers and initiatives pages
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
-      $('.main-wrapper__button').css({'bottom': 300, 'position': 'absolute'})
-    } else {
-      $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'})
+    if ($(window).scrollTop() + $(window).height() > $(document).height() - 225) {
+      $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
+    } else if ($(window).scrollTop() + $(window).height() < $(document).height() - 300) {
+      $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'});
     }
-  })
+  });
 // Top menu scrolling
   $(window).scroll(function () {
     if ($(window).scrollTop() == 0) {
-      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 1)')
+      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 1)');
     } else {
-      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.6)')
+      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.6)');
     }
-  })
-})
+  });
+});
 
 //Slider histories initiatives and volunters
-  var cur = 1;
+  var currents = {
+    curInit: 1,
+    curVol: 1
+  };
   $('.arrows i').on('click', function(ev) {
     var arr = ev.target.parentNode.parentNode.children;
-    console.log(ev.target.parentNode.parentNode.children);
+    var cur, check;
+    if ( ~ev.target.parentNode.parentNode.className.indexOf("vol") ) {
+      cur = currents.curVol;
+      check = "vol";
+    } else if ( ~ev.target.parentNode.parentNode.className.indexOf("in") ) {
+      cur = currents.curInit;
+      check = "init";
+    }
     if ( ( ~ev.target.className.indexOf("fa-caret-left") && cur === 1 ) || ( ~ev.target.className.indexOf("fa-caret-right") && cur === arr.length - 2 ) ) {
       return;
     } else if ( ~ev.target.className.indexOf("fa-caret-left") ) {
@@ -79,6 +90,11 @@ $(document).ready(function () {
       } else if ( sign === "minus" ) cur -= 1;
       arr[cur].classList.remove(remove);
     }
+  }
+  if (check === "vol") {
+    currents.curVol = cur;
+  } else if (check === "init") {
+    currents.curInit = cur;
   }
   });
 

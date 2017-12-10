@@ -286,7 +286,7 @@ p, li {
 .main-wrapper {
   flex: 1;
   padding-top: 35px;
-  padding-bottom: 35px;
+ 
   position: relative; }
   .main-wrapper .main-wrapper__top {
     display: flex;
