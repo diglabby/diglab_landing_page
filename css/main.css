@@ -399,10 +399,17 @@ footer p {
   padding-bottom: 0
 }
 
+.copyleft {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  display: inline;
+  padding: 5px 10px 10px 5px;
+}
+
 .copyleft * {
   display: inline-block;
   line-height: 16px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .copyleft i {
@@ -797,6 +804,11 @@ footer p {
   padding-right: 20px;
 }
 
+.stat-items .item {
+  padding-left: 19px; 
+  padding-right: 19px; 
+}
+
 .card-items .item h3 {
   font-size: 28px;
 }
@@ -807,6 +819,10 @@ footer p {
   font-weight: normal;
   margin: 20px 0 20px 0;
   width: 219px;
+}
+
+.card-init .item p {
+  font-weight: bold;
 }
 
 .card-items .item button {
@@ -839,7 +855,7 @@ footer p {
 .stat-info {
   font-size: 33px;
   line-height: 35px;
-  width: 219px;
+  width: 221px;
 }
 
 .history-init {
@@ -867,6 +883,16 @@ footer p {
 }
 
 .submit-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -879,7 +905,6 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   padding: 5px 30px 5px 30px;
-  margin-left: 50px;
 }
 
 .submit-form input {
@@ -888,6 +913,7 @@ footer p {
   font-size: 19px;
   height: 37px;
   width: 300px;
+  margin-right: 20px;
 }
 
 .without-bottom-margin {
@@ -927,16 +953,19 @@ footer p {
   font-size: 24px;
  }
  .submit-form {
-  text-align: left;
- }
- .submit-form button {
-  display: block;
-  margin-left: 0;
-  margin-top: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
  }
 .submit-form input {
   border: 1px #333333 solid;
   font-size: 17px;
+  margin-right: 0;
+  margin-bottom: 20px;
  }
  .history-init h3, .history-vol h3 {
   margin-top: 0;
@@ -947,8 +976,5 @@ footer p {
  }
 .item-nonactive {
   display: none;
- }
-.card-items .item p {
-  font-weight: bold;
  }
 }

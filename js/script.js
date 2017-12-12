@@ -58,10 +58,10 @@ $(document).ready(function () {
   $('.arrows i').on('click', function(ev) {
     var arr = ev.target.parentNode.parentNode.children;
     var cur, check;
-    if ( ~ev.target.parentNode.parentNode.className.indexOf("vol") ) {
+    if ( ~ev.target.parentNode.parentNode.className.indexOf("card-vol") ) {
       cur = currents.curVol;
       check = "vol";
-    } else if ( ~ev.target.parentNode.parentNode.className.indexOf("in") ) {
+    } else if ( ~ev.target.parentNode.parentNode.className.indexOf("card-init") ) {
       cur = currents.curInit;
       check = "init";
     }
