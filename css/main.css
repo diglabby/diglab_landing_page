@@ -883,6 +883,11 @@ footer p {
 }
 
 .submit-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#mc-embedded-subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -893,8 +898,6 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .submit-form button {
@@ -908,6 +911,7 @@ footer p {
 }
 
 .submit-form input {
+  border: 1px #333333 solid;
   color: #666666;
   font-family: 'PT Sans';
   font-size: 19px;
@@ -952,7 +956,7 @@ footer p {
 .subscribe .section-title {
   font-size: 24px;
  }
- .submit-form {
+#mc-embedded-subscribe-form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -962,7 +966,6 @@ footer p {
           flex-direction: column;
  }
 .submit-form input {
-  border: 1px #333333 solid;
   font-size: 17px;
   margin-right: 0;
   margin-bottom: 20px;
