@@ -815,7 +815,7 @@ footer p {
 }
 
 .card-items .item h3 {
-  font-size: 23px;
+  font-size: 22px;
   width: 219px;
 }
 
@@ -826,12 +826,10 @@ footer p {
   margin: 20px 0 20px 0;
   overflow: hidden;
   width: 219px;
-  height: 110px;
 }
 
 .card-init .item p {
   font-weight: bold;
-  height: 155px;
 }
 
 .card-items .item button {
@@ -959,7 +957,7 @@ footer p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
  }
- .stat-digits {
+.stat-digits {
   font-size: 50px;
 }
 .stat-info {
@@ -1002,7 +1000,6 @@ footer p {
   }
   .card-items .item p {
     width: 270px;
-    height: 110px;
   }
   .card-items .item h3 {
     font-size: 24px;

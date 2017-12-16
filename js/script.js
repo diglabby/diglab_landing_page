@@ -48,6 +48,31 @@ $(document).ready(function () {
       $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.6)');
     }
   });
+
+  function setHeightOfHistories(selector) {
+    var entries = selector + " .item p";
+    var arr = [];
+    for ( var i = 0; i < $(entries).length; i++ ) {
+      document.querySelectorAll(entries)[i].style.height = "initial";
+      arr.push( document.querySelectorAll(entries)[i].offsetHeight );
+    }
+    $(entries).css({ 'height': Math.max(...arr) });
+  }
+  setHeightOfHistories(".card-vol");
+  setHeightOfHistories(".card-init");
+
+    $('.arrows').on('click', function (event) {
+      console.log(1);
+      setHeightOfHistories(".card-vol");
+      setHeightOfHistories(".card-init"); 
+  });
+
+    $(window).on('resize', function (event) {
+      console.log(2);
+      setHeightOfHistories(".card-vol");
+      setHeightOfHistories(".card-init"); 
+  });
+
 });
 
 //Slider histories initiatives and volunters
