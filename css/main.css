@@ -811,7 +811,7 @@ footer p {
 
 .stat-items .item {
   padding-left: 19px; 
-  padding-right: 19px; 
+  padding-right: 19px;
 }
 
 .card-items .item h3 {
@@ -824,16 +824,14 @@ footer p {
   font-size: 16px;
   font-weight: normal;
   margin: 20px 0 20px 0;
+  overflow: hidden;
   width: 219px;
-  height: 145px;
-}
-
-.card-vol .item p {
-  height: 105px;
+  height: 110px;
 }
 
 .card-init .item p {
   font-weight: bold;
+  height: 155px;
 }
 
 .card-items .item button {
@@ -846,12 +844,9 @@ footer p {
   width: 219px;
 }
 
-.card-img {
-  background-color: #ff6666 ;
+.card-img img {
   height: 146px;
   width: 219px;
-  text-align: center; 
-  padding-top: 70px;
 }
 
 .statistic {
@@ -970,6 +965,7 @@ footer p {
 .stat-info {
   font-size: 18px;
   line-height: 20px;
+  width: auto;
 }
 .subscribe .section-title {
   font-size: 24px;
@@ -998,4 +994,21 @@ footer p {
 .item-nonactive {
   display: none;
  }
+}
+@media (min-width: 420px) and (max-width: 1023px) {
+  .card-img img {
+  height: 180px;
+  width: 270px;
+  }
+  .card-items .item p {
+    width: 270px;
+    height: 110px;
+  }
+  .card-items .item h3 {
+    font-size: 24px;
+    width: 270px;
+  }
+  .arrows {
+    padding-top: 150px;
+  }
 }
