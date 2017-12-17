@@ -24,22 +24,24 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ( $(window).scrollTop() + $(window).height() > $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() - 75 ) ) {
+      $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
       $('.buttons').css({'position': 'relative', 'z-index': 1});
     } else if ( $(window).scrollTop() + $(window).height() < $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() ) ) {
       $('.buttons').css({'bottom': 0, 'position': 'fixed', 'z-index': 9999});
+      $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'});
     }
     $('.buttons').show();
   });
 
 // Volunteers and initiatives pages
 
-  $(window).scroll(function () {
+/*  $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 225) {
       $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
     } else if ($(window).scrollTop() + $(window).height() < $(document).height() - 300) {
       $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'});
     }
-  });
+  });*/
 // Top menu scrolling
   $(window).scroll(function () {
     if ($(window).scrollTop() == 0) {
@@ -60,17 +62,18 @@ $(document).ready(function () {
   }
   setHeightOfHistories(".card-vol");
   setHeightOfHistories(".card-init");
+  setHeightOfHistories(".card-projects");
 
     $('.arrows').on('click', function (event) {
-      console.log(1);
       setHeightOfHistories(".card-vol");
-      setHeightOfHistories(".card-init"); 
+      setHeightOfHistories(".card-init");
+      setHeightOfHistories(".card-projects");
   });
 
     $(window).on('resize', function (event) {
-      console.log(2);
       setHeightOfHistories(".card-vol");
-      setHeightOfHistories(".card-init"); 
+      setHeightOfHistories(".card-init");
+      setHeightOfHistories(".card-projects");
   });
 
 });
@@ -78,7 +81,8 @@ $(document).ready(function () {
 //Slider histories initiatives and volunters
   var currents = {
     curInit: 1,
-    curVol: 1
+    curVol: 1,
+    curProj: 1
   };
   $('.arrows i').on('click', function(ev) {
     var arr = ev.target.parentNode.parentNode.children;
@@ -89,7 +93,15 @@ $(document).ready(function () {
     } else if ( ~ev.target.parentNode.parentNode.className.indexOf("card-init") ) {
       cur = currents.curInit;
       check = "init";
+    } else if ( ~ev.target.parentNode.parentNode.className.indexOf("card-projects") ) {
+      cur = currents.curProj;
+      check = "proj";
     }
+
+    if ( ~ev.target.parentNode.parentNode.className.indexOf("card-projects") && $(window).width() > 1023 ) {
+     return;
+    }
+
     if ( ( ~ev.target.className.indexOf("fa-caret-left") && cur === 1 ) || ( ~ev.target.className.indexOf("fa-caret-right") && cur === arr.length - 2 ) ) {
       return;
     } else if ( ~ev.target.className.indexOf("fa-caret-left") ) {
@@ -116,12 +128,23 @@ $(document).ready(function () {
       arr[cur].classList.remove(remove);
     }
   }
+
   if (check === "vol") {
     currents.curVol = cur;
   } else if (check === "init") {
     currents.curInit = cur;
+  } else if (check === "proj") {
+    currents.curProj = cur;
   }
   });
+
+  if ( $(window).width() > 1023 ) {
+    $('.arrows')[0].classList.add("blocked-arrow");
+    $('.arrows')[1].classList.add("blocked-arrow");
+  } else {
+    $('.arrows')[0].classList.add("blocked-arrow");
+    $('.arrows')[1].classList.add("nonblocked-arrow");
+  }
 
 // <!-- Start of Async Drift Code -->
 //!(function () {

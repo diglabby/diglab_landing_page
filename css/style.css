@@ -173,7 +173,7 @@ p, li {
 	  display: flex!important;
 	  padding-left: 1%;
 	  padding-right: 1%;
-          width: 690px; }
+          width: 850px; }
 	.nav__lang {
           width: 15%; } }
       @media only screen and (max-width: 768px) {
@@ -285,7 +285,6 @@ p, li {
 
 .main-wrapper {
   flex: 1;
-  padding-top: 35px;
  
   position: relative; }
   .main-wrapper .main-wrapper__top {
@@ -726,3 +725,257 @@ footer {
     margin: 0 0 15px -5px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Page of Community */
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.item {  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+  font-family: Ubuntu;
+  font-weight: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+
+.card-items .item h3 {
+  font-size: 24px;
+  width: 219px;
+}
+
+.card-items .item p {
+  font-family: 'PT Sans';
+  font-size: 16px;
+  font-weight: normal;
+  margin: 20px 0 20px 0;
+  overflow: hidden;
+  width: 219px;
+}
+
+.card-items .item button {
+  background-color: #cccccc;
+  border: 1px solid #333333;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  width: 219px;
+}
+
+.card-img {
+  height: 146px;
+  width: 219px;
+  background-color: purple;
+}
+
+.current-projects {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.arrows {
+  color: #4d4d4d;
+  display: inherit;
+  font-size: 50px;
+  padding-top: 160px;
+}
+
+.nonblocked-arrow {
+  opacity: 1;
+}
+
+.nonblocked-arrow i:hover {
+  color: #CCFF00;
+  cursor: pointer;
+}
+
+.blocked-arrow {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.tools {
+  background-color: #e6e6e6;
+  color: #ffffff;
+}
+
+.tools h2 {
+  text-shadow: 1px 1px 1px black;
+}
+
+.card-tools {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-tools .item div i {
+  font-size: 65px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.card-tools .item div a {
+  font-size: 26px;
+  padding-left: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.card-tools .item p {
+  font-weight: 700;
+}
+
+.github-activity {
+  background-color: #333333;
+}
+
+.github-activity h2 {
+  color: #ccff00;
+}
+
+.module-place {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.subscribe {
+  background-color: white;
+}
+
+.submit-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#mc-embedded-subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submit-form button {
+  background-color: #cccccc;
+  border: 1px #333333 solid;
+  color: #333333;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 30px 5px 30px;
+}
+
+.submit-form input {
+  border: 1px #333333 solid;
+  color: #666666;
+  font-family: 'PT Sans';
+  font-size: 19px;
+  height: 37px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.without-bottom-margin {
+  margin-bottom: 0;
+}
+
+.without-top-margin {
+  margin-top: 0;
+}
+
+@media (max-width: 1023px) {
+ .current-projects h2, .tools h2 {
+  font-size: 24px;
+ }
+ .card-items .item h3 {
+  font-size: 20px;
+ }
+ .card-items .item p {
+  font-size: 13px;
+ }
+ .item-nonactive {
+  display: none;
+ }
+ .card-tools {
+  align-items: center;
+  flex-direction: column;
+ }
+ .card-tools .item div i {
+  font-size: 60px;
+  text-shadow: 1px 1px 1px black;
+}
+.card-tools .item div a {
+  font-size: 20px;
+}
+.subscribe .section-title {
+  font-size: 24px;
+ }
+ #mc-embedded-subscribe-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+ }
+ .submit-form input {
+  font-size: 17px;
+  margin-right: 0;
+  margin-bottom: 20px;
+ }
+ .list-inline {
+  margin-bottom: 10px;
+ }
+}
+@media (min-width: 420px) and (max-width: 1023px) {
+  .card-img {
+  height: 180px;
+  width: 270px;
+  }
+  .card-items .item p {
+    width: 270px;
+  }
+  .card-items .item h3 {
+    width: 270px;
+  }
+  .arrows {
+    padding-top: 170px;
+  }
+}
+@media (max-width: 420px) {
+  .card-projects .item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .arrows {
+    padding-top: 155px;
+  }
+  .submit-form input {
+    width: 200px;
+  }
+}

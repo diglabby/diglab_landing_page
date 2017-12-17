@@ -852,6 +852,10 @@ footer p {
   color: #CCFF00;
 }
 
+.statistic h2 {
+  font-size: 24px;
+}
+
 .stat-digits {
   font-size: 75px;
 }
@@ -1007,5 +1011,14 @@ footer p {
   }
   .arrows {
     padding-top: 150px;
+  }
+}
+@media (max-width: 420px) {
+  .card-vol .item, .card-init .item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .submit-form input {
+    width: 200px;
   }
 }
