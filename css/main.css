@@ -853,7 +853,7 @@ footer p {
 }
 
 .statistic h2 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .stat-digits {
@@ -926,6 +926,7 @@ footer p {
   height: 37px;
   width: 300px;
   margin-right: 20px;
+  padding-left: 5px
 }
 
 .without-bottom-margin {
@@ -960,7 +961,15 @@ footer p {
 .stat-items {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: flex-start;
  }
+.stat-items .item {
+  padding-left: 0;
+  width: 50%;
+}
+.stat-items .item:last-child {
+  padding-top: 20px;
+}
 .stat-digits {
   font-size: 50px;
 }
@@ -969,7 +978,7 @@ footer p {
   line-height: 20px;
   width: auto;
 }
-.subscribe .section-title {
+.subscribe .section-title, .statistic h2 {
   font-size: 24px;
  }
 #mc-embedded-subscribe-form {
@@ -997,28 +1006,35 @@ footer p {
   display: none;
  }
 }
-@media (min-width: 420px) and (max-width: 1023px) {
+@media (min-width: 370px) and (max-width: 1023px) {
   .card-img img {
-  height: 180px;
-  width: 270px;
+    height: 100%;
+    width: 100%;
+  }
+  .card-vol .item, .card-init .item {
+    padding-left: 0;
+    padding-right: 0;
   }
   .card-items .item p {
-    width: 270px;
+    width: 100%;
+    max-width: 600px
   }
   .card-items .item h3 {
     font-size: 24px;
     width: 270px;
   }
   .arrows {
-    padding-top: 150px;
+    position: absolute;
   }
 }
-@media (max-width: 420px) {
-  .card-vol .item, .card-init .item {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+@media (max-width: 348px) {
+  .stat-items {
+  justify-content: center;
+ }
+  .stat-items .item {
+  width: auto;
+}
   .submit-form input {
-    width: 200px;
+    width: 250px;
   }
 }

@@ -51,6 +51,7 @@ $(document).ready(function () {
     }
   });
 
+//compute dynamical height of paragraphs in histories-blocks
   function setHeightOfHistories(selector) {
     var entries = selector + " .item p";
     var arr = [];
@@ -74,11 +75,28 @@ $(document).ready(function () {
       setHeightOfHistories(".card-vol");
       setHeightOfHistories(".card-init");
       setHeightOfHistories(".card-projects");
+      setPositionOfArrows();
   });
+  
+  setPositionOfArrows();
 
 });
 
-//Slider histories initiatives and volunters
+//compute alignment of arrows on mobile devices
+
+function setPositionOfArrows() {
+    if ( $(window).width() > 1024 ) return;
+    var position = $(".card-img:visible:first").position();
+    var left = position.left - 27;
+    var right = position.left + $(".card-img:visible:first").width() + 9;
+    var top = ( $(".card-img:visible:first").height() - 120 ) / 2.2;
+    $(".arrows:eq(0), .arrows:eq(2)").css("left", left + "px");
+    $(".arrows:eq(1), .arrows:eq(3)").css("left", right + "px");
+    $(".arrows").css("top", top + "px");
+}
+
+//Carousel histories initiatives and volunters
+
   var currents = {
     curInit: 1,
     curVol: 1,
