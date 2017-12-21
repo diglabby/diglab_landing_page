@@ -728,6 +728,11 @@ footer {
 
 /* Page of Community */
 
+.section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,7 +787,7 @@ footer {
   width: 219px;
 }
 
-.card-img {
+.card-img img {
   height: 146px;
   width: 219px;
   background-color: purple;
@@ -953,30 +958,34 @@ footer {
   margin-bottom: 10px;
  }
 }
-@media (min-width: 420px) and (max-width: 1023px) {
-  .card-img {
-  height: 180px;
-  width: 270px;
+@media (min-width: 370px) and (max-width: 1023px) {
+  .card-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .card-items .item {
+    padding-left: 0;
+    padding-right: 0;
   }
   .card-items .item p {
-    width: 270px;
+    width: 100%;
+    max-width: 600px
   }
   .card-items .item h3 {
     width: 270px;
   }
   .arrows {
-    padding-top: 170px;
+    position: absolute;
   }
 }
-@media (max-width: 420px) {
-  .card-projects .item {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .arrows {
-    padding-top: 155px;
-  }
+@media (max-width: 348px) {
+  .stat-items {
+  justify-content: center;
+ }
+  .stat-items .item {
+  width: auto;
+}
   .submit-form input {
-    width: 200px;
+    width: 250px;
   }
 }

@@ -89,7 +89,7 @@ function setPositionOfArrows() {
     var position = $(".card-img:visible:first").position();
     var left = position.left - 27;
     var right = position.left + $(".card-img:visible:first").width() + 9;
-    var top = ( $(".card-img:visible:first").height() - 120 ) / 2.2;
+    var top = ( $(".card-img:visible:first").height() - 120 ) / 2.5;
     $(".arrows:eq(0), .arrows:eq(2)").css("left", left + "px");
     $(".arrows:eq(1), .arrows:eq(3)").css("left", right + "px");
     $(".arrows").css("top", top + "px");
@@ -156,13 +156,7 @@ function setPositionOfArrows() {
   }
   });
 
-  if ( $(window).width() > 1023 ) {
-    $('.arrows')[0].classList.add("blocked-arrow");
-    $('.arrows')[1].classList.add("blocked-arrow");
-  } else {
-    $('.arrows')[0].classList.add("blocked-arrow");
-    $('.arrows')[1].classList.add("nonblocked-arrow");
-  }
+
 
 // <!-- Start of Async Drift Code -->
 //!(function () {
