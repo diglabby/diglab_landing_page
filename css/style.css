@@ -536,7 +536,7 @@ p, li {
     align-items: center;
     justify-content: flex-start;
     padding-top: 35px;
-    padding-bottom: 100px;
+    padding-bottom: 55px;
     background-color: #333;
     color: #CCFF00; }
     @media only screen and (max-width: 1366px) {
@@ -764,7 +764,7 @@ footer {
 }
 
 .card-items .item h3 {
-  font-size: 24px;
+  font-size: 22px;
   width: 219px;
 }
 
@@ -793,6 +793,10 @@ footer {
   background-color: purple;
 }
 
+.history-init {
+  background-color: #ececec;
+}
+
 .current-projects {
   background-color: #ffffff;
   color: #333333;
@@ -800,7 +804,7 @@ footer {
 
 .arrows {
   color: #4d4d4d;
-  display: inherit;
+  display: none;
   font-size: 50px;
   padding-top: 160px;
 }

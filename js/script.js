@@ -51,6 +51,18 @@ $(document).ready(function () {
     }
   });
 
+//add arrows on comminty page
+  function showArrows() {
+    if ( $(".current-projects").length && $(window).width() > 1024 ) {
+      $(".arrows").show();
+      $(".arrows").css("padding-top", "145px");
+    } else if ( $(window).width() < 1024 ) {
+      $(".arrows").show();
+    } else if ( !$(".current-projects").length && $(window).width() >= 1024 ) {
+      $(".arrows").hide();
+    }
+  }
+
 //compute dynamical height of paragraphs in histories-blocks
   function setHeightOfHistories(selector) {
     var entries = selector + " .item p";
@@ -76,9 +88,11 @@ $(document).ready(function () {
       setHeightOfHistories(".card-init");
       setHeightOfHistories(".card-projects");
       setPositionOfArrows();
+      showArrows();
   });
   
   setPositionOfArrows();
+  showArrows();
 
 });
 
