@@ -7,7 +7,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Тут валанцёры-праграмісты, дызайнеры, перакладчыкі могуць падаць заяўку і знайсці грамадзянскую ініцыятыву.">
-      <meta name="author" content="">
+      <meta name="author" content="Falanster">
+      <meta name="designer" content="Sviatlana Ermakovich">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
       <title>For volunteer - Digital Lab</title>
@@ -22,7 +23,7 @@
       <script src="https://use.fontawesome.com/57e075aec4.js"></script>
 
       <!-- jQuery -->
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -57,13 +58,14 @@
             <li><a href="http://it.falanster.by/blog/">blog</a></li>
             <li><a href="initiative-en.html">for initiative</a></li>
             <li><a href="#" class="nav-current">for volunteer</a></li>
+            <li><a href="community-en.html">community</a></li>
             <li><a href="https://geeklauka.by/" target="_blank">geek shop <i class="fa fa-linux" aria-hidden="true"></i></a></li>
           </ul>
           <!-- Lang panel -->
           <div class="nav__lang">
             <a href="volunteers.html" >BY</a>
-            <a href="#" >TRAS</a>
-            <a href="volunteers-en.html" class="lang-active">EN</a>
+            <a href="volunteers-tras.html" >TRAS</a>
+            <a href="#" class="lang-active">EN</a>
             <a href="volunteers-ru.html" >RU</a>
           </div>
       </nav>
@@ -126,6 +128,40 @@
           </div>
         </section>
 
+  <div class="section history-vol">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+            <h2 class="section-title">History of volunteers</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 items card-items card-vol">
+          <div class="arrows blocked-arrow"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+          <div class="item">
+            <h3>Dmitri Buimistrov,<br>frontend developer</h3>
+            <div class="card-img"><img src="img/histories/Dima.jpg" alt="Photo of Dmitri Buimistrov"></div>
+            <p>"Digital Lab is a place where you can get experience."</p>
+            <button onclick="window.open('https://it.falanster.by/blog/2017/06/05/zmicer-it-volunteer/','_blank')">read the history</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3>Anastasia Frost,<br>designer</h3>
+            <div class="card-img"><img src="img/histories/nascia.jpg" alt="Photo of Anastasia Frost"></div>
+            <p>"IT volunteering is a good opportunity to reveal yourself, find like-minded people and do something useful for those who don’t have all necessary resources."</p>
+            <button onclick="window.open('https://it.falanster.by/blog/2017/09/17/design-frost/','_blank')">read the history</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3>Svetlana Kotikova,<br>business analyst</h3>
+            <div class="card-img"><img src="img/histories/svetlana.jpg" alt="Photo of Svetlana Kotikova"></div>
+            <p>"Success of the volunteer project depends on personal responsibility. You shouldn’t be afraid."</p>
+            <button onclick="window.open('https://it.falanster.by/blog/2017/11/25/kotikava-how-to-make-website/','_blank')">read the history</button>
+          </div>
+          <div class="arrows nonblocked-arrow"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    </div>
+  </div>
+
         <!-- About working methods -->
         <section class="main-wrapper__below">
           <div class="main-wrapper__below-container">
@@ -166,9 +202,34 @@
             <!-- <iframe class="main-wrapper__video-player" width="760" height="460" src="https://www.youtube.com/embed/HRcsBrd4OoE" frameborder="0" allowfullscreen></iframe> -->
           </div>
         </section>
-    </main>
+
     <!-- Green button. Fixed positions, when on a footer - absolute (see script.js for customization) -->
     <a href="https://docs.google.com/forms/d/1n3NvUiVhCghEy12hNpZ-aPFU3R_dB-xJa64cOPTWgc8/viewform" class="main-wrapper__button" onclick="goog_report_conversion()">become volunteer</a>
+
+  <div class="section subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+          <h2 class="section-title">Do you want to receive monthly news?<br>Subscribe!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 submit-form">
+          <!-- Begin MailChimp Signup Form -->
+          <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <form action="https://falanster.us6.list-manage.com/subscribe/post?u=a85c8705ea30c06ccde479258&amp;id=53758bd248" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="e-mail" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a85c8705ea30c06ccde479258_53758bd248" tabindex="-1" value=""></div>
+            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe</button>
+          </form>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -180,6 +241,7 @@
               <li><a href="https://it.falanster.by//blog">blog</a></li>
               <li><a href="#" class="nav-current">for volunteer</a></li>
               <li><a href="initiative-en.html">for initiative</a></li>
+              <li><a href="community-en.html">Community</a></li>
               <li><a href="partners-en.html">our partners</a></li>
             </ul>
             <ul class="contact list-inline">
