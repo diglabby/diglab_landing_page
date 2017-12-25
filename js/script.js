@@ -89,12 +89,80 @@ $(document).ready(function () {
       setHeightOfHistories(".card-projects");
       setPositionOfArrows();
       showArrows();
+      if ( $(window).width() < 1023 ) {
+        resetMobile(".card-vol");
+        resetMobile(".card-init");
+        resetMobile(".card-projects");
+      } else {
+        resetDesktop(".card-projects");
+        resetDesktop(".card-vol");
+        resetDesktop(".card-init");
+      }
   });
   
   setPositionOfArrows();
   showArrows();
 
+  if ( $(".card-projects").length && $(window).width() > 1023 && $(".card-projects").children().length > 5 ) {
+    $(".card-projects").children().each(function(index, item) {
+      if ( index > 3 && index !== $(".card-projects").children().length - 1 ) {
+        $( this ).hide();
+      }
+    });
+  } else if ( $(".card-projects").length && $(window).width() > 1023 && $(".card-projects").children().length <= 5 ) {
+      $(".arrows").each(function() {
+        if ( $(this).hasClass("nonblocked-arrow") ) {
+          $( this ).removeClass("nonblocked-arrow");
+          $( this ).addClass("blocked-arrow");
+        }
+      });
+  }
+
 });
+
+//functions for reset of carousel
+function resetMobile(sel) {
+  if ( !$(sel).length ) {
+    return;
+  }
+  currents.curInit = currents.curVol = currents.curProj = 1;
+  $(sel).children().each(function(index, item) {
+    if ( index > 1 && index !== $(sel).children().length - 1 ) {
+      $( this ).hide();
+    } else if ( index === 1 ) {
+      $( this ).show();
+    } else if ( index === 0 ) {
+      $( this ).removeClass("nonblocked-arrow");
+      $( this ).addClass("blocked-arrow");
+    } else if ( index === $(sel).children().length - 1 ) {
+      $( this ).removeClass("blocked-arrow");
+      $( this ).addClass("nonblocked-arrow");
+    }
+  });
+ }
+
+ function resetDesktop(sel) {
+  if ( !$(sel).length ) {
+    return;
+  }
+  currents.curInit = currents.curVol = currents.curProj = 1;
+  $(sel).children().each(function(index, item) {
+    if ( index === 0 ) {
+      $( this ).removeClass("nonblocked-arrow");
+      $( this ).addClass("blocked-arrow");
+    } else if ( index > 4 && index === $(sel).children().length - 1 ) {
+      $( this ).removeClass("blocked-arrow");
+      $( this ).addClass("nonblocked-arrow");
+    } else if ( index === 4 && index === $(sel).children().length - 1 ) {
+      $( this ).removeClass("nonblocked-arrow");
+      $( this ).addClass("blocked-arrow");
+    } else if ( index > 0 && index < 4 ) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+ });
+}
 
 //compute alignment of arrows on mobile devices
 
@@ -118,7 +186,7 @@ function setPositionOfArrows() {
   };
   $('.arrows i').on('click', function(ev) {
     var arr = ev.target.parentNode.parentNode.children;
-    var cur, check;
+    var cur, check, projects;
     if ( ~ev.target.parentNode.parentNode.className.indexOf("card-vol") ) {
       cur = currents.curVol;
       check = "vol";
@@ -131,33 +199,53 @@ function setPositionOfArrows() {
     }
 
     if ( ~ev.target.parentNode.parentNode.className.indexOf("card-projects") && $(window).width() > 1023 ) {
-     return;
-    }
+      projects = true;
+    } else projects = false;
 
-    if ( ( ~ev.target.className.indexOf("fa-caret-left") && cur === 1 ) || ( ~ev.target.className.indexOf("fa-caret-right") && cur === arr.length - 2 ) ) {
+    if ( ( ~ev.target.className.indexOf("fa-caret-left") && cur === 1 ) || ( ~ev.target.className.indexOf("fa-caret-right") && ( cur === arr.length - 2 || ( projects === true && cur === arr.length - 4 ) ) ) ) {
       return;
     } else if ( ~ev.target.className.indexOf("fa-caret-left") ) {
-      arrows("item-nonactive", "item-nonactive", cur, "minus");
+      arrows("item-nonactive", "item-nonactive", cur, "minus", projects);
     } else if ( ~ev.target.className.indexOf("fa-caret-right") ) {
-      arrows("item-nonactive", "item-nonactive", cur, "plus");
+      arrows("item-nonactive", "item-nonactive", cur, "plus", projects);
     }
      if ( cur === 1 ) {
       arrows("nonblocked-arrow", "blocked-arrow", 0);
-     } else if ( cur === arr.length - 2 ) {
+      arrows("blocked-arrow", "nonblocked-arrow", arr.length - 1);
+     } else if ( cur === arr.length - 2 || ( projects === true && cur === arr.length - 4 ) ) {
       arrows("nonblocked-arrow", "blocked-arrow", arr.length - 1);
+      arrows("blocked-arrow", "nonblocked-arrow", 0);
      } else {
       arrows("blocked-arrow", "nonblocked-arrow", 0);
       arrows("blocked-arrow", "nonblocked-arrow", arr.length - 1);
      }
 
-  function arrows(remove, add, num, sign) {
-    if (!sign) arr[num].classList.remove(remove);
-    arr[num].classList.add(add);
+  function arrows(remove, add, num, sign, projects) {
+    var show;
+    if (!sign) {
+      arr[num].classList.remove(remove);
+      arr[num].classList.add(add);
+      return;
+    }
     if (sign) {
-      if ( sign === "plus" ) {
+      if ( projects && sign === "plus" ) {
+        arr[num].style.display = "none";
+        show = cur + 3;
         cur += 1;
-      } else if ( sign === "minus" ) cur -= 1;
-      arr[cur].classList.remove(remove);
+      } else if ( sign === "plus" ) {
+        arr[num].style.display = "none";
+        show = cur + 1;
+        cur += 1;
+      } else if ( projects && sign === "minus" ) {
+        arr[num+2].style.display = "none";
+        show = cur - 1;
+        cur -= 1;
+      } else if ( sign === "minus" ) {
+        arr[num].style.display = "none";
+        show = cur - 1;
+        cur -= 1;
+      }
+      arr[show].style.display = "inherit";
     }
   }
 
