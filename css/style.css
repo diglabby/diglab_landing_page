@@ -462,7 +462,7 @@ p, li {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
         line-height: 6.25rem;
         text-align: center;
-        margin-top: 10px; }
+        margin-top: 60px; }
         @media only screen and (max-width: 768px) {
           .main-wrapper .main-wrapper__below .main-wrapper__below-container .main-wrapper__below-header {
             line-height: 2.5rem; } }
@@ -765,6 +765,7 @@ footer {
 .card-items .item h3 {
   font-size: 22px;
   width: 219px;
+  margin-top: 0;
 }
 
 .card-items .item p {
@@ -777,7 +778,7 @@ footer {
 }
 
 .card-items .item button {
-  background-color: #cccccc;
+  background-color: #b3b3b3;
   border: 1px solid #333333;
   color: #333333;
   font-size: 18px;
@@ -792,12 +793,7 @@ footer {
   background-color: purple;
 }
 
-.history-init {
-  background-color: #ececec;
-  color: #333333;
-}
-
-.history-vol {
+.history-init, .history-vol {
   background-color: #d9d9d9;
   color: #333333;
 }
@@ -807,11 +803,15 @@ footer {
   color: #333333;
 }
 
+.card-projects .item:nth-child(7) h3 {
+  width: 222px;
+}
+
 .arrows {
   color: #4d4d4d;
   display: none;
   font-size: 50px;
-  padding-top: 160px;
+  padding-top: 115px
 }
 
 .nonblocked-arrow {
@@ -835,6 +835,10 @@ footer {
 
 .tools h2 {
   text-shadow: 1px 1px 1px black;
+}
+
+.tools a {
+  text-decoration: underline;
 }
 
 .card-tools {
@@ -923,14 +927,25 @@ footer {
 }
 
 @media (max-width: 1023px) {
- .current-projects h2, .tools h2 {
-  font-size: 24px;
- }
+  .card-items .item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card-img img {
+    height: 100%;
+    width: 100%;
+  }
  .card-items .item h3 {
-  font-size: 20px;
+  font-size: 24px;
+  width: auto;
+ }
+ .section-title, h2 {
+  font-size: 26px;
  }
  .card-items .item p {
-  font-size: 13px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px
  }
  .item-nonactive {
   display: none;
@@ -946,9 +961,6 @@ footer {
 .card-tools .item div a {
   font-size: 20px;
 }
-.subscribe .section-title {
-  font-size: 24px;
- }
  #mc-embedded-subscribe-form {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -966,23 +978,6 @@ footer {
  .list-inline {
   margin-bottom: 10px;
  }
-}
-@media (min-width: 370px) and (max-width: 1023px) {
-  .card-img img {
-    height: 100%;
-    width: 100%;
-  }
-  .card-items .item {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .card-items .item p {
-    width: 100%;
-    max-width: 600px
-  }
-  .card-items .item h3 {
-    width: 270px;
-  }
   .arrows {
     position: absolute;
   }

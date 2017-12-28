@@ -11,17 +11,8 @@ $(document).ready(function () {
     }, 800, function () {
     });
   });
-// CTA buttons panel shown on scroll
-/*  $('.buttons').hide();
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('.buttons').show();
-      }
-    });
-  });*/
-// CTA buttons panel attached to footer
 
+// CTA buttons panel attached to footer
   $(window).scroll(function () {
     if ( $(window).scrollTop() + $(window).height() > $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() - 75 ) ) {
       $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
@@ -33,15 +24,6 @@ $(document).ready(function () {
     $('.buttons').show();
   });
 
-// Volunteers and initiatives pages
-
-/*  $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 225) {
-      $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
-    } else if ($(window).scrollTop() + $(window).height() < $(document).height() - 300) {
-      $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'});
-    }
-  });*/
 // Top menu scrolling
   $(window).scroll(function () {
     if ($(window).scrollTop() == 0) {
@@ -51,19 +33,31 @@ $(document).ready(function () {
     }
   });
 
-//add arrows on comminty page
+// Changing top menu opacity
+  $('.header__nav').on('mouseover', function(event) {
+    if ( $(window).scrollTop() > 0 ) {
+      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 1)');
+    }
+  });
+  $('.header__nav').on('mouseout', function(event) {
+    if ( $(window).scrollTop() > 0 ) {
+      $('.header__nav').css('background-color', 'rgba(128, 128, 128, 0.6)');
+    }
+  });
+
+// Adding arrows on community page
   function showArrows() {
-    if ( $(".current-projects").length && $(window).width() > 1024 ) {
+    if ( $(".current-projects").length && $(window).width() > 1023 ) {
       $(".arrows").show();
-      $(".arrows").css("padding-top", "145px");
+      $(".arrows").css("padding-top", "115px");
     } else if ( $(window).width() < 1024 ) {
       $(".arrows").show();
-    } else if ( !$(".current-projects").length && $(window).width() >= 1024 ) {
+    } else if ( !$(".current-projects").length && $(window).width() >= 1023 ) {
       $(".arrows").hide();
     }
   }
 
-//compute dynamical height of paragraphs in histories-blocks
+// Compute dynamical height of paragraphs in histories-blocks
   function setHeightOfHistories(selector) {
     var entries = selector + " .item p";
     var arr = [];
@@ -117,10 +111,9 @@ $(document).ready(function () {
         }
       });
   }
-
 });
 
-//functions for reset of carousel
+// Functions for reset of carousel on mobile and desktop devices
 function resetMobile(sel) {
   if ( !$(sel).length ) {
     return;
@@ -164,10 +157,9 @@ function resetMobile(sel) {
  });
 }
 
-//compute alignment of arrows on mobile devices
-
+// Compute alignment of arrows on mobile devices
 function setPositionOfArrows() {
-    if ( $(window).width() > 1024 ) return;
+    if ( $(window).width() > 1023 ) return;
     var position = $(".card-img:visible:first").position();
     var left = position.left - 27;
     var right = position.left + $(".card-img:visible:first").width() + 9;
@@ -177,8 +169,7 @@ function setPositionOfArrows() {
     $(".arrows").css("top", top + "px");
 }
 
-//Carousel histories initiatives and volunters
-
+// Carousel histories initiatives, volunteers and current projects
   var currents = {
     curInit: 1,
     curVol: 1,
@@ -257,30 +248,3 @@ function setPositionOfArrows() {
     currents.curProj = cur;
   }
   });
-
-
-
-// <!-- Start of Async Drift Code -->
-//!(function () {
-//  var t
-//  if (t = window.driftt = window.drift = window.driftt || [], !t.init) {
-//    return t.invoked ? void (window.console && console.error && console.error('Drift snippet included twice.')) : (t.invoked = !0,
-//t.methods = [ 'identify', 'track', 'reset', 'debug', 'show', 'ping', 'page', 'hide', 'off', 'on' ],
-//t.factory = function (e) {
-//  return function () {
-//    var n
-//    return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t
-//  }
-//}, t.methods.forEach(function (e) {
-//  t[e] = t.factory(e)
-//}), t.load = function (t) {
-//  var e, n, o, r
-//  e = 3e5, r = Math.ceil(new Date() / e) * e, o = document.createElement('script'),
-//o.type = 'text/javascript', o.async = !0, o.crossorigin = 'anonymous', o.src = 'https://js.driftt.com/include/' + r + '/' + t + '.js',
-//n = document.getElementsByTagName('script')[0], n.parentNode.insertBefore(o, n)
-//})
-//  }
-//}())
-//drift.SNIPPET_VERSION = '0.2.0'
-//drift.load('ipwzpyyt22rb')
-// <!-- End of Async Drift Code -->

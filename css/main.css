@@ -855,8 +855,12 @@ footer p {
   font-size: 36px;
 }
 
-.stat-digits {
-  font-size: 70px;
+.stat-digits span {
+  font-size: 75px;
+}
+
+.stat-digits i {
+  font-size: 65px;
 }
 
 .stat-info {
@@ -967,12 +971,16 @@ footer p {
  }
 .stat-items .item {
   padding-left: 0;
+  padding-right: 10px;
   width: 50%;
 }
 .stat-items .item:last-child {
   padding-top: 20px;
 }
-.stat-digits {
+.stat-digits span {
+  font-size: 45px;
+}
+.stat-digits i {
   font-size: 40px;
 }
 .stat-info {
@@ -1007,8 +1015,6 @@ footer p {
 .item-nonactive {
   display: none;
  }
-}
-@media (min-width: 370px) and (max-width: 1023px) {
   .card-img img {
     height: 100%;
     width: 100%;
