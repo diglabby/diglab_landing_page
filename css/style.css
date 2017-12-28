@@ -765,7 +765,6 @@ footer {
 .card-items .item h3 {
   font-size: 22px;
   width: 219px;
-  margin-top: 0;
 }
 
 .card-items .item p {
@@ -938,6 +937,7 @@ footer {
  .card-items .item h3 {
   font-size: 24px;
   width: auto;
+  margin-top: 0;
  }
  .section-title, h2 {
   font-size: 26px;
