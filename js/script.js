@@ -49,8 +49,9 @@ $(document).ready(function () {
   function showArrows() {
     if ( $(".current-projects").length && $(window).width() > 1023 ) {
       $(".arrows").show();
-      $(".arrows").css("padding-top", "115px");
+      $(".arrows").css("padding-top", "145px");
     } else if ( $(window).width() < 1024 ) {
+      $(".arrows").css("padding-top", "120px");
       $(".arrows").show();
     } else if ( !$(".current-projects").length && $(window).width() >= 1023 ) {
       $(".arrows").hide();
