@@ -851,7 +851,7 @@ footer {
 }
 
 .card-tools .item div a {
-  font-size: 26px;
+  font-size: 22px;
   padding-left: 5px;
   text-shadow: 1px 1px 1px black;
 }
@@ -940,10 +940,10 @@ footer {
   margin-top: 0;
  }
  .section-title, h2 {
-  font-size: 26px;
+  font-size: 24px;
  }
  .card-items .item p {
-  font-size: 16px;
+  font-size: 13px;
   width: 100%;
   max-width: 600px
  }
