@@ -1027,6 +1027,7 @@ footer p {
     padding-right: 0;
   }
   .card-items .item p {
+    font-size: 13px;
     width: 100%;
     max-width: 600px
   }
