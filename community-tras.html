@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="be">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Фаланстэр">
+    <meta name="designer" content="Святлана Ермаковіч">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Саобшчэства - Цыфравы рамонт</title>
+
+    <meta property="og:url"           content="http://it.falanster.by/community-tras.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Саобшчэства - Цыфравая масцірская" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="http://it.falanster.by/img/logo_for_site.png" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <script src="https://use.fontawesome.com/57e075aec4.js"></script>
+    <link href="css/cc-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- GitHub Activity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="github-activity/src/github-activity.css"> 
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="github-activity/src/github-activity.js"></script>
+
+    <script type="text/javascript" src="js/gha.js"></script>
+
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="header__nav">
+      <!-- Burger. It appears only in mobile version -->
+      <a class="main-header__bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <!-- Main navigation -->
+      <ul class="nav__list">
+        <li><a href="index-tras.html">галоўная</a></li>
+        <li><a href="http://it.falanster.by/blog/">блог</a></li>
+        <li><a href="initiative.html">iнiцыацівам</a></li>
+        <li><a href="volunteers.html">валанцёрам</a></li>
+        <li><a href="#" class="nav-current">саобшчэства</a></li>
+        <li><a href="https://geeklauka.by/" target="_blank">наша точка <i class="fa fa-linux" aria-hidden="true"></i></a></li>
+      </ul>
+      <!-- Lang panel -->
+      <div class="nav__lang">
+        <a href="community.html">BY</a>
+        <a href="community-tras.html" class="lang-active">TRAS</a>
+        <a href="community-en.html">EN</a>
+        <a href="community-ru.html">RU</a>
+      </div>
+    </nav>
+    <div class="header-bottom">
+      <!--Logotype and name -->
+      <div class="container">
+        <div class="row" --="">
+          <div class="col-lg-10 col-lg-offset-1 col-sm-12 inner-header-background">
+            <a href="https://it.falanster.by/index.html"><img class="img-responsive inner-logo" src="img/logo_for_site.png" alt="logo"><h1 class="inner-title">цыфравая масцірская</h1></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+   <div class="section current-projects">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+            <h2 class="section-title">Над чэм работаем</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 items card-items card-projects">
+          <div class="arrows blocked-arrow"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+          <div class="item">
+            <h3>Модуль данэйта<br>“Doika”</h3>
+            <div class="card-img"><img src="img/projects/doika_donate-module.png" alt="Модуль данэйту “Doika”" /></div>
+            <p>Модуль для прыёма пажэртваваній некамерчэскімі організацыямі у адін клік чэрэз свой сайт. Назначэніе - упрасціць збор срэдств.</p>
+            <button onclick="window.open('https://wiki.falanster.info/wiki/Дойка','_blank')">ісчо</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3>Мадэрнизацыя<br>блога ЛМ</h3>
+            <div class="card-img"><img src="img/projects/digital-lab-blog.png" alt="Мадэрнізацыя блога ЛМ"></div>
+            <p>Усавершэнстванне дзеяцельнасці блога Лічбавай Масцерской, плашчадки "айті па-беларуски". Работа касаецца візуальнага і тэхніескага улучшэния блога.</p>
+            <button onclick="window.open('https://wiki.falanster.info/wiki/%D0%A1%D0%BF%D1%96%D1%81_%D0%BF%D0%BB%D0%B0%D0%BD%D1%83%D0%B5%D0%BC%D1%8B%D1%85_%D0%BF%D1%80%D0%B0%D0%B5%D0%BA%D1%82%D0%B0%D1%9E_%D0%A4%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D1%82%D1%8D%D1%80%D0%B0#.D0.91.D0.BB.D0.BE.D0.B3_.D0.9C.D0.B0.D0.B9.D1.81.D1.82.D1.8D.D1.80.D0.BD.D1.96','_blank')">ісчо</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3>Слэк-чат "Балбатун"</h3>
+            <div class="card-img"><img src="img/projects/bulbutun-project.png" alt="Балбатун. Анлайн чат - вэб-прыкладанне, якое дазваляе наведвальнікам сайта ўзаемадзейнічаць з удзельнікамі каналаў слэка"></div>
+            <p>Сазданне онлайн чата: web-прылажэния, каторае дазваляе пасетітелям взаімадзейнічаць з участнікамі організацыі чэрэз слэк.</p>
+            <button onclick="window.open('https://wiki.falanster.info/wiki/Чат-модуль_-_Балбатун','_blank')">ісчо</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3><br>Фаланстер 2.0</h3>
+            <div class="card-img"><img src="img/projects/falanster20.png" alt="Фаланстэр 2.0"></div>
+            <p>Улучшэніе сайта falanster.by. Праэкт па інтеграцыі новых сэрвісаў на сайт. Срэді цэляў - абеспечыць большую  віднасць деятельнасці організацыі.</p>
+            <button onclick="window.open('https://wiki.falanster.info/wiki/Паляпшаем_сайт_Фаланстэра_2.0','_blank')">чытаць історыю</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3><br>Гік-лаўка</h3>
+            <div class="card-img"><img src="img/projects/geeklauka.png" alt="Гік-лаўка"></div>
+            <p>Онлайн-крама, созданая гікамі для гікаў. Атрыбуціка распрастраняецца сагласна з ідэямі Creative Commons, свабодных цэн і  DIY.</p>
+            <button onclick="window.open('https://geeklauka.by/about.html','_blank')">ісчо</button>
+          </div>
+          <div class="item item-nonactive">
+            <h3>Мапа грамадскіх<br>прастораў</h3>
+            <div class="card-img"><img src="img/projects/public-space-map.png" alt="Мапа грамадскіх прастораў"></div>
+            <p>Інтерактыуная карта абшчэственных прастораў і арганізацый. Цэля праекта - зделаць пошук саобшчэств удобным, а работу організацый - больш аткрытай.</p>
+            <button onclick="window.open('https://wiki.falanster.info/wiki/%D0%9C%D0%B0%D0%BF%D0%B0_%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D0%B4%D1%81%D0%BA%D1%96%D1%85_%D0%B0%D1%80%D0%B3%D0%B0%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%8B%D0%B9','_blank')">ісчо</button>
+          </div>
+          <div class="arrows nonblocked-arrow"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="section tools">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+          <h2 class="section-title">Нашы парадки</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 items card-items card-tools">
+          <div class="item">
+            <div><i class="fa fa-trello" aria-hidden="true"></i><a href="https://trello.com/invite/b/9iYo5zNa/bc921ae2ad7f270e2e501b5d5d15e007/digital-lab-%D0%B0%D0%B9%D1%86%D1%96%D0%B2%D0%B0%D0%BB%D0%B0%D0%BD%D1%86%D1%91%D1%80" target="_blank">Trello</a></div>
+            <p>Мы используем джыру для бландзинак для каждай адзельнай движухи у якую уписваецца Цыфравы Рымонт. Первае знакомства неафитаў з нашым дзелам можна рэалізаваць на сцяне <a href="https://trello.com/invite/b/9iYo5zNa/bc921ae2ad7f270e2e501b5d5d15e007/digital-lab-%D0%B0%D0%B9%D1%86%D1%96%D0%B2%D0%B0%D0%BB%D0%B0%D0%BD%D1%86%D1%91%D1%80" target="_blank">#айціваланцёр</a>.</p>
+          </div>
+          <div class="item">
+            <div><i class="fa fa-slack" aria-hidden="true"></i><a href="https://falanster.slack.com/messages/C16AP3B3Q/" target="_blank">Slack</a></div>
+            <p>Наша каманда юзает слэк. Чат такой. Мы саздаём для каждай бальшой цемы сваи базары и связываим з нашами тулсами. Есць аснаўной базар  <a href="https://falanster.slack.com/messages/C16AP3B3Q/" target="_blank">#dig_lab</a>, куда инвайцим свежа завербаваных валанцёраў.</p>
+          </div>
+          <div class="item">
+            <div><i class="fa fa-github-alt" aria-hidden="true"></i><a href="https://github.com/diglabby" target="_blank">Github</a></div>
+            <p><a href="https://github.com/diglabby" target="_blank">Аснаўной</a>, аднака не адной точкай, штобы сахраниць аткрытый код, яўляецца наш гитхаб. Тут жэ вы можыце пралистаць увесь <a href="https://github.com/diglabby/tasks/issues" target="_blank">списак</a> задач пастаўляемы абшчэствинниками и там начаць развиваць цему.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="section github-activity">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+          <h2 class="section-title">Github актывнасць</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 module-place">
+          <div id="feed"></div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+      <!-- Green button. Fixed positions, when on a footer - absolute (see script.js for customization) -->
+    <a href="https://docs.google.com/forms/d/1xvajxU2tx9YequE-0bDqLgxZ5QJtwQqbOAoKcM7nHj4/viewform" class="main-wrapper__button" onclick="goog_report_conversion()">стань валанцёрам</a>
+
+    <div class="section subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+          <h2 class="section-title">Хочаш палучаць новасці кажды месяц?<br>Падпішысь!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 submit-form">
+          <!-- Begin MailChimp Signup Form -->
+          <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <form action="https://falanster.us6.list-manage.com/subscribe/post?u=a85c8705ea30c06ccde479258&amp;id=53758bd248" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="e-mail" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a85c8705ea30c06ccde479258_53758bd248" tabindex="-1" value=""></div>
+            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">падпісацца</button>
+          </form>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <ul class="bottom-menu list-inline">
+            <!-- Footer navigation -->
+            <li><a href="index-tras.html">Галоўная</a></li>
+            <li><a href="tos-tras.html">Правілы карыстання</a></li>
+            <li><a href="http://it.falanster.by/blog/">Блог</a></li>
+            <li><a href="volunteers.html">Валанцёрам</a></li>
+            <li><a href="initiative.html">Iнiцыацівам</a></li>
+            <li><a href="#" class="nav-current">Саобшчэства</a></li>
+            <li><a href="partners-tras.html">Наша крыша</a></li>
+          </ul>
+          <ul class="contact list-inline">
+            <!-- Contacts -->
+            <li>Целіфон і імэйл:</li>
+            <li><a href="mailto:falanster.by@gmail.com">falanster.by@gmail.com</a></li>
+            <li><a href="tel:+375291274267" class="contact__tel">+375 29 127 42 67</a></li>
+          </ul>
+          <p class="social"><span class="icons">
+            <a href="https://www.facebook.com/groups/1039026109504642/?fref=ts" target="_blank">
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://vk.com/dig_lab" target="_blank">
+              <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/diglabby" target="_blank">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCAmTfxxasQwNaKkljnmvc5A" target="_blank">
+              <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/groups/12028397" target="_blank">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a></span>
+          </p>
+          <p class="copyleft">
+            <!-- Copyrights -->
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="copyleft__license">
+              <img src="img/cc.png" width="16" height="16"  alt="cc">
+              <img src="img/by.png" width="16" height="16"  alt="cc">
+              <img src="img/sa.png" width="16" height="16"  alt="cc">
+            </a>
+            <a href="https://falanster.by/be" class="copyleft__falanster">Гняздо двіжа</a></p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Custom styles -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89579350-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>
