@@ -619,7 +619,7 @@ footer p {
     max-width: 100%
   }
   .img-halfwidth {
-    max-width: 90%
+    max-width: 100%;
   }
 }
 
@@ -794,9 +794,9 @@ footer p {
   margin-bottom: 30px;
 }
 
-.item {  
-  display: -webkit-box;  
-  display: -ms-flexbox;  
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Ubuntu;
   font-weight: normal;
@@ -804,12 +804,12 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px; 
+  padding-left: 20px;
   padding-right: 20px;
 }
 
 .stat-items .item {
-  padding-left: 19px; 
+  padding-left: 19px;
   padding-right: 19px;
 }
 

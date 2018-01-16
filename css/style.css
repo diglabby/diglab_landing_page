@@ -347,7 +347,7 @@ p, li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
- 
+
   position: relative; }
   .main-wrapper .main-wrapper__top {
     display: -webkit-box;
@@ -394,11 +394,11 @@ p, li {
         text-align: center; } }
     .main-wrapper .main-wrapper__medium .main-wrapper__medium-container {
       width: 750px;
-      
+
       display: -webkit-box;
-      
+
       display: -ms-flexbox;
-      
+
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -422,11 +422,11 @@ p, li {
                   flex-direction: column; } }
       .main-wrapper .main-wrapper__medium .main-wrapper__medium-container .main-wrapper__medium-left {
         width: 450px;
-        
+
         display: -webkit-box;
-        
+
         display: -ms-flexbox;
-        
+
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -460,11 +460,11 @@ p, li {
             padding: 0 0 10px 0; }
     .main-wrapper .main-wrapper__medium .main-wrapper__medium-container-init {
       width: 750px;
-      
+
       display: -webkit-box;
-      
+
       display: -ms-flexbox;
-      
+
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -642,9 +642,8 @@ p, li {
         color: #F8F8F8;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        line-height: 6.25rem;
         text-align: center;
-        margin-top: 60px; }
+        margin: 60px 0px 60px 0px;}
         @media only screen and (max-width: 768px) {
           .main-wrapper .main-wrapper__below .main-wrapper__below-container .main-wrapper__below-header {
             line-height: 2.5rem; } }
@@ -1021,9 +1020,9 @@ footer {
   margin-bottom: 30px;
 }
 
-.item {  
-  display: -webkit-box;  
-  display: -ms-flexbox;  
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Ubuntu;
   font-weight: normal;
@@ -1031,7 +1030,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px; 
+  padding-left: 20px;
   padding-right: 20px;
 }
 
