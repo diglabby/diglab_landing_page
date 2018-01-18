@@ -1316,6 +1316,12 @@ footer p {
     width: 250px;
   }
 }
+@media (max-width: 505px) {
+  .ask-for-help,.ask-for-valunteers{
+    margin:0 auto;
+    width:134px;
+  }
+}
 @media (max-width: 440px) {
   .donate-desc {
     -webkit-box-orient: vertical;
