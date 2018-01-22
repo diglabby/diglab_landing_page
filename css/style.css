@@ -33,7 +33,7 @@ h1 {
   font-weight: 700; }
 
 h2, h3, h4, h5, h6 {
-  margin: 30px 0;
+  margin: 60px 0 30px 0;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400; }
   @media only screen and (min-width: 280px) and (max-width: 424px) {
@@ -607,6 +607,9 @@ p, li {
         .main-wrapper .main-wrapper__bottom .main-wrapper__bottom-container .main-wrapper__bottom-list {
           padding-top: 0;
           } }
+.main-wrapper__below {
+padding: 35px 15px;
+}
   .main-wrapper .main-wrapper__below {
     min-height: 690px;
     display: -webkit-box;
@@ -1107,10 +1110,6 @@ footer {
   text-shadow: 1px 1px 1px black;
 }
 
-.tools a {
-  text-decoration: underline;
-}
-
 .card-tools {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,8 +1127,9 @@ footer {
 
 .card-tools .item div a {
   font-size: 22px;
-  padding-left: 5px;
+  padding-left: 15px;
   text-shadow: 1px 1px 1px black;
+
 }
 
 .card-tools .item p {
@@ -1225,7 +1225,8 @@ footer {
  .card-items .item p {
   font-size: 13px;
   width: 100%;
-  max-width: 600px
+  font-weight: bold;
+  max-width: 600px;
  }
  .item-nonactive {
   display: none;
