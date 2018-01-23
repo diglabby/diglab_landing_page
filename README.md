@@ -1,2 +1,3 @@
-# falanster_landings
-Two pages for volunteers and initiatives
+# dig_lab landing
+
+Тут будзе апісанне праекта і інструкцыя па дэплойменту.
