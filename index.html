@@ -38,6 +38,10 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;subset=cyrillic" rel="stylesheet">
 
+    <link rel="stylesheet" href="mpa/donate.css">
+    <script type="text/javascript" src="https://js.bepaid.by/begateway-1-latest.min.js"></script>
+    <script type="text/javascript" src="mpa/mpa-script.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -82,6 +86,73 @@
   </header>
   <main>
   <!-- Page Content -->
+
+  <!--MPA start -->
+  <div class="section mod">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12 module-donate">
+          <div class="donate-left">
+            <div class="donate-title"></div>
+            <div class="donate-desc">
+              <img src="img/server_pic.png" alt="Ілюстрацыя да апісання модуля даната">
+              <div></div>
+            </div>
+            <div class="donate-sum"></div>
+          </div>
+          <div style="display: none" class="backButton" onclick="backbutton()"><i class="fa fa-angle-left"></i></div>
+          <div class="donate-right">
+            <div>
+              <button data-sum="5">5 руб.</button>
+              <button data-sum="10">10 руб.</button>
+              <button data-sum="15">15 руб.</button>
+            </div>
+            <div>
+              <button data-sum="20">20 руб.</button>
+              <button data-sum="50">50 руб.</button>
+              <button data-sum="100">100 руб.</button>
+            </div>
+            <div class="donate-call">
+              <input type="number" placeholder="іншая сума">
+              <button onclick="submitbutton()">Ахвяруй!</button>
+            </div>
+            <div id="mpa-rules"><a href="javascript:PopUpShow()" class="donate-link">Апiсанне спосабу аплаты</a></div>
+          </div>
+          <div style="display: none" class="donate-form" id="donate-form"></div>
+          <div style="display: none" class="donate-form-answer donate-error-tech">
+            <p>Прабачце, транзакцыя была<br> адхілена з прычыны тэхнічнага збою.</p>
+            <button onclick="backbutton()">Паспрабаваць яшчэ раз</button>
+          </div>
+          <div style="display: none" class="donate-form-answer donate-error-bank">
+            <p>Прабачце, транзакцыя была<br> адхілена банкам.</p>
+            <button onclick="backbutton()">Паспрабаваць яшчэ раз</button>
+          </div>
+          <div style="display: none" class="donate-form-answer donate-success">
+            <p>Ахвяраванне паспяхова здзейснена.</p>
+            <p>Дзякуй за падтрымку!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            <p style="text-align: center">На гэтай старонцы ахвяраванне робіцца <strong>банкаўскай картай</strong>.</p>
+            <p>Па націсканні кнопкі “Ахвяруй!” для Вас будзе выведзеная адмысловая плацёжная форма працэсінгавай сістэмы <span style="background-color:#ffffff;color:#f79646;font-weight:700;text-decoration:underline"><a href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://bepaid.by/%26amp;sa%3DD%26amp;ust%3D1512210348836000%26amp;usg%3DAFQjCNF80DpFih_fNIw_ddPPenMA6k1VRQ&amp;sa=D&amp;ust=1512210348842000&amp;usg=AFQjCNEr7EVyPzSdZapDB4yMW-BY6e1nAA" style="color:inherit;text-decoration:inherit">be</a></span><span style="background-color:#ffffff;color:#1155cc;font-weight:700;text-decoration:underline"><a href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://bepaid.by/%26amp;sa%3DD%26amp;ust%3D1512210348836000%26amp;usg%3DAFQjCNF80DpFih_fNIw_ddPPenMA6k1VRQ&amp;sa=D&amp;ust=1512210348843000&amp;usg=AFQjCNEA49MozecrsbatrFpI-2tc8Z5I9A" style="color:inherit;text-decoration:inherit">Paid</a></span>.
+            Для аплаты Вам спатрэбіцца ўвесці дадзеныя сваёй карты і пацвердзіць плацёж кнопкай “Аплаціць N руб.”, дзе N ― вызначаная Вамі сума.
+            Мы прымаем плацяжы з наступных банкаўскіх картаў: MasterCard, Maestro, Visa, Visa Electron, Белкарт.</p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 355.57px; height: 62.06px;"><img alt="" src="https://lh4.googleusercontent.com/9EEq8ZYJPpco2xK00gYJFFUx_Stj37Nb5wLQanbnBU5ELcPdOan1UAy_jeUqGNFdCAoWC0PT_5AXfjwhZcPrBR1JXsrf9XGcv58mR-ktyN0vPN77gRdOaXXg1i-oCKX-CzkKK4vl=s800" style="width: 255.57px; height: 52.06px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""><img src="https://lh6.googleusercontent.com/Bt1eFBKo9amovmut4a08H93W1863_8c-a24F5S-vvXiQkVTbk44B5x9O-k4bIz6S93spBuuUyAD8dVr4l7Hk-KCX6crgyMo8tN5NCra707A1sAlmzmVInE_NJKgWrf3rplqdIshN"></span></p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 120.00px; height: 80.00px;"><img alt="" src="https://lh5.googleusercontent.com/Ca6oYDV-FN43D4v26PQMQY9vewOEcrGHoSr7loyG7xlUmOxkxEaILtkq9W7ZrETZKe00OYzP4F94bKA5IMvHDs7kuAi5hxETr7W9QuelOJYdPXBXDQiFEKQ6drqEuhumtyMGdZHG=s800" style="width: 120.00px; height: 80.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+            
+            <br /> 
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:justify"><span style="font-style:italic">Плацяжы з банкаўскіх картаў ажыццяўляюцца праз сістэму электронных плацяжоў </span><span style="background-color:#ffffff;font-style:italic;color:#f79646;font-weight:700;text-decoration:underline"><a href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://bepaid.by/%26amp;sa%3DD%26amp;ust%3D1512210929948000%26amp;usg%3DAFQjCNEUoxeFz8lTx5QHUi_w8BRG936XKw&amp;sa=D&amp;ust=1512210929952000&amp;usg=AFQjCNHUx_27SUuixkj1Fve8R4V1o1wnEA" style="color:inherit;text-decoration:inherit">be</a></span><span style="background-color:#ffffff;font-style:italic;color:#1155cc;font-weight:700;text-decoration:underline"><a href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://bepaid.by/%26amp;sa%3DD%26amp;ust%3D1512210929948000%26amp;usg%3DAFQjCNEUoxeFz8lTx5QHUi_w8BRG936XKw&amp;sa=D&amp;ust=1512210929952000&amp;usg=AFQjCNHUx_27SUuixkj1Fve8R4V1o1wnEA" style="color:inherit;text-decoration:inherit">Paid</a></span><span style="font-style:italic">.</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp;Плацёжная форма сістэмы адпавядае ўсім патрабаванням бяспекі перадачы звестак (PCI DSS Level 1). Усе канфідэнцыйныя звесткі захоўваюцца ў зашыфраваным выглядзе і максімальна ўстойлівыя да ўзлому.</span></p>
+            
+            <p style="text-align:center"><a href="javascript:PopUpHide()">Назад да старонкi ахвяравання</a></p>
+        </div>
+      </div>
+                                                
+  <!-- MPA end-->   
 
    <div class="section background-white">
     <div class="container">
@@ -177,13 +248,13 @@
           <div class="item">
             <h3>Ліга добраахвотнай<br>працы моладзі</h3>
             <div class="card-img"><img src="img/histories/liga.jpg" alt="Скрыншот сайта Ліга добраахвотнай працы моладзі"></div>
-            <p>Каманда арганізацыі ладзіць праграмы па ахоўве традыцый студэнцкіх атрадаў і развіццё дабравольніцкага (валанцёрскага) руху сярод моладзі Беларусі.</p>
+            <p>Каманда арганізацыі ладзіць праграмы па ахове традыцый студэнцкіх атрадаў і развіццё дабравольніцкага (валанцёрскага) руху сярод моладзі Беларусі.</p>
             <button onclick="window.open('https://it.falanster.by/blog/2017/12/04/navuchycca-vuchycca-4-pytanni-pa-stvarjennju-sajta-ligi-dabraahvotnaj-pracy-moladzi/','_blank')">чытаць гісторыю</button>
           </div>
           <div class="item item-nonactive">
             <h3>Клубны дом <br>"Крылы Надзеі"</h3>
             <div class="card-img"><img src="img/histories/wings-of-hope.jpg" alt="Скрыншот сайта Клубны дом Крылы Надзеі"></div>
-            <p>Пляцоўка для рэабілітацыі людзей з псіха-фізічнымі адхіленнямі. Тут удзельнікі практыкуюць сацыяльную уключанасць і ўзаемадапамогу.</p>
+            <p>Пляцоўка для рэабілітацыі людзей з псіха-фізічнымі адхіленнямі. Тут удзельнікі практыкуюць сацыяльную ўключанасць і ўзаемадапамогу.</p>
             <button onclick="window.open('https://it.falanster.by/blog/2017/09/14/padarozhzha-dyletanta%D1%9E-ili-jak-navuchylisja-ljotac-u-intjernece/','_blank')">чытаць гісторыю</button>
           </div>
           <div class="item item-nonactive">
@@ -246,14 +317,14 @@
       </div>
     </div>
   </div><!-- bottom wrapper -->
-  
+
   <!-- CTA buttons-->
     <div class="buttons">
       <div class="button-volunteers">
-        <a href="https://docs.google.com/forms/d/1xvajxU2tx9YequE-0bDqLgxZ5QJtwQqbOAoKcM7nHj4/viewform"><span>стань валанцёрам</span></a>
+        <a href="https://docs.google.com/forms/d/1xvajxU2tx9YequE-0bDqLgxZ5QJtwQqbOAoKcM7nHj4/viewform"><div class="ask-for-valunteers"><span>стань валанцёрам</span></div></a>
       </div>
       <div class="button-initiatives">
-        <a href="https://docs.google.com/forms/d/17TAstNrQcY5WOEN3mTZBBLHlacICsgzpBzQ-hI30Aak/viewform"><span>запытай  дапамогу</span></a>
+        <a href="https://docs.google.com/forms/d/17TAstNrQcY5WOEN3mTZBBLHlacICsgzpBzQ-hI30Aak/viewform"><div class="ask-for-help"><span>запытай  дапамогу</span></div></a>
       </div>
     </div>
   <!-- end CTA buttons-->
@@ -275,6 +346,10 @@
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a85c8705ea30c06ccde479258_53758bd248" tabindex="-1" value=""></div>
             <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">падпісацца</button>
           </form>
+            <div id="mce-responses" class="clear">
+              <div class="response alert alert-danger" id="mce-error-response" style="display:none">Памылка. Калі ласка, уважліва праверце ўведзены e-mail.</div>
+              <div class="response alert alert-info" id="mce-success-response" style="display:none">Вы паспяхова падпісаны! Калі ласка, праверце сваю паштовую скрыню, каб пацвердзіць уведзены адрас.</div>
+            </div>
           <!--End mc_embed_signup-->
         </div>
       </div>

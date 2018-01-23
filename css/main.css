@@ -619,7 +619,7 @@ footer p {
     max-width: 100%
   }
   .img-halfwidth {
-    max-width: 90%
+    max-width: 100%;
   }
 }
 
@@ -794,9 +794,9 @@ footer p {
   margin-bottom: 30px;
 }
 
-.item {  
-  display: -webkit-box;  
-  display: -ms-flexbox;  
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Ubuntu;
   font-weight: normal;
@@ -804,12 +804,12 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px; 
+  padding-left: 20px;
   padding-right: 20px;
 }
 
 .stat-items .item {
-  padding-left: 19px; 
+  padding-left: 19px;
   padding-right: 19px;
 }
 
@@ -935,6 +935,16 @@ footer p {
       box-sizing: border-box;
 }
 
+#mce-responses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 .without-bottom-margin {
   margin-bottom: 0;
 }
@@ -963,271 +973,9 @@ footer p {
   opacity: 0.6;
 }
 
-.module-donate {
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #4d4d4d;
-  border: 5px solid #ccff00;
-  border-radius: 4px;
-}
-
-.donate-left, .donate-right, .donate-form, .donate-form-answer {
-  padding: 20px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.donate-left {
-  color: #ffffff;
-}
-
-.donate-title {
-  font-family: Ubuntu;
-  font-size: 23px;
-}
-
-.donate-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 11.5px;
-  padding-top: 20px;
-}
-
-.donate-desc img {
-  height: 150px;
-  width: 150px;
-}
-
-.donate-desc div {
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding-left: 20px;
-}
-
-.donate-sum {
-  color: #ccff00;
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-.donate-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.donate-right div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 25px;
-}
-
-.donate-right button {
-  background-color: #f9f9f9;
-  border: none;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
-  font-size: 17px;
-  height: 50px;
-}
-
-.donate-call button:first-child {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-}
-
-.donate-call button:last-child {
-  background-color: #ccff00;
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.donate-link {
-  color: #ffffff;
-  font-size: 12px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.donate-form, .donate-form form, .donate-form-answer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.donate-form-fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.donate-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.donate-social button {
-  border:none;
-  border-radius: 1px;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.donate-social button:nth-child(1) {
-  background-color: green;
-}
-
-.donate-social button:nth-child(2) {
-  background-color: blue;
-}
-
-.donate-social button:nth-child(3) {
-  background-color: red;
-}
-
-.donate-form form input {
-  margin-bottom: 10px;
-  padding-left: 5px;
-}
-
-.donate-form form input::-webkit-input-placeholder {
-  color: #b3b3b3;
-  font-size: 14px;
-}
-
-.donate-form form input:-ms-input-placeholder {
-  color: #b3b3b3;
-  font-size: 14px;
-}
-
-.donate-form form input::-ms-input-placeholder {
-  color: #b3b3b3;
-  font-size: 14px;
-}
-
-.donate-form form input::placeholder {
-  color: #b3b3b3;
-  font-size: 14px;
-}
-
-.donate-form label, .donate-security, .donate-form a {
-  color: #ffffff;
-}
-
-.donate-security, .donate-form a {
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 12px;
-}
-
-.donate-security {
-  padding: 8px 0;
-}
-
-.donate-form a {
-  padding: 8px 0 0 0;
-}
-
-.donate-form label {
-  font-size: 11px;
-}
-
-.donate-form button[type="submit"] {
-  background-color: #ccff00;
-  border: none;
-  color: #333333;
-  font-size: 17px;
-  font-weight: 700;
-  height: 35px;
-}
-
-.donate-form-answer {
-  color: #ffffff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.donate-form-answer p:first-child {
-  font-size: 17px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.donate-form-answer p:nth-child(2) {
-  font-size: 21px;
-}
-
-.donate-form-answer button {
-  background-color: #ccff00;
-  border: none;
-  color: #333333;
-  font-size: 17px;
-  width: 225px;
-  height: 35px;
-  padding: 0 20px;
-}
-
 @media (max-width: 1023px) {
 .section-title {
   font-size: 24px;
-}
-.module-donate {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.donate-right, .donate-form, .donate-form-answer {
-  width: 370px;
 }
 .stat-items {
   -ms-flex-wrap: wrap;
@@ -1316,6 +1064,12 @@ footer p {
     width: 250px;
   }
 }
+@media (max-width: 505px) {
+  .ask-for-help,.ask-for-valunteers{
+    margin:0 auto;
+    width:134px;
+  }
+}
 @media (max-width: 440px) {
   .donate-desc {
     -webkit-box-orient: vertical;
@@ -1339,4 +1093,4 @@ footer p {
   .donate-right, .donate-form, .donate-form-answer {
     width: auto;
   }
-}
+

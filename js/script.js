@@ -45,6 +45,24 @@ $(document).ready(function () {
     }
   });
 
+// Validate e-mail on subscribe module
+  $('#mc-embedded-subscribe').on('click', function(event) {
+    if ( !validateEmail( $('#mce-EMAIL').val() )  ) {
+      if ( $('#mce-success-response').length ) $('#mce-success-response').hide();
+      $('#mce-error-response').show();
+      return false;
+    } else {
+      if ( $('#mce-error-response').length ) $('#mce-error-response').hide();
+      $('#mce-success-response').show();
+    }
+  });
+
+  function validateEmail(email) {
+    var pattern = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+    return pattern.test($.trim(email)) ? true : false;
+  }
+
 // Adding arrows on community page
   function showArrows() {
     if ( $(".current-projects").length && $(window).width() > 1023 ) {
