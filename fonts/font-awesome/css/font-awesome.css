@@ -782,6 +782,7 @@
 }
 .fa-caret-right:before {
   content: "\f0da";
+  -moz-padding-left:15px;
 }
 .fa-columns:before {
   content: "\f0db";

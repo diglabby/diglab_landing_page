@@ -619,7 +619,7 @@ footer p {
     max-width: 100%
   }
   .img-halfwidth {
-    max-width: 90%
+    max-width: 100%;
   }
 }
 
@@ -794,9 +794,9 @@ footer p {
   margin-bottom: 30px;
 }
 
-.item {  
-  display: -webkit-box;  
-  display: -ms-flexbox;  
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Ubuntu;
   font-weight: normal;
@@ -804,12 +804,12 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px; 
+  padding-left: 20px;
   padding-right: 20px;
 }
 
 .stat-items .item {
-  padding-left: 19px; 
+  padding-left: 19px;
   padding-right: 19px;
 }
 
@@ -935,6 +935,16 @@ footer p {
       box-sizing: border-box;
 }
 
+#mce-responses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 .without-bottom-margin {
   margin-bottom: 0;
 }
@@ -1054,3 +1064,33 @@ footer p {
     width: 250px;
   }
 }
+@media (max-width: 505px) {
+  .ask-for-help,.ask-for-valunteers{
+    margin:0 auto;
+    width:134px;
+  }
+}
+@media (max-width: 440px) {
+  .donate-desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .donate-right, .donate-form, .donate-form-answer {
+    width: 300px;
+  }
+  .donate-form-fields {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 350px) {
+  .donate-right, .donate-form, .donate-form-answer {
+    width: auto;
+  }
+
