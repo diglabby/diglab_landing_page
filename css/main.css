@@ -431,7 +431,7 @@ header {
 
 footer {
   padding:  0;
-  min-height: 300px;
+  min-height: 450px;
   position: relative;
   background-image: url(../img/footer_4.png);
   background-position: center bottom;
@@ -827,12 +827,6 @@ footer p {
   }
 }
 
-@media (min-width:480px) {
-  footer {
-    background-size: auto 70%
-  }
-}
-
 @media (min-width:720px) {
   .contact {
     margin: 0 0 15px -5px
@@ -1038,6 +1032,14 @@ footer p {
   opacity: 0.6;
 }
 
+.bank-info {
+  font-size: 11px;
+}
+
+.banks-img {
+  width: 70%;
+}
+
 @media (max-width: 1023px) {
 .section-title {
   font-size: 24px;
@@ -1158,3 +1160,7 @@ footer p {
   .donate-right, .donate-form, .donate-form-answer {
     width: auto;
   }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 775896b074158721fa60fcd585dcc676e25d07bc
