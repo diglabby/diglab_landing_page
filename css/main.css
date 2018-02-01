@@ -284,7 +284,7 @@ ul, ol {
 }
 /*popup-end*/
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 856px) {
   .nav__list {
     display: -webkit-box!important;
     display: -ms-flexbox!important;
@@ -298,7 +298,7 @@ ul, ol {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 855px) {
   .main-header__bars {
     display: block;
     position: absolute;
