@@ -3,8 +3,8 @@ GitHubActivity.feed({
   username: "diglabby",
   handler: "github-activity/handler.php",
   repositories: {
-  	"falanster": "falanster"
+  	"falanster": "falanster"	
   },
   selector: "#feed",
-  limit: 20
+  limit: 10
 });
