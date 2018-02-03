@@ -161,7 +161,8 @@ ul, ol {
 }
 
 .nav__list li {
-  margin-right: 20px;
+  margin-right: 14px;
+  padding-bottom: 5px;
 }
 
 .nav__list a {
