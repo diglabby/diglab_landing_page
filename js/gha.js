@@ -6,6 +6,6 @@ GitHubActivity.feed({
         "falanster": "falanster"
   },
   selector: "#feed",
-  limit: 10
+  limit: 20
 });
 
