@@ -272,15 +272,13 @@ ul, ol {
       font-size:15px;
   }
 }
-@media only screen and (max-width: 700px){
-  .b-popup-content p{
-      font-size:12px;
-  }
-}
-@media only screen and (max-width: 450px){
-  .b-popup-content p{
-      font-size:10px;
-  }
+@media only screen and (max-width: 550px) {
+    .b-popup .b-popup-content {
+        width: 98.5vw!important;
+    }
+    .b-popup-content p {
+        font-size: 13px!important;
+    }
 }
 /*popup-end*/
 
