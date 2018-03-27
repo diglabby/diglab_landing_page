@@ -38,10 +38,9 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;subset=cyrillic" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="dl_doika-1/mpa/donate.css">
-    <script type="text/javascript" src="https://js.bepaid.by/begateway-1-latest.min.js"></script>
-    <script type="text/javascript" src="dl_doika-1/mpa/mpa-script.js"></script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,6 +48,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+    <!-- Include slack-chat -->  
+    
 </head>
 
 <body>
@@ -102,7 +104,7 @@
             </div>
             <div class="donate-sum"></div>
           </div>
-          <div style="display: none" class="backButton" onclick="backbutton()"><i class="fa fa-angle-left"></i></div>
+          <div style="display: none" class="backButton" onclick="backbutton()"><i class="fa fa-angle-left"></i><p>назад</p></div>
           <div class="donate-right">
             <div>
               <button data-sum="5">5 руб.</button>
@@ -422,6 +424,11 @@
   ga('create', 'UA-89579350-1', 'auto');
   ga('send', 'pageview');
 </script>
+
+<script type="text/javascript" src="https://js.bepaid.by/begateway-1-latest.min.js"></script>
+<script type="text/javascript" src="dl_doika-1/mpa/mpa-script.js"></script>
+<script src="slackChatWidget/slackWidgetLoader.js"></script>
+
 </body>
 
 </html>
