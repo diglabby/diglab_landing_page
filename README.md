@@ -11,7 +11,7 @@
 sudo yum install git-core - дзеля дiстрiбуцiва Fedora
 sudo apt-get install git - дзеля дiстрiбуцiва на Debian
 ```
-Для карыстальнiкау ОС Windows скампуйце файл i усталюйце яго (адсюль](https://desktop.github.com/).
+Для карыстальнiкау ОС Windows скампуйце файл i усталюйце яго [адсюль](https://desktop.github.com/).
 
 
 ### Каб разгарнўць сайт трэба разгарнуць рэпазіторыі па наступнай чарзе.
@@ -48,7 +48,7 @@ git clone https://github.com/diglabby/dl_doika-1
 
 Праз камандную строку гэта можна зрабiць наступным чынам.
 ```bash 
-git clone https://github.com/diglabby/chat-widget-for-slack ;
+git clone https://github.com/diglabby/chat-widget-for-slack 
 ```
 Альбо зрабiце гэта праз сайт, нацiснувшы зяленую кнопку справа.Яе назва 'clone or download'
 
@@ -63,7 +63,7 @@ git clone https://github.com/diglabby/chat-widget-for-slack ;
 
 Праз камандную строку гэта можна зрабiць наступным чынам.
 ```bash 
-git clone https://github.com/diglabby/github-activity ; 
+git clone https://github.com/diglabby/github-activity 
 ```
 Альбо зрабiце гэта праз сайт, нацiснувшы зяленую кнопку справа.Яе назва 'clone or download'
 
@@ -89,7 +89,7 @@ echo "/chat-widget-for-slack " >> .gitignore
 /chat-widget-for-slack 
 /github-activity 
 `
-> Note: Кропка перад назвай файла адзначае что ен зьяуляецца скрытым, запытацйце у гугла як пабачыць усе файлы у вашым файлавым менеджере.
+> Note: Кропка перад назвай файла адзначае что ен зьяўляецца скрытым, запытайце у гугла як пабачыць усе файлы у вашым файлавым менеджере.
 
 
 ### Aўтаматычнае ўсталюванне
@@ -104,19 +104,14 @@ echo "/chat-widget-for-slack " >> .gitignore
 ```bash 
 git clone https://github.com/diglabby/diglab_landing_page && cd diglab_landing_page  
 ```
-3. Калi вы карыстальнiк ОС Linux, выканаце наступную каманду: 
-
-```bash 
-chmod -755 install.sh 
-```
-3. Запусціце скрыпт: 
+3. Запусціце скрыпт аўтаматычнага ўсталювання, выканав каманду у кансоли: 
     
-``` 
+```bash 
 ./install.sh 
 ```
 
-*Калi вам нешта не зразумела,вы можаце праглядзець наступнае вiдэа на [youtube]()* 
+ *Калi вам нешта будзе не зразумела,вы можаце праглядзець наступнае вiдэа-гайд па разгортванню на [youtube](https://youtu.be/rt5h6KnxeUY)* 
 
 ## Праблемы
 
-iнфармацыя дзеля распрацоушчыкау, былi праблемы з пакетам node-sass дзеля модуля чата пры усталюваннi.
+iнфармацыя дзеля распрацоушчыкаў, былi праблемы з пакетам node-sass дзеля модуля чата пры ўсталюваннi.
