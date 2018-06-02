@@ -1,0 +1,10 @@
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .main-wrapper .main-wrapper__medium { margin-bottom: 150px; }
+  .img-responsive {height: 100%;}
+  .main-wrapper__medium-left ol {width: 750px;}
+  .main-wrapper__bottom-list { width: 350px }
+  .main-wrapper__bottom-container li {list-style-type: disc;}
+  .card-items .item button { margin-top: auto }
+  .main-wrapper__medium-text { display: none }
+}
+
