@@ -112,7 +112,7 @@ echo "/chat-widget-for-slack " >> .gitignore
 ```bash 
 git clone https://github.com/diglabby/diglab_landing_page && cd diglab_landing_page  
 ```
-3. Запусціце скрыпт аўтаматычнага ўсталювання, выканав каманду у кансолі: 
+3. Запусціце скрыпт аўтаматычнага ўсталявання, выканаўшы каманду ў кансолі: 
     
 ```bash 
 ./install.sh 
@@ -127,4 +127,4 @@ git clone https://github.com/diglabby/diglab_landing_page && cd diglab_landing_p
 
 ## Праблемы
 
-iнфармацыя дзеля распрацоушчыкаў, былi праблемы з пакетам node-sass дзеля модуля чата пры ўсталюваннi.
+iнфармацыя для распрацоўшчыкаў, былi праблемы з пакетам node-sass для модуля чата пры ўсталюваннi.
