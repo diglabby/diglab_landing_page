@@ -45,7 +45,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-
+    <script src="slackChatWidget/slackWidgetLoader.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -224,6 +224,12 @@
             <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe</button>
           </form>
           <!--End mc_embed_signup-->
+          <!-- message errorr/succes -->
+          <div id="mce-responses" class="clear">
+            <div class="response alert alert-danger" id="mce-error-response" style="display:none">Error. Please, see the field e-mail entry is correct.</div>
+            <div class="response alert alert-info" id="mce-success-response" style="display:none">You are subscribed! Please, check your email to confirm your email.</div>
+          </div>
+          <!--End message errorr/succes -->
         </div>
       </div>
     </div>
@@ -237,8 +243,8 @@
             <ul class="bottom-menu list-inline">
               <!-- Footer navigation -->
               <li><a href="index-en.html">home</a></li>
-              <li><a href="https://it.falanster.by/tos-en.html">terms of use</a></li>
-              <li><a href="https://it.falanster.by//blog">blog</a></li>
+              <li><a href="tos-en.html">terms of use</a></li>
+              <li><a href="/blog/">blog</a></li>
               <li><a href="#" class="nav-current">for volunteer</a></li>
               <li><a href="initiative-en.html">for initiative</a></li>
               <li><a href="community-en.html">Community</a></li>

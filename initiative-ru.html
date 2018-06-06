@@ -37,6 +37,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+     <!-- ie 10 11 -->
+    <link rel="stylesheet" href="css/ie.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +47,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="slackChatWidget/slackWidgetLoader.js"></script>
 </head>
   <body>
     <header class="main-header">
@@ -101,7 +104,7 @@
             </div>
             <!-- Img container for initiatives page -->
             <div class="main-wrapper__medium-img-init">
-              <img src="img/initiative_2_ru.png" alt="Skills" class="img-responsive" width="1500" height="615">
+              <img src="img/initiative_2_ru.png" alt="Skills" class="img-responsive" width="750" height="307.5">
             </div>
           </div>
 
@@ -147,7 +150,7 @@
             <h3>Клубный дом<br>"Крылья Надежды"</h3>
             <div class="card-img"><img src="img/histories/wings-of-hope.jpg" alt="Скриншот сайта Клубный дом Крылья Надежды"></div>
             <p>Площадка для реабилитации людей с психо-физическими отклонениями. Здесь участники практикуют социальную включенность и взаимопомощь.</p>
-            <button onclick="window.open('https://it.falanster.by/blog/2017/09/14/padarozhzha-dyletanta%D1%9E-ili-jak-navuchylisja-ljotac-u-intjernece/','_blank')">читать историю</button>
+            <button onclick="window.open('https://it.falanster.by/blog/2017/09/14/padarozhzha-dyletantau-ili-jak-navuchylisja-ljotac-u-intjernece/','_blank')">читать историю</button>
           </div>
           <div class="item item-nonactive">
             <h3><br>Komnata 3/0/2</h3>
@@ -208,6 +211,12 @@
             <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">подписаться</button>
           </form>
           <!--End mc_embed_signup-->
+          <!-- message errorr/succes -->
+          <div id="mce-responses" class="clear">
+              <div class="response alert alert-danger" id="mce-error-response" style="display:none">Ошибка. Пожалуйста, внимательно проверьте введенный e-mail.</div>
+              <div class="response alert alert-info" id="mce-success-response" style="display:none">Вы подписаны ! Пожалуйста, проверьте ваш почтовый ящик, что-бы потвердить ваш email .</div>
+          </div>
+          <!--End message errorr/succes -->
         </div>
       </div>
     </div>
@@ -222,7 +231,7 @@
               <!-- Footer navigation -->
               <li><a href="index-ru.html">Главная</a></li>
               <li><a href="tos-ru.html">Правила пользования</a></li>
-              <li><a href="http://it.falanster.by/blog/">Блог</a></li>
+              <li><a href="/blog/">Блог</a></li>
               <li><a href="volunteers-ru.html">Волонтёрам</a></li>
               <li><a href="#" class="nav-current">Инициативам</a></li>
               <li><a href="community-ru.html">Сообщество</a></li>

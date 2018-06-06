@@ -45,7 +45,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-
+    <script src="slackChatWidget/slackWidgetLoader.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -221,6 +221,12 @@
             <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">подписаться</button>
           </form>
           <!--End mc_embed_signup-->
+          <!-- message errorr/succes -->
+          <div id="mce-responses" class="clear">
+              <div class="response alert alert-danger" id="mce-error-response" style="display:none">Ошибка. Пожалуйста, внимательно проверьте введенный e-mail.</div>
+              <div class="response alert alert-info" id="mce-success-response" style="display:none">Вы подписаны ! Пожалуйста, проверьте ваш почтовый ящик, что-бы потвердить ваш email .</div>
+          </div>
+          <!--End message errorr/succes -->
         </div>
       </div>
     </div>
@@ -235,7 +241,7 @@
               <!-- Footer navigation -->
               <li><a href="index-ru.html">Главная</a></li>
               <li><a href="tos-ru.html">Правила пользования</a></li>
-              <li><a href="https://it.falanster.by/blog">Блог</a></li>
+              <li><a href="/blog/">Блог</a></li>
               <li><a href="#" class="nav-current">Волонтерам</a></li>
               <li><a href="initiative-ru.html">Инициативам</a></li>
               <li><a href="community-en.html">Community</a></li>
