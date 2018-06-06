@@ -3,5 +3,8 @@ blog
 blog/
 /github-activity
 /dl_doika-1
+<<<<<<< HEAD
 slackChatWidget
+=======
+>>>>>>> 888717f1536c0b4c490d1d3961ae0fbc774a9ce8
 slackChatWidget/

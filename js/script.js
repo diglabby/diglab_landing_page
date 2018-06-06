@@ -18,7 +18,7 @@ $(document).ready(function () {
       $('.main-wrapper__button').css({'position': 'relative', 'z-index': 1});
       $('.buttons').css({'position': 'relative', 'z-index': 1});
     } else if ( $(window).scrollTop() + $(window).height() < $(document).height() - ( $('.subscribe').outerHeight() + $('footer').outerHeight() ) ) {
-      $('.buttons').css({'bottom': 0, 'position': 'fixed', 'z-index': 9999});
+      $('.buttons').css({'bottom': 0, 'position': 'fixed', 'z-index': 99});
       $('.main-wrapper__button').css({'bottom': 0, 'position': 'fixed'});
     }
     $('.buttons').show();
