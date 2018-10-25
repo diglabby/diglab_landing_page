@@ -1,4 +1,4 @@
-body, html {
+﻿body, html {
   width: 100%;
   min-height: 100vh;
   display: -ms-flex;
@@ -108,6 +108,13 @@ ul, ol {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+/*Doika*/
+
+#module-donate-wrapper {
+  margin: 10px auto 15px !important;
+  
 }
 
 
